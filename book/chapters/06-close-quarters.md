@@ -1,7 +1,7 @@
 # Close Quarters & Breaching {#ch-close-quarters}
 
 ::: flavor
-The plywood house behind Herron's mill has no roof, one door, and chalk on every wall. Deacon built it in a weekend and has rebuilt the frame twice since — door frames splinter. Inside, penciled tallies from weeks of runs: who hesitated on the threshold, who crossed it flat-footed and took a chalk X on the chest for it. *A doorway is a machine for killing the first one through,* he says before every run. *You don't argue with a machine. You feed it something it chokes on — light, noise, a hole where it wasn't watching — and you come in second.*
+The plywood house behind Herron's mill has no roof, one door, and chalk on every wall. Inside, penciled tallies from weeks of runs: who hesitated on the threshold, who crossed it flat-footed and took a chalk X on the chest for it. *A doorway is a machine for killing the first one through,* Deacon says before every run. *You don't argue with a machine. You feed it something it chokes on — light, noise, a hole where it wasn't watching — and you come in second.*
 :::
 
 This chapter owns the fight at door distance: what shooting inside a Zone means, who fires first when a figure comes through a Portal, how to make the answer be you, and what the knife is for. Zones, Portals, and the Posted and Deep states are defined in {{ref:sec-zones}} and are not repeated here; attacks resolve by {{ref:sec-attack-procedure}}, as always. Everything that follows happens inside five meters, in about three seconds, and is mostly decided before anyone steps through the door.

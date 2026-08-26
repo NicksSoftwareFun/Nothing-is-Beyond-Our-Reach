@@ -146,6 +146,15 @@ skill-tiers:
     - ["Skilled civilian", "11/13", "11", "hunters, competent shooters"]
     - ["Green", "13/15", "12", "most starting civilians"]
 
+status-effects:
+  title: Status Effects at a Glance
+  columns: [State, Effects, Gets worse, Recovers]
+  rows:
+    - ["Shaken", "-4 AP at next activation (min 2); +2 TN on own tests; no Reaction Fire", "Shaken again -> Pinned", "End of own next activation; Rally; or End Phase if not activated and not shot at"]
+    - ["Pinned", "Only Crawl, hug cover, or self-aid; anything else needs Grit at +2 (one test, start of activation)", "-", "Rally (to Shaken); or End Phase if not shot at (to Shaken)"]
+    - ["Down and Dying", "Unconscious; bleed-out clock d6+2 turns; cries force Grit tests within 6 squares", "Clock expires -> dead; second Critical -> dead", "Stabilized by Aid (stays Down, must be carried)"]
+  note: The Warden's figures use the same states; its Down figures are simply out of the fight.
+
 crew-morale-triggers:
   title: Crew Morale - When Grit Is Tested
   columns: [Trigger, Timing, On failure]

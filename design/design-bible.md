@@ -552,6 +552,23 @@ mechanically correct answer. (Robin Sage war-crime negotiation pattern; Falling 
 15. **Grenade throws:** low Cover along the line never bars a throw; Block terrain and closed
     doors do.
 
+16. **Bleed marks** erase when the wound worsens (count restarts at the new rate) and when aid
+    stops Bleed; Down-and-Dying figures mark no Bleed — the d6+2 clock replaces it.
+17. **Wound stacking:** your condition = your worst wound; a new wound AT that level steps it
+    up one; a wound below it adds only its location effect; Grazes never stack. When two
+    effects change AP, halve first, then subtract.
+18. **Self-aid** is the Aid action on yourself, no Aid Bag needed, impossible while Down. Each
+    Buddy Aid attempt spends a bag use, success or failure.
+19. **Stabilizing a Dying figure** stops the clock; the figure stays Down (unconscious, must
+    be carried) and stops crying out.
+20. **Dying cries:** the Grit test is once per turn per listening figure, however many Dying
+    figures are near.
+21. **Pinned:** one Grit test at +2 at the start of the activation; failure limits that
+    activation to Crawl/cover/self-aid. Pinned→Shaken in the End Phase requires only
+    not-shot-at (activating is allowed — crawling to cover isn't punished).
+22. **Carrying:** lifting a Down figure = Interact; setting down free; Walk/Crawl only; an
+    unstabilized bleed-out clock keeps ticking while carried.
+
 ## 18. Writing rules for chapter agents
 
 - **Capitalized game terms only when they carry rules weight**, and only terms from the

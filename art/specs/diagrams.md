@@ -25,3 +25,5 @@ text these illustrate is in `/design/design-bible.md` (section noted).
 | diagram-scatter-elevation.svg | High/Ground levels, elevated shooter bonus (6.1): ridge cross-section (viewBox 800×400) |
 | diagram-rally-radius.svg | Rally: 3-square radius (6 with radios), per-figure rolls, Pinned→Shaken step (7.6) |
 | diagram-doctrine-fallback.svg | OPFOR morale ladder: Assault→Base-of-Fire→Holding→Rout; off-ladder doctrines drop to Holding (7.6) |
+| diagram-wound-procedure.svg | Crew wound chain: hit → location d10 → severity d10+DR−armor → wound line (7.3): flowchart strip |
+| diagram-shaken-pinned.svg | Shaken/Pinned state graph: causes, escalation, the three recovery paths (7.5) |
