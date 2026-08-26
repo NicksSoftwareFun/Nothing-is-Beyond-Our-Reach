@@ -1,0 +1,510 @@
+/* ============================================================================
+   book.css — NOTHING IS BEYOND OUR REACH rulebook design.
+   Field-guide realism: warm paper, olive/tan/ink, blaze reserved for alerts.
+   Colors are hardcoded from art/lib/palette.json; each hex is tagged with its
+   palette token name. No shadows, no gradients — print-clean.
+
+   Palette tokens used:
+     paper          #F2EDDF
+     paper-bright   #F8F6EE
+     ink            #2B2A26
+     ink-soft       #4C4A42
+     tan            #C9BA95
+     olive          #5B6244
+     olive-light    #8A8F6A
+     contour        #A38B66
+     rust           #9C4A38
+     blaze          #D96C2E
+   ========================================================================== */
+
+/* ---------- Page geometry & running matter ------------------------------- */
+
+@page {
+  size: 8.5in 11in; /* US Letter */
+  margin: 0.75in;
+}
+
+/* Mirrored running heads: book title on verso (left) pages, chapter title
+   (string-set from h1) on recto (right) pages. Page number bottom outer. */
+@page :left {
+  @top-left {
+    content: "NOTHING IS BEYOND OUR REACH"; /* book title, kept in sync with book/book.yaml */
+    font-family: "Barlow Semi Condensed", "Liberation Sans", sans-serif;
+    font-weight: 600;
+    font-size: 7.5pt;
+    letter-spacing: 0.09em;
+    color: #4C4A42; /* ink-soft */
+    vertical-align: bottom;
+    padding-bottom: 9pt;
+  }
+  @bottom-left {
+    content: counter(page);
+    font-family: "Barlow Semi Condensed", "Liberation Sans", sans-serif;
+    font-weight: 600;
+    font-size: 9pt;
+    color: #2B2A26; /* ink */
+    vertical-align: top;
+    padding-top: 9pt;
+  }
+}
+
+@page :right {
+  @top-right {
+    content: string(chaptertitle);
+    font-family: "Barlow Semi Condensed", "Liberation Sans", sans-serif;
+    font-weight: 600;
+    font-size: 7.5pt;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: #4C4A42; /* ink-soft */
+    vertical-align: bottom;
+    padding-bottom: 9pt;
+  }
+  @bottom-right {
+    content: counter(page);
+    font-family: "Barlow Semi Condensed", "Liberation Sans", sans-serif;
+    font-weight: 600;
+    font-size: 9pt;
+    color: #2B2A26; /* ink */
+    vertical-align: top;
+    padding-top: 9pt;
+  }
+}
+
+/* No running head over the opening page. */
+@page :first {
+  @top-left { content: none; }
+  @top-right { content: none; }
+}
+
+/* Warm paper on every rendered sheet (Paged.js page element). */
+.pagedjs_page {
+  background: #F2EDDF; /* paper */
+}
+
+/* ---------- Base type ----------------------------------------------------- */
+
+html {
+  font-family: "Source Serif 4", "Bitstream Charter", "Charter", serif;
+  font-size: 10pt;
+  line-height: 13.5pt;
+  color: #2B2A26; /* ink */
+}
+
+body {
+  margin: 0;
+}
+
+p {
+  margin: 0 0 5pt 0;
+  orphans: 2;
+  widows: 2;
+  hyphens: auto;
+}
+
+strong { font-weight: 600; }
+
+ul, ol {
+  margin: 0 0 5pt 0;
+  padding-left: 14pt;
+}
+li { margin: 0 0 2pt 0; }
+
+blockquote {
+  margin: 6pt 0 8pt 10pt;
+  padding-left: 8pt;
+  border-left: 2pt solid #C9BA95; /* tan */
+  color: #4C4A42; /* ink-soft */
+  font-style: italic;
+}
+
+hr {
+  border: none;
+  border-top: 1pt solid #C9BA95; /* tan */
+  margin: 10pt 0;
+}
+
+code {
+  font-family: "Barlow Semi Condensed", "Liberation Sans", sans-serif;
+  font-size: 9pt;
+  background: #F8F6EE; /* paper-bright */
+  padding: 0 2pt;
+}
+
+/* ---------- Chapters & the two-column body -------------------------------- */
+
+section.chapter {
+  column-count: 2;
+  column-gap: 0.3in;
+  column-fill: balance;
+}
+
+/* every chapter after the first starts on a fresh page */
+section.chapter ~ section.chapter {
+  break-before: page;
+}
+
+/* Chapter opener: spans both columns, Oswald, olive rule. */
+h1 {
+  string-set: chaptertitle content(text);
+  column-span: all;
+  font-family: "Oswald", "Liberation Sans", sans-serif;
+  font-weight: 600;
+  font-size: 24pt;
+  line-height: 26pt;
+  letter-spacing: 0.02em; /* Oswald tracking +2% */
+  text-transform: uppercase;
+  color: #2B2A26; /* ink */
+  margin: 0 0 10pt 0;
+  padding-bottom: 6pt;
+  border-bottom: 3pt solid #5B6244; /* olive */
+  break-after: avoid;
+}
+
+h2 {
+  font-family: "Oswald", "Liberation Sans", sans-serif;
+  font-weight: 600;
+  font-size: 13pt;
+  line-height: 15pt;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #5B6244; /* olive */
+  margin: 10pt 0 4pt 0;
+  break-after: avoid;
+}
+
+h3 {
+  font-family: "Oswald", "Liberation Sans", sans-serif;
+  font-weight: 500;
+  font-size: 10.5pt;
+  line-height: 12.5pt;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #2B2A26; /* ink */
+  margin: 8pt 0 3pt 0;
+  break-after: avoid;
+}
+
+h4 {
+  font-family: "Barlow Semi Condensed", "Liberation Sans", sans-serif;
+  font-weight: 700;
+  font-size: 9.5pt;
+  color: #2B2A26; /* ink */
+  margin: 6pt 0 2pt 0;
+  break-after: avoid;
+}
+
+/* ---------- Tables --------------------------------------------------------- */
+
+table {
+  font-family: "Barlow Semi Condensed", "Liberation Sans", sans-serif;
+  font-size: 8.5pt;
+  line-height: 10.5pt;
+  border-collapse: collapse;
+  width: 100%;
+  margin: 4pt 0 9pt 0;
+}
+
+caption {
+  caption-side: top;
+  text-align: left;
+  font-family: "Oswald", "Liberation Sans", sans-serif;
+  font-weight: 500;
+  font-size: 9pt;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #5B6244; /* olive */
+  padding-bottom: 2pt;
+}
+caption .dice {
+  font-family: "Barlow Semi Condensed", "Liberation Sans", sans-serif;
+  font-weight: 600;
+  text-transform: none;
+  color: #4C4A42; /* ink-soft */
+}
+
+thead th {
+  background: #5B6244; /* olive */
+  color: #F8F6EE; /* paper-bright */
+  font-weight: 600;
+  font-size: 8pt;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  text-align: left;
+  padding: 2pt 4pt;
+}
+
+tbody td {
+  padding: 2pt 4pt;
+  vertical-align: top;
+  border-bottom: 0.5pt solid #C9BA95; /* tan */
+}
+
+/* zebra: paper-bright on odd rows, tan at low tint on even rows */
+tbody tr:nth-child(odd) td {
+  background: #F8F6EE; /* paper-bright */
+}
+tbody tr:nth-child(even) td {
+  background: rgba(201, 186, 149, 0.28); /* tan #C9BA95 @ 28% tint */
+}
+
+tfoot td, td.table-note {
+  font-size: 7.5pt;
+  color: #4C4A42; /* ink-soft */
+  padding: 2pt 4pt;
+  border-top: 1pt solid #5B6244; /* olive */
+  font-style: italic;
+}
+
+/* Small tables keep together; long ones split and repeat their header. */
+table.keep {
+  break-inside: avoid;
+}
+
+/* Full-width table: spans both columns; can only split at page boundaries,
+   where the shell's Paged.js handler repeats the thead. */
+table.wide {
+  column-span: all;
+}
+
+/* ---------- Stat blocks ---------------------------------------------------- */
+
+.statblock {
+  break-inside: avoid;
+  background: rgba(201, 186, 149, 0.22); /* tan #C9BA95 @ 22% tint */
+  border: 1pt solid #C9BA95; /* tan */
+  padding: 5pt 6pt;
+  margin: 4pt 0 9pt 0;
+}
+.statblock-name {
+  font-family: "Oswald", "Liberation Sans", sans-serif;
+  font-weight: 600;
+  font-size: 10pt;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #2B2A26; /* ink */
+  border-bottom: 1pt solid #5B6244; /* olive */
+  padding-bottom: 2pt;
+  margin-bottom: 3pt;
+}
+.statblock dl {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  column-gap: 6pt;
+  row-gap: 1pt;
+  margin: 0;
+  font-family: "Barlow Semi Condensed", "Liberation Sans", sans-serif;
+  font-size: 8.5pt;
+  line-height: 10.5pt;
+}
+.statblock dt {
+  font-weight: 600;
+  font-size: 7.5pt;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #4C4A42; /* ink-soft */
+}
+.statblock dd {
+  margin: 0;
+}
+.statblock .statblock-notes {
+  font-family: "Barlow Semi Condensed", "Liberation Sans", sans-serif;
+  font-size: 8.5pt;
+  line-height: 10.5pt;
+  margin: 3pt 0 0 0;
+  border-top: 0.5pt solid #C9BA95; /* tan */
+  padding-top: 2pt;
+}
+
+/* ---------- Asides (containers) -------------------------------------------- */
+
+aside {
+  break-inside: avoid;
+  margin: 5pt 0 9pt 0;
+  padding: 5pt 7pt;
+  font-size: 9pt;
+  line-height: 12pt;
+}
+
+aside::before {
+  display: block;
+  font-family: "Oswald", "Liberation Sans", sans-serif;
+  font-weight: 600;
+  font-size: 7.5pt;
+  letter-spacing: 0.12em;
+  margin-bottom: 3pt;
+}
+
+aside.example {
+  background: rgba(91, 98, 68, 0.10); /* olive #5B6244 @ 10% tint */
+  border-left: 3pt solid #5B6244; /* olive */
+}
+aside.example::before {
+  content: "EXAMPLE";
+  color: #5B6244; /* olive */
+}
+
+aside.designer {
+  border: 1pt dashed #4C4A42; /* ink-soft */
+  background: #F8F6EE; /* paper-bright */
+}
+aside.designer::before {
+  content: "DESIGNER'S NOTE";
+  color: #4C4A42; /* ink-soft */
+}
+
+aside.sidebar {
+  background: #F8F6EE; /* paper-bright */
+  border: 1pt solid #C9BA95; /* tan */
+  border-top: 3pt solid #C9BA95; /* tan */
+}
+
+aside.flavor {
+  font-family: "Source Serif 4", "Bitstream Charter", "Charter", serif;
+  font-style: italic;
+  color: #4C4A42; /* ink-soft */
+  padding: 2pt 10pt;
+  border-left: 1.5pt solid #9C4A38; /* rust — the citizens' mark */
+}
+
+aside p:last-child { margin-bottom: 0; }
+
+/* ---------- Art figures ---------------------------------------------------- */
+
+figure.art {
+  break-inside: avoid;
+  margin: 5pt 0 9pt 0;
+  text-align: center;
+}
+figure.art svg {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+figure.art.wide {
+  column-span: all;
+  margin: 8pt 0 10pt 0;
+}
+figure.art.wide svg {
+  max-width: 6in;
+}
+figure.art figcaption {
+  font-family: "Barlow Semi Condensed", "Liberation Sans", sans-serif;
+  font-size: 8pt;
+  color: #4C4A42; /* ink-soft */
+  margin-top: 2pt;
+}
+figure.art.missing {
+  border: 1pt dashed #9C4A38; /* rust */
+  padding: 20pt 8pt;
+}
+figure.art.missing .art-tbd {
+  font-family: "Barlow Semi Condensed", "Liberation Sans", sans-serif;
+  font-weight: 600;
+  font-size: 8pt;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #9C4A38; /* rust */
+}
+
+/* ---------- Cross-references ------------------------------------------------ */
+
+a { color: #2B2A26; /* ink */ text-decoration: none; }
+
+a.xref {
+  font-weight: 600;
+}
+a.xref::after {
+  content: " (p. " target-counter(attr(href), page) ")";
+  font-family: "Barlow Semi Condensed", "Liberation Sans", sans-serif;
+  font-weight: 600;
+  font-size: 0.9em;
+  color: #4C4A42; /* ink-soft */
+}
+
+/* ---------- Table of contents ---------------------------------------------- */
+
+nav.toc {
+  column-span: all;
+  margin: 0 0 12pt 0;
+}
+nav.toc .toc-head {
+  font-family: "Oswald", "Liberation Sans", sans-serif;
+  font-weight: 600;
+  font-size: 14pt;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #2B2A26; /* ink */
+  border-bottom: 2pt solid #5B6244; /* olive */
+  padding-bottom: 3pt;
+  margin-bottom: 6pt;
+}
+nav.toc ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+nav.toc li {
+  margin: 0 0 3pt 0;
+}
+nav.toc a.toc-link {
+  display: flex;
+  align-items: baseline;
+  font-family: "Barlow Semi Condensed", "Liberation Sans", sans-serif;
+  font-size: 10pt;
+  color: #2B2A26; /* ink */
+}
+nav.toc .toc-title {
+  font-weight: 500;
+}
+/* leader(): not implemented by Paged.js — dotted-border flex spacer instead */
+nav.toc .toc-dots {
+  flex: 1 1 auto;
+  min-width: 16pt;
+  margin: 0 4pt;
+  border-bottom: 1pt dotted #A38B66; /* contour */
+  height: 0.72em;
+}
+nav.toc a.toc-link::after {
+  content: target-counter(attr(href), page);
+  font-weight: 600;
+}
+
+/* ---------- Front matter / title block -------------------------------------- */
+
+.title-block {
+  column-span: all;
+  text-align: center;
+  margin: 0.4in 0 0.35in 0;
+}
+.title-block .book-title {
+  font-family: "Oswald", "Liberation Sans", sans-serif;
+  font-weight: 700;
+  font-size: 30pt;
+  line-height: 32pt;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #2B2A26; /* ink */
+  margin: 0 0 4pt 0;
+}
+.title-block .book-subtitle {
+  font-family: "Oswald", "Liberation Sans", sans-serif;
+  font-weight: 500;
+  font-size: 12pt;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #5B6244; /* olive */
+  margin: 0 0 3pt 0;
+}
+.title-block .book-version {
+  font-family: "Barlow Semi Condensed", "Liberation Sans", sans-serif;
+  font-size: 9pt;
+  color: #4C4A42; /* ink-soft */
+}
+.title-block .title-rule {
+  width: 2.2in;
+  border: none;
+  border-top: 1.5pt solid #D96C2E; /* blaze — the player's mark, used once */
+  margin: 8pt auto 0 auto;
+}

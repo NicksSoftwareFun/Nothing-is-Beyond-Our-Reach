@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>{{TITLE}}</title>
+<style>
+/* Vendored fonts. Relative to build/<name>.html -> ../fonts/. Fallbacks per style guide:
+   Oswald/Barlow -> Liberation Sans, Source Serif 4 -> Bitstream Charter. */
+@font-face {
+  font-family: "Oswald";
+  src: url("../fonts/Oswald.ttf") format("truetype");
+  font-weight: 200 700; /* variable */
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif 4";
+  src: url("../fonts/SourceSerif4.ttf") format("truetype");
+  font-weight: 200 900; /* variable */
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif 4";
+  src: url("../fonts/SourceSerif4-Italic.ttf") format("truetype");
+  font-weight: 200 900; /* variable */
+  font-style: italic;
+}
+@font-face {
+  font-family: "Barlow Semi Condensed";
+  src: url("../fonts/BarlowSemiCondensed-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Barlow Semi Condensed";
+  src: url("../fonts/BarlowSemiCondensed-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Barlow Semi Condensed";
+  src: url("../fonts/BarlowSemiCondensed-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Barlow Semi Condensed";
+  src: url("../fonts/BarlowSemiCondensed-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+</style>
+<style>
+{{CSS}}
+</style>
+<script>
+/* Make sure every face is loaded before Paged.js measures a single line,
+   otherwise columns get laid out against fallback metrics. */
+window.PagedConfig = {
+  auto: true,
+  before: async () => {
+    const probes = [
+      "12px Oswald", "500 12px Oswald", "600 12px Oswald", "700 12px Oswald",
+      "12px 'Source Serif 4'", "600 12px 'Source Serif 4'", "italic 12px 'Source Serif 4'",
+      "12px 'Barlow Semi Condensed'", "500 12px 'Barlow Semi Condensed'",
+      "600 12px 'Barlow Semi Condensed'", "700 12px 'Barlow Semi Condensed'"
+    ];
+    try { await Promise.all(probes.map((p) => document.fonts.load(p))); } catch (e) {}
+    await document.fonts.ready;
+  }
+};
+</script>
+<script src="../vendor/pagedjs/paged.polyfill.js"></script>
+<script>
+window.__pagedDone = false;
+window.__pagedPageCount = 0;
+
+class NiborDoneHandler extends window.Paged.Handler {
+  afterRendered(pages) {
+    window.__pagedPageCount = pages.length;
+    window.__pagedDone = true;
+  }
+}
+window.Paged.registerHandlers(NiborDoneHandler);
+
+/* Paged.js rebuilds a page-split table without its thead; clone it back onto
+   every continuation fragment. (Column-level splits inside a page are native
+   Chrome multicol, which never repeats headers — keep long in-column tables
+   short-celled, or mark them .wide so only page splits can occur.) */
+class NiborRepeatTableHeaders extends window.Paged.Handler {
+  afterPageLayout(pageElement, page, breakToken, chunker) {
+    pageElement.querySelectorAll("table[data-split-from]").forEach((table) => {
+      if (table.querySelector(":scope > thead")) return;
+      const ref = table.dataset.ref;
+      if (!ref || !chunker || !chunker.source) return;
+      const sourceTable = chunker.source.querySelector("[data-ref='" + ref + "']");
+      const header = sourceTable && sourceTable.querySelector("thead");
+      if (header) table.insertBefore(header.cloneNode(true), table.firstChild);
+    });
+  }
+}
+window.Paged.registerHandlers(NiborRepeatTableHeaders);
+
+/* In-page audit, called by tools/build.mjs after __pagedDone. */
+window.__audit = function () {
+  const out = { overflows: [], unresolvedRefs: 0, fontsOk: false, pageCount: window.__pagedPageCount };
+  const EPS = 2; /* px tolerance for rounding */
+  const seen = new Set();
+  document.querySelectorAll(".pagedjs_page").forEach((pg) => {
+    const content = pg.querySelector(".pagedjs_page_content");
+    if (!content) return;
+    const cr = content.getBoundingClientRect();
+    const sel = "p,h1,h2,h3,h4,h5,h6,table,thead,tbody,tr,aside,figure,li,dl,dt,dd,pre,blockquote,nav,.statblock,caption,svg";
+    content.querySelectorAll(sel).forEach((el) => {
+      const r = el.getBoundingClientRect();
+      if (r.width === 0 && r.height === 0) return;
+      const overRight = r.right - cr.right;
+      const overBottom = r.bottom - cr.bottom;
+      const overLeft = cr.left - r.left;
+      if (overRight > EPS || overBottom > EPS || overLeft > EPS) {
+        const near = el.closest("[id]");
+        const label =
+          el.tagName.toLowerCase() +
+          (el.id ? "#" + el.id : near && near.id ? " near #" + near.id : "") +
+          " [page " + (pg.getAttribute("data-page-number") || "?") + "]" +
+          " (+" + Math.max(0, Math.round(overRight)) + "x+" + Math.max(0, Math.round(overBottom)) + "px)";
+        if (!seen.has(label)) { seen.add(label); out.overflows.push(label); }
+      }
+    });
+  });
+  document.querySelectorAll("a.xref").forEach((a) => {
+    const href = a.getAttribute("href") || "";
+    const id = href.startsWith("#") ? href.slice(1) : null;
+    let bad = !id;
+    if (id) { try { bad = !document.getElementById(id); } catch (e) { bad = true; } }
+    if (!a.textContent.trim()) bad = true;
+    if (bad) out.unresolvedRefs++;
+  });
+  out.fontsOk = ["12px Oswald", "12px 'Source Serif 4'", "12px 'Barlow Semi Condensed'"]
+    .every((f) => document.fonts.check(f));
+  if (out.overflows.length > 40) out.overflows = out.overflows.slice(0, 40).concat(["...truncated"]);
+  return out;
+};
+</script>
+</head>
+<body>
+{{BODY}}
+</body>
+</html>

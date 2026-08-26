@@ -1,0 +1,29 @@
+# Book manifest for the rulebook build. `node tools/build.mjs rulebook` reads this.
+# Chapter paths are relative to book/chapters/. Missing files are skipped with a
+# warning so the book builds while chapters are still being written.
+title: NOTHING IS BEYOND OUR REACH
+subtitle: A Solo Wargame of the Fall
+version: 0.1.0 "Leaf Season"
+chapters:
+  - 00-front-matter.md
+  - 01-welcome.md
+  - 02-core-concepts.md
+  - 03-actions-and-the-turn.md
+  - 04-fieldcraft.md
+  - 05-ranged-combat.md
+  - 06-close-quarters.md
+  - 07-wounds-and-recovery.md
+  - 08-the-human-factor.md
+  - 09-crew-served-weapons.md
+  - 10-vehicles.md
+  - 11-drones-and-ew.md
+  - 12-the-enemy-system.md
+  - 13-forces-of-the-fall.md
+  - 14-running-missions.md
+  - 15-the-long-war.md
+  - 16-pineland-burning.md
+  - 17-mission-architect.md
+  - 90-appendix-tables.md
+  - 91-appendix-arsenal.md
+  - 95-quick-reference.md
+  - 99-index.md

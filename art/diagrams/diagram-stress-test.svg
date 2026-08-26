@@ -1,0 +1,38 @@
+<svg data-nibor="diagrams/diagram-stress-test" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <!-- pale grid: contour @ hairline 0.75 -->
+  <g stroke="#A38B66" stroke-width="0.75" fill="none">
+    <path d="M0 100 H800 M0 200 H800 M0 300 H800 M0 400 H800"/>
+    <path d="M100 0 V500 M200 0 V500 M300 0 V500 M400 0 V500 M500 0 V500 M600 0 V500 M700 0 V500"/>
+  </g>
+  <rect x="2" y="2" width="796" height="496" fill="none" stroke="#2B2A26" stroke-width="1.5"/>
+
+  <!-- a building blocking the eastern lane -->
+  <rect x="520" y="220" width="160" height="160" fill="#8E8A7E" stroke="#2B2A26" stroke-width="1.5"/>
+
+  <!-- crew token: ring + glyph only (blaze ring = the player's figure) -->
+  <circle cx="150" cy="350" r="46" fill="#F8F6EE" stroke="#D96C2E" stroke-width="6"/>
+  <path d="M150 322 L178 378 L122 378 Z" fill="none" stroke="#2B2A26" stroke-width="3"/>
+
+  <!-- OPFOR token: ring + glyph only (authority) -->
+  <circle cx="650" cy="120" r="46" fill="#F8F6EE" stroke="#4A4E57" stroke-width="6"/>
+  <rect x="628" y="98" width="44" height="44" fill="none" stroke="#2B2A26" stroke-width="3"/>
+
+  <!-- the taught move: blaze arrow, two legs -->
+  <g stroke="#D96C2E" stroke-width="3" fill="none">
+    <path d="M196 340 L350 300 L350 160"/>
+  </g>
+  <path d="M350 138 L338 166 L362 166 Z" fill="#D96C2E" stroke="none"/>
+
+  <!-- illegal move: dashed intent, rust X -->
+  <path d="M196 356 L520 300" stroke="#4C4A42" stroke-width="1.5" stroke-dasharray="9 6" fill="none"/>
+  <g stroke="#9C4A38" stroke-width="6" fill="none">
+    <path d="M432 268 L472 308 M472 268 L432 308"/>
+  </g>
+
+  <!-- callout labels -->
+  <text x="290" y="240" text-anchor="end" font-family='"Barlow Semi Condensed", "Liberation Sans", sans-serif' font-weight="600" font-size="26" fill="#2B2A26">MOVE 4</text>
+  <text x="452" y="248" text-anchor="middle" font-family='"Barlow Semi Condensed", "Liberation Sans", sans-serif' font-weight="600" font-size="26" fill="#9C4A38">NO LOS</text>
+  <text x="600" y="424" text-anchor="middle" font-family='"Barlow Semi Condensed", "Liberation Sans", sans-serif' font-weight="400" font-size="22" fill="#4C4A42">BUILDING</text>
+  <text x="150" y="436" text-anchor="middle" font-family='"Barlow Semi Condensed", "Liberation Sans", sans-serif' font-weight="400" font-size="22" fill="#4C4A42">CREW</text>
+  <text x="650" y="46" text-anchor="middle" font-family='"Barlow Semi Condensed", "Liberation Sans", sans-serif' font-weight="400" font-size="22" fill="#4C4A42">SENTRY</text>
+</svg>
