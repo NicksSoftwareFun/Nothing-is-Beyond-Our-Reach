@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 75 75" data-nibor="tokens/status/status-shaken">
+  <!-- Shaken - bad state: rust ring, paper-bright disc, c-glyph-shaken. -->
+  <circle cx="37.5" cy="37.5" r="34" fill="#F8F6EE" stroke="#9C4A38" stroke-width="3"/>
+  <g id="c-glyph-shaken" transform="translate(37.5,37.5) scale(1.15) translate(-20,-20)">
+    <polygon points="4.5,23 12,12.5 19.5,23 27,12.5 34.5,23 34.5,29.5 27,19 19.5,29.5 12,19 4.5,29.5" fill="#2B2A26"/>
+  </g>
+</svg>

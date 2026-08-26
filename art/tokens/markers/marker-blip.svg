@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 75 75" data-nibor="tokens/markers/marker-blip">
+  <!-- Unresolved contact blip - tan disc, ink ring, ?-diamond, numbered 1-12 (build fills data-field="num"). -->
+  <circle cx="37.5" cy="37.5" r="34" fill="#C9BA95" stroke="#2B2A26" stroke-width="3"/>
+  <!-- c-glyph-blip diamond, opened up for the number -->
+  <polygon points="37.5,8.5 66.5,37.5 37.5,66.5 8.5,37.5" fill="none" stroke="#2B2A26" stroke-width="3" stroke-linejoin="round"/>
+  <!-- the ? mark, small at the diamond's crown -->
+  <path d="M34.6,19.2 a3.4,3.4 0 1 1 5.3,3.2 c-1.2,0.9 -1.8,1.6 -1.8,3.1" fill="none" stroke="#2B2A26" stroke-width="1.5" stroke-linecap="round"/>
+  <circle cx="38.1" cy="28.6" r="1.4" fill="#2B2A26"/>
+  <!-- blip number (print x12, numbered 1-12) -->
+  <text data-field="num" x="37.5" y="55" text-anchor="middle" font-family='"Oswald", "Liberation Sans", sans-serif' font-weight="600" font-size="24" fill="#2B2A26">3</text>
+</svg>

@@ -569,6 +569,27 @@ mechanically correct answer. (Robin Sage war-crime negotiation pattern; Falling 
 22. **Carrying:** lifting a Down figure = Interact; setting down free; Walk/Crawl only; an
     unstabilized bleed-out clock keeps ticking while carried.
 
+23. **"Covering" a Portal** = having LOS to it (from an aligned interior Portal or outside on
+    the grid) plus reaction eligibility; Deep figures never qualify. Non-covering defenders get
+    no shot at the entry moment but react normally to later triggers.
+24. **Breach-and-bang entry:** every defender in the entered Zone is Shaken immediately (not at
+    grenade end-of-Phase timing); the enterer's first action precedes ALL defender reactions,
+    including un-Shaken coverers beyond the blast.
+25. **Same-Zone combat** is always Open TN both ways (Posted counts as Cover only against
+    shots from outside); sole exception: Deep figures take blasts at Cover TN.
+26. **Indoors there is no Blind Arc** — every aware figure in a Zone counts as in every other's
+    frontal arc. The Blind Arc is an outdoor mechanism.
+27. **Posted/Deep** is declared on Zone entry and changed freely while spending AP.
+28. **Grenades through an adjacent open Portal:** no scatter AND no Throw test.
+29. **Locked/barred doors** (scenario-marked) don't open for 1 AP — kick or demo only.
+30. **Melee vs aware enemies:** a normal attack on the attacker's Shoot line at Point Blank
+    with the blade's DR; Silent = zero Noise. The §11 takedown is only vs Unaware.
+31. **Flashbang Noise** = explosion (+3).
+32. **A bare kicked breach does not reverse entry order** — reversal needs breach + grenade/
+    flashbang/demo in the same Crew Phase (or Point Man). The defender Posted at a kicked door
+    may react at the kicker.
+33. **Wound AP penalties** apply immediately, including to AP still held mid-activation.
+
 ## 18. Writing rules for chapter agents
 
 - **Capitalized game terms only when they carry rules weight**, and only terms from the

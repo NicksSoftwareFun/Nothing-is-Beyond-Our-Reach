@@ -146,6 +146,19 @@ skill-tiers:
     - ["Skilled civilian", "11/13", "11", "hunters, competent shooters"]
     - ["Green", "13/15", "12", "most starting civilians"]
 
+breaching-methods:
+  title: Getting Through - Doors, Windows, Breaches
+  columns: [Method, AP, Noise, Entry order]
+  rows:
+    - ["Open an unlocked door", "1", "0", "Defenders fire first (clean entry)"]
+    - ["Climb through a window", "2", "0", "Defenders fire first (clean entry)"]
+    - ["Kick a door", "2", "+2", "Defenders fire first - the kick alone reverses nothing"]
+    - ["Flashbang, then enter", "3 (throw) + entry", "+3", "Defenders in the Zone Shaken; enterer fires first"]
+    - ["Kick + frag, then enter", "2 + 3 + entry", "+2, +3", "Defenders Shaken (and worse); enterer fires first"]
+    - ["Demolition breach", "4 (place) + entry", "+3", "New Portal anywhere in a wall; defenders Shaken; enterer fires first"]
+    - ["Point Man (skill)", "entry only", "0", "Enterer fires first on a clean entry, once per turn"]
+  note: Locked or barred doors (scenario-marked) do not open for 1 AP - kick or demo only.
+
 status-effects:
   title: Status Effects at a Glance
   columns: [State, Effects, Gets worse, Recovers]

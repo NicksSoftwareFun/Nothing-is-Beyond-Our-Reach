@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 200" data-nibor="tokens/vehicles/vehicle-technical">
+  <!-- Technical (HMG) - civil-order edge band, pickup top-down nose up, ring-mounted HMG in bed. -->
+  <!-- faction edge band (stroke 6 rounded rect inset) -->
+  <rect x="5" y="5" width="90" height="190" rx="12" fill="#F8F6EE" stroke="#6E7480" stroke-width="6"/>
+  <!-- tires -->
+  <rect x="18.5" y="38" width="7.5" height="20" rx="2" fill="#2B2A26"/>
+  <rect x="74" y="38" width="7.5" height="20" rx="2" fill="#2B2A26"/>
+  <rect x="18.5" y="128" width="7.5" height="20" rx="2" fill="#2B2A26"/>
+  <rect x="74" y="128" width="7.5" height="20" rx="2" fill="#2B2A26"/>
+  <!-- pickup body -->
+  <rect x="26" y="24" width="48" height="152" rx="6" fill="#C9BA95" stroke="#2B2A26" stroke-width="3"/>
+  <!-- grille -->
+  <rect x="38" y="25.5" width="24" height="4.5" fill="#4C4A42"/>
+  <!-- hood line -->
+  <line x1="27.5" y1="64" x2="72.5" y2="64" stroke="#2B2A26" stroke-width="1.5"/>
+  <!-- windshield band -->
+  <rect x="28" y="64" width="44" height="13" fill="#4C4A42" stroke="#2B2A26" stroke-width="1.5"/>
+  <!-- mirrors -->
+  <rect x="20" y="66" width="6" height="3" fill="#2B2A26"/>
+  <rect x="74" y="66" width="6" height="3" fill="#2B2A26"/>
+  <!-- cab roof -->
+  <rect x="29" y="77" width="42" height="26" rx="3" fill="#BFB8A8" stroke="#2B2A26" stroke-width="1.5"/>
+  <!-- bed interior -->
+  <rect x="30" y="106" width="40" height="64" fill="#4C4A42" stroke="#2B2A26" stroke-width="1.5"/>
+  <line x1="27" y1="170" x2="73" y2="170" stroke="#2B2A26" stroke-width="1.5"/>
+  <!-- ring mount -->
+  <circle cx="50" cy="128" r="13" fill="none" stroke="#2B2A26" stroke-width="3"/>
+  <!-- gunner (exposed) -->
+  <ellipse cx="50" cy="158" rx="10" ry="6" fill="#6E7480" stroke="#2B2A26" stroke-width="1.5"/>
+  <circle cx="50" cy="155" r="4.5" fill="#C9BA95" stroke="#2B2A26" stroke-width="1.5"/>
+  <!-- c-weapon-hmg on the ring mount, muzzle over the cab -->
+  <g id="c-weapon-hmg" transform="translate(50,128) scale(0.62) translate(-50,-48)">
+    <rect x="46.4" y="4" width="7.2" height="7" rx="1.4" fill="#2B2A26"/><rect x="48" y="11" width="4" height="6" fill="#2B2A26"/><rect x="45.9" y="17" width="8.2" height="15" rx="2" fill="#2B2A26"/><rect x="42.4" y="32" width="15.2" height="33" rx="1.4" fill="#2B2A26"/><rect x="29.8" y="37.5" width="10.4" height="14" rx="1.2" fill="#2B2A26"/><rect x="40.2" y="41" width="2.6" height="2.8" fill="#2B2A26"/><rect x="40.2" y="45.4" width="2.6" height="2.8" fill="#2B2A26"/><rect x="43.6" y="65" width="12.8" height="5.5" rx="1" fill="#2B2A26"/><rect x="44.2" y="70.5" width="3" height="8.5" fill="#2B2A26"/><rect x="52.8" y="70.5" width="3" height="8.5" fill="#2B2A26"/><circle cx="45.7" cy="82.5" r="4" fill="#2B2A26"/><circle cx="54.3" cy="82.5" r="4" fill="#2B2A26"/>
+  </g>
+  <!-- gunner's hands on the spade grips -->
+  <circle cx="46.2" cy="148" r="2.6" fill="#C9BA95" stroke="#2B2A26" stroke-width="0.75"/>
+  <circle cx="53.8" cy="148" r="2.6" fill="#C9BA95" stroke="#2B2A26" stroke-width="0.75"/>
+</svg>
