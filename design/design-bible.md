@@ -590,6 +590,23 @@ mechanically correct answer. (Robin Sage war-crime negotiation pattern; Falling 
     may react at the kicker.
 33. **Wound AP penalties** apply immediately, including to AP still held mid-activation.
 
+34. **Every Warden trigger requires a Known target** — Doctrine fire, Directives, AND Reaction
+    Fire. An OPFOR figure never shoots what the force does not Know. (This is what makes
+    stealth playable against §5's reaction triggers.)
+35. **Bodies:** found by a Blip → +3 Noise, force at least Suspicious; found by a revealed
+    element → +3 Noise and clear contact (Alerted). Discovery = a Blip or revealed figure
+    (LOS, outside its Blind Arc) moving within 3 squares. Bodies are moved like carried Down
+    figures; hidden bodies (Concealment/water/Deep) are found only from adjacent.
+36. **Takedowns are legal only while the force is Unaware** — the window closes at Suspicious.
+    ("Unaware" is the force state, not per-figure awareness.)
+37. **The paid Spot action** has no range limit — any Blip in LOS. Binoculars extend the
+    automatic resolve envelope (12/6 → 16/10), not the paid Spot.
+38. **Becoming Unknown:** move at least 3 squares with no OPFOR figure holding LOS at any
+    point along the way; remove the Known marker at the end of that move.
+39. **Concealment beats proximity:** a Blip can pass adjacent to a concealed, non-firing Crew
+    figure without resolving or surprising.
+40. **Glossary additions:** Unaware and Suspicious are capitalized Alert-ladder labels.
+
 ## 18. Writing rules for chapter agents
 
 - **Capitalized game terms only when they carry rules weight**, and only terms from the

@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 750 1050" data-nibor="cards/templates/preview-card-crew">
+  <!-- PREVIEW ONLY - card-crew.svg filled with Reyna Vasquez (data/crew.yaml) + placeholder bust. Not a build input. -->
+  <rect x="0" y="0" width="750" height="1050" fill="#F2EDDF"/>
+  <rect x="24" y="24" width="702" height="1002" fill="#F8F6EE" stroke="#2B2A26" stroke-width="9"/>
+  <rect x="28.5" y="28.5" width="693" height="96" fill="#D96C2E"/>
+  <text x="52" y="94" font-family='"Oswald", "Liberation Sans", sans-serif' font-weight="600" font-size="44" letter-spacing="1.5" fill="#F8F6EE">REYNA VASQUEZ</text>
+  <text x="52" y="166" font-family='"Barlow Semi Condensed", "Liberation Sans", sans-serif' font-weight="600" font-size="26" letter-spacing="1.5" fill="#4C4A42">SERVICE VET</text>
+  <!-- stat boxes -->
+  <rect x="48" y="190" width="190" height="120" fill="#F2EDDF" stroke="#2B2A26" stroke-width="4.5"/>
+  <text x="143" y="218" text-anchor="middle" font-family='"Barlow Semi Condensed", "Liberation Sans", sans-serif' font-weight="600" font-size="18" letter-spacing="1.5" fill="#4C4A42">SHOOT</text>
+  <text x="143" y="278" text-anchor="middle" font-family='"Oswald", "Liberation Sans", sans-serif' font-weight="600" font-size="50" fill="#2B2A26">10 / 12</text>
+  <text x="143" y="300" text-anchor="middle" font-family='"Barlow Semi Condensed", "Liberation Sans", sans-serif' font-weight="400" font-size="14" letter-spacing="1" fill="#4C4A42">OPEN / COVER</text>
+  <rect x="250" y="190" width="98" height="120" fill="#F2EDDF" stroke="#2B2A26" stroke-width="4.5"/>
+  <text x="299" y="218" text-anchor="middle" font-family='"Barlow Semi Condensed", "Liberation Sans", sans-serif' font-weight="600" font-size="18" letter-spacing="1.5" fill="#4C4A42">GRIT</text>
+  <text x="299" y="280" text-anchor="middle" font-family='"Oswald", "Liberation Sans", sans-serif' font-weight="600" font-size="50" fill="#2B2A26">10</text>
+  <rect x="360" y="190" width="98" height="120" fill="#F2EDDF" stroke="#2B2A26" stroke-width="4.5"/>
+  <text x="409" y="218" text-anchor="middle" font-family='"Barlow Semi Condensed", "Liberation Sans", sans-serif' font-weight="600" font-size="18" letter-spacing="1.5" fill="#4C4A42">AP</text>
+  <text x="409" y="280" text-anchor="middle" font-family='"Oswald", "Liberation Sans", sans-serif' font-weight="600" font-size="50" fill="#2B2A26">8</text>
+  <!-- bust: flat-vector placeholder silhouette -->
+  <g data-slot="bust">
+    <rect x="482" y="144" width="220" height="220" fill="#F2EDDF" stroke="#2B2A26" stroke-width="4.5"/>
+    <clipPath id="clip-bust-prev"><rect x="482" y="144" width="220" height="220"/></clipPath>
+    <g clip-path="url(#clip-bust-prev)">
+      <rect x="578" y="272" width="28" height="34" fill="#C9BA95" stroke="#2B2A26" stroke-width="9"/>
+      <circle cx="592" cy="246" r="38" fill="#C9BA95" stroke="#2B2A26" stroke-width="9"/>
+      <path d="M546,246 A46,46 0 1 1 638,246 Z" fill="#5B6244" stroke="#2B2A26" stroke-width="9" stroke-linejoin="round"/>
+      <path d="M496,368 C500,326 528,302 592,302 C656,302 684,326 688,368 Z" fill="#5B6244" stroke="#2B2A26" stroke-width="9"/>
+      <line x1="554" y1="312" x2="568" y2="366" stroke="#2B2A26" stroke-width="4.5"/>
+      <line x1="630" y1="312" x2="616" y2="366" stroke="#2B2A26" stroke-width="4.5"/>
+      <rect x="572" y="332" width="40" height="30" rx="4" fill="#8A8F6A" stroke="#2B2A26" stroke-width="4.5"/>
+    </g>
+  </g>
+  <!-- skills -->
+  <text x="52" y="404" font-family='"Barlow Semi Condensed", "Liberation Sans", sans-serif' font-weight="600" font-size="20" letter-spacing="2" fill="#2B2A26">SKILLS</text>
+  <line x1="48" y1="414" x2="702" y2="414" stroke="#2B2A26" stroke-width="2.25"/>
+  <text x="52" y="466" font-family='"Oswald", "Liberation Sans", sans-serif' font-weight="500" font-size="28" letter-spacing="1" fill="#2B2A26">LEADER</text>
+  <text x="52" y="500" font-family='"Barlow Semi Condensed", "Liberation Sans", sans-serif' font-weight="400" font-size="24" fill="#2B2A26">May Rally (2 AP, radius 3).</text>
+  <text x="52" y="560" font-family='"Oswald", "Liberation Sans", sans-serif' font-weight="500" font-size="28" letter-spacing="1" fill="#2B2A26">FIRE DISCIPLINE</text>
+  <text x="52" y="594" font-family='"Barlow Semi Condensed", "Liberation Sans", sans-serif' font-weight="400" font-size="24" fill="#2B2A26">Friendly figures within 3 squares get +1 Noise-free</text>
+  <text x="52" y="626" font-family='"Barlow Semi Condensed", "Liberation Sans", sans-serif' font-weight="400" font-size="24" fill="#2B2A26">suppressed shot per turn (counts under the</text>
+  <text x="52" y="658" font-family='"Barlow Semi Condensed", "Liberation Sans", sans-serif' font-weight="400" font-size="24" fill="#2B2A26">suppressed cap).</text>
+  <!-- gear -->
+  <text x="52" y="776" font-family='"Barlow Semi Condensed", "Liberation Sans", sans-serif' font-weight="600" font-size="20" letter-spacing="2" fill="#2B2A26">GEAR</text>
+  <line x1="48" y1="786" x2="702" y2="786" stroke="#2B2A26" stroke-width="2.25"/>
+  <text x="52" y="830" font-family='"Barlow Semi Condensed", "Liberation Sans", sans-serif' font-weight="400" font-size="24" fill="#2B2A26">Carbine &#183; Chest rig</text>
+  <!-- bio -->
+  <line x1="48" y1="874" x2="702" y2="874" stroke="#2B2A26" stroke-width="2.25"/>
+  <text x="52" y="916" font-family='"Source Serif 4", "Bitstream Charter", serif' font-style="italic" font-size="24" fill="#4C4A42">Led an 82nd Airborne fireteam. Came home to bury</text>
+  <text x="52" y="948" font-family='"Source Serif 4", "Bitstream Charter", serif' font-style="italic" font-size="24" fill="#4C4A42">her father; stayed for the valley.</text>
+  <!-- footer -->
+  <line x1="48" y1="994" x2="702" y2="994" stroke="#4C4A42" stroke-width="2.25"/>
+  <text x="52" y="1016" font-family='"Barlow Semi Condensed", "Liberation Sans", sans-serif' font-weight="500" font-size="15" letter-spacing="2.5" fill="#4C4A42">VOLUNTEER ROSTER CARD</text>
+  <text x="698" y="1016" text-anchor="end" font-family='"Oswald", "Liberation Sans", sans-serif' font-weight="600" font-size="17" letter-spacing="2" fill="#D96C2E">CREW</text>
+</svg>

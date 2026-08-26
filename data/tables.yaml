@@ -120,7 +120,7 @@ noise-sources:
     - ["Explosion / crash", "+3"]
     - ["Vehicle engine moving on board", "+2 per turn"]
     - ["Crew drone aloft", "+1 per turn"]
-    - ["Body discovered by the Warden", "+3 and Suspicious"]
+    - ["Body discovered", "+3; at least Suspicious - Alerted if found by a revealed element"]
   note: Noise never decreases during a mission.
 
 interrupt-die:

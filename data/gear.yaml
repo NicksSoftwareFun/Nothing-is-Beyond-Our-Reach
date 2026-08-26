@@ -37,7 +37,7 @@ nvg:
 binoculars:
   name: Binoculars
   slot: 1
-  effect: Spot at +4 squares range. May Spot from High ground at any board distance.
+  effect: The automatic Blip-resolve envelope widens from 12/6 to 16/10 squares for this figure.
   supply: 0
 
 med-kit:
