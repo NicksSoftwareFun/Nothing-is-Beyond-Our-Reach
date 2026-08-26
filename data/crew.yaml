@@ -119,7 +119,7 @@ vance:
   ap: 8
   skills:
     - name: Shepherd
-      rule: May Rally (2 AP, radius 3). His Rally also clears Pinned to Shaken.
+      rule: May Rally (2 AP, radius 3). Figures his Rally clears go all the way - Pinned or Shaken drop to no state on a success.
     - name: Known Face
       rule: Campaign - Rapport losses from failed missions reduced by 1 while he survives.
   gear_default: [shotgun]

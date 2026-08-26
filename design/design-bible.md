@@ -512,6 +512,46 @@ mechanically correct answer. (Robin Sage war-crime negotiation pattern; Falling 
 10. Vehicle: HMG (Pen 3) vs Armor 0 pickup: P(Wreck|hit) ≥ .30; rifle (Pen 0) vs Armor 2:
     P(>Mobility) = 0 (the cap holds)
 
+## 17b. Canonized rulings (designer decisions on bible gaps — binding)
+
+1. **"Effective fire"** (morale trigger) = an attack roll resolved against the figure, or a
+   blast/template/near-miss touching its square. The "first time under effective fire" test is
+   **per figure**, once per mission.
+2. The Down/Dead morale trigger reads "within 6 squares **or** anywhere in LOS."
+3. **Rally:** the per-figure 2d10 ≥ Grit roll is unmodified (Shaken's +2 does not apply — the
+   roll is not the figure's action); the Rallying figure may include itself; base Rally steps
+   Pinned → Shaken.
+4. **Panic Sprint** costs no AP and is not an activation, but generates Sprint Noise and makes
+   the figure a Sprinting target.
+5. **OPFOR group morale:** "half its figures" counts Down and Dead together; elements on
+   Sweep/Cordon/QRF that fail fall back **to Holding**; the Warden has no Rally — a step lost
+   is lost for the mission.
+6. **Routing figures** Sprint edge-ward each activation, cannot shoot or react, count as
+   Sprinting targets, and are removed on exiting the board.
+7. **Restrain** (binding a Down enemy for capture) is a **4 AP** Interact (Grant's Deputy skill
+   halves it); a Routing figure that is cornered or starts adjacent to a Crew figure surrenders
+   (Down-for-capture, no stabilization needed); a prisoner Walks with an adjacent escort, never
+   Sprints, and exits at the Exfil like any figure.
+
+8. **Blast attacks:** 12/14 is THE blast attack for all Blast-1 weapons at each weapon's own
+   DR, rolled separately per figure, Open/Cover judged per figure from the marker square.
+9. **Dive away:** any figure, either side, once per detonation, 1 AP from held AP (prone + 1
+   square); not a Reaction, doesn't count against the reaction limit; dives resolve before
+   blasts; the Warden dives by Good Faith.
+10. **Natural 2 on a shot** = weapon jam, cleared by Reload (replaces the default
+    complication). Thrown weapons keep the default and still scatter.
+11. **Long guns in Zones:** rifle-class, shotguns, and crew-served weapons fire at +1 TN while
+    inside a Zone. Sidearms and Compact weapons are exempt. (This is what the Compact trait
+    waives.)
+12. **Smoke** blooms on landing (not end of Phase): impact square + one adjacent square of the
+    thrower's choice; no dive.
+13. **Fire markers** burn for the rest of the mission unless the scenario says otherwise; a
+    figure whose square catches fire is displaced 1 square free.
+14. **Bolt trait:** no Automatic near-miss; +1 additional TN on Snap Shots (counts inside the
+    +6 cap).
+15. **Grenade throws:** low Cover along the line never bars a throw; Block terrain and closed
+    doors do.
+
 ## 18. Writing rules for chapter agents
 
 - **Capitalized game terms only when they carry rules weight**, and only terms from the

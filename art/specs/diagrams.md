@@ -23,3 +23,5 @@ text these illustrate is in `/design/design-bible.md` (section noted).
 | diagram-noise-ladder.svg | Noise pool → Alert states flow, ALARM human-act gate (8) |
 | diagram-blip-resolve.svg | blip movement, 12/6-square resolve ranges, surprise adjacency (9) |
 | diagram-scatter-elevation.svg | High/Ground levels, elevated shooter bonus (6.1): ridge cross-section (viewBox 800×400) |
+| diagram-rally-radius.svg | Rally: 3-square radius (6 with radios), per-figure rolls, Pinned→Shaken step (7.6) |
+| diagram-doctrine-fallback.svg | OPFOR morale ladder: Assault→Base-of-Fire→Holding→Rout; off-ladder doctrines drop to Holding (7.6) |

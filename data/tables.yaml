@@ -146,6 +146,26 @@ skill-tiers:
     - ["Skilled civilian", "11/13", "11", "hunters, competent shooters"]
     - ["Green", "13/15", "12", "most starting civilians"]
 
+crew-morale-triggers:
+  title: Crew Morale - When Grit Is Tested
+  columns: [Trigger, Timing, On failure]
+  rows:
+    - ["First time under effective fire (per figure, per mission)", "when the attack resolves", "Shaken"]
+    - ["A Crew figure goes Down or Dead within 6 squares or in LOS", "immediately", "Shaken"]
+    - ["Surprise Point Blank contact (a Blip resolves adjacent)", "before either side acts", "Shaken"]
+    - ["A Dying figure's cries, within 6 squares", "start of your activation, once per turn", "Shaken"]
+  note: "Natural 2 on any of these - Panic: Sprint (no AP, +1 Noise, counts as Sprinting) to the nearest cover away from the enemy, then Pinned."
+
+opfor-group-morale:
+  title: OPFOR Group Morale
+  columns: [Step, Rule]
+  rows:
+    - ["Trigger", "An element has lost half its figures (Down and Dead together), or its Leader is killed"]
+    - ["Test", "Each survivor rolls 2d10 vs its Grit, once (marauders +2, SRT -2, faction specials apply)"]
+    - ["Failure", "Falls back one Doctrine step: Assault -> Base-of-Fire -> Holding -> Rout. Sweep/Cordon/QRF fall back to Holding"]
+    - ["Rout", "Sprint toward the nearest board edge away from the Crew each activation; no shooting or reacting; removed on exit"]
+    - ["No rallying", "The Warden has no Rally - a step lost is lost for the mission"]
+
 injury-recovery:
   title: Post-Mission Injury Recovery (d20, roll for the worst wound carried off the table)
   dice: d20
