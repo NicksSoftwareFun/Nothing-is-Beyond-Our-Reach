@@ -1,0 +1,205 @@
+# The campaign roster - 12 named characters (design-bible §4 tiers, §16 fiction).
+# Schema: name, callsign?, tier, shoot (Open/Cover), grit, ap, skills (list of {name, rule}),
+# gear_default (list of weapon/gear ids), bio (one line, card flavor).
+# Shoot TNs must match a bible §4 tier. Owned by the lead designer.
+
+deacon:
+  name: Dale McAllister
+  callsign: Deacon
+  tier: SOF vet
+  shoot: 8/10
+  grit: 8
+  ap: 7
+  skills:
+    - name: Point Man
+      rule: Fires first on clean Zone entries (no breach needed). Once per turn.
+    - name: Leader
+      rule: May Rally (2 AP, radius 3).
+    - name: Old Knees
+      rule: AP 7 (already applied). May not Sprint on consecutive activations.
+  gear_default: [carbine, pistol, plates]
+  bio: Twenty years playing guerrilla chief for the schoolhouse at Mackall. Now the exercise is real.
+
+vasquez:
+  name: Reyna Vasquez
+  callsign: null
+  tier: Service vet
+  shoot: 10/12
+  grit: 10
+  ap: 8
+  skills:
+    - name: Leader
+      rule: May Rally (2 AP, radius 3).
+    - name: Fire Discipline
+      rule: Friendly figures within 3 squares get +1 Noise-free suppressed shot per turn (counts under the suppressed cap).
+  gear_default: [carbine, chest-rig]
+  bio: Led an 82nd Airborne fireteam. Came home to bury her father; stayed for the valley.
+
+boone:
+  name: Marcus Boone
+  callsign: Gun One
+  tier: Service vet
+  shoot: 10/12
+  grit: 10
+  ap: 8
+  skills:
+    - name: Machine Gunner
+      rule: Sustained Fire at TN 10 instead of 11. Reload the MMG at 2 AP with an AG.
+    - name: Strong Back
+      rule: Carries the MMG or a Down figure without the half-AP penalty.
+  gear_default: [mmg, pistol]
+  bio: Marine 0331. His gun is the crew's argument of last resort.
+
+pham:
+  name: Casey Pham
+  callsign: Doc
+  tier: Skilled civilian
+  shoot: 11/13
+  grit: 10
+  ap: 8
+  skills:
+    - name: EMT
+      rule: Buddy Aid at 3 AP, test at 2d10 >= 9. On a natural 20, downgrade the wound a step.
+    - name: Triage
+      rule: Once per turn, a Dying figure within 6 squares pauses its bleed-out clock this turn.
+  gear_default: [pistol, med-kit, trauma-kit]
+  bio: County paramedic. Has hauled more neighbors out of wrecks than the Authority ever will.
+
+ledford:
+  name: Junior Ledford
+  callsign: null
+  tier: Skilled civilian
+  shoot: 11/13
+  grit: 11
+  ap: 8
+  skills:
+    - name: Hunter
+      rule: With a Scoped weapon, no TN penalty beyond Effective Range (still +4 beyond 2x).
+    - name: Stalker
+      rule: In Concealment, blips and sentries spot him only within 3 squares.
+  gear_default: [hunting-rifle, knife, ghillie]
+  bio: Bear hunter out of Sugar Creek. Counts wind in his sleep.
+
+okafor:
+  name: Tanya Okafor
+  callsign: null
+  tier: Green
+  shoot: 13/15
+  grit: 10
+  ap: 8
+  skills:
+    - name: Lineman
+      rule: Interact to cut power, comms, or lights takes 2 AP and no test. Climbs as 1 AP per level.
+    - name: Grid Sense
+      rule: Pre-mission, name one map building - the Warden reveals whether it is powered, wired, or dark.
+  gear_default: [shotgun, bolt-cutters]
+  bio: Kept the co-op's lines alive through two ice storms. Knows what the substation feeds.
+
+delgado:
+  name: Ray Delgado
+  callsign: null
+  tier: Skilled civilian
+  shoot: 12/14
+  grit: 10
+  ap: 8
+  skills:
+    - name: Driver
+      rule: Drive TN 8 in any wheeled vehicle. Ramming and barrier runs at no Handling penalty.
+    - name: Mechanic
+      rule: Interact (4 AP) to clear a vehicle Mobility hit, once per vehicle per mission.
+  gear_default: [smg, tool-kit]
+  bio: Two million miles, every road east of the river - including the ones the maps forgot.
+
+vance:
+  name: Amos Vance
+  callsign: Pastor
+  tier: Green
+  shoot: 13/15
+  grit: 9
+  ap: 8
+  skills:
+    - name: Shepherd
+      rule: May Rally (2 AP, radius 3). His Rally also clears Pinned to Shaken.
+    - name: Known Face
+      rule: Campaign - Rapport losses from failed missions reduced by 1 while he survives.
+  gear_default: [shotgun]
+  bio: Buried the valley's dead for thirty years. Refuses to bury it whole.
+
+birdy:
+  name: Birdy Sizemore
+  callsign: null
+  tier: Green
+  shoot: 13/15
+  grit: 11
+  ap: 9
+  skills:
+    - name: Fast
+      rule: AP 9 (already applied).
+    - name: Scout
+      rule: Spot costs 1 AP. May resolve blips at 14 squares (8 in Concealment).
+  gear_default: [pistol, binoculars]
+  bio: Nineteen, poacher's kid, knows every deer path and culvert between here and the dam.
+
+grant:
+  name: Hollis Grant
+  callsign: null
+  tier: Skilled civilian
+  shoot: 11/13
+  grit: 10
+  ap: 8
+  skills:
+    - name: Deputy
+      rule: Point Blank shots at -3 TN instead of -2. May Interact to restrain a Down enemy (prisoner) in 2 AP.
+    - name: Door Voice
+      rule: Once per mission, an un-Alerted OPFOR element that spots him hesitates - resolve its spotting next Warden Phase instead.
+  gear_default: [shotgun, pistol]
+  bio: Was the law here when the law was local. Some habits keep.
+
+haddad:
+  name: Sana Haddad
+  callsign: null
+  tier: Service vet
+  shoot: 11/13
+  grit: 10
+  ap: 8
+  skills:
+    - name: Combat Medic
+      rule: Buddy Aid at 3 AP. May move 2 squares and still Aid in the same action for 4 AP total.
+    - name: Under Fire
+      rule: Ignores Shaken TN penalty while performing Aid.
+  gear_default: [carbine, med-kit]
+  bio: Guard medic, one deployment. The Authority requisitioned her clinic; she requisitioned it back.
+
+petty:
+  name: Oren Petty
+  callsign: Static
+  tier: Green
+  shoot: 13/15
+  grit: 11
+  ap: 7
+  skills:
+    - name: Ham
+      rule: Operates the jammer and radio sets. Warden ALARM attempts within his jammer bubble auto-fail.
+    - name: Intercept
+      rule: Once per mission, look at the top Directive card; put it back or bury it.
+  gear_default: [pistol, jammer-pack, radio-set]
+  bio: Forty years of QSL cards from basements the Authority never found. Slow, deaf, indispensable.
+
+# --- Simplified support units (user-locked: one-line stats, OPFOR-style casualty) ---
+support:
+  driver:
+    name: Volunteer Driver
+    stat: "Drive TN 10, Grit 11, Shoot 14/16"
+    rule: Casualty Die at -1 (support). Will not leave the vehicle unless Rallied.
+  porter:
+    name: Auxiliary Porter
+    stat: "Grit 11, Shoot 15/17"
+    rule: Carries 2 extra gear slots or ammo for a crew-served weapon. Casualty Die at -1.
+  guide:
+    name: Local Guide
+    stat: "Grit 10, Shoot 14/16"
+    rule: Crew Sprints cost no Noise while within 3 squares of the Guide (he knows the quiet ground). Casualty Die at -1.
+  medic-aux:
+    name: Auxiliary Medic
+    stat: "Grit 10, Shoot 15/17"
+    rule: Buddy Aid 4 AP as a Skilled civilian. Casualty Die at -1.

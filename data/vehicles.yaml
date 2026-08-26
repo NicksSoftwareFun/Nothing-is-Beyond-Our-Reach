@@ -1,0 +1,73 @@
+# Vehicle profiles (design-bible §13).
+# Schema: name, handling (TN), speed_road / speed_rough (squares per 1 AP), armor (0-2),
+# seats, special, faction_typical.
+
+sedan:
+  name: Civilian Sedan
+  handling: 9
+  speed_road: 3
+  speed_rough: 1
+  armor: 0
+  seats: 4
+  special: Low clearance - Rough terrain costs 2 AP per square and risks a Mobility hit on any Handling failure.
+  faction_typical: anyone
+
+pickup:
+  name: Pickup Truck
+  handling: 9
+  speed_road: 3
+  speed_rough: 2
+  armor: 0
+  seats: 5
+  special: Open bed - 3 more riders exposed (they may fire at +3; they are hit on Weapon/exposed results).
+  faction_typical: crew, compact
+
+box-truck:
+  name: Box Truck
+  handling: 11
+  speed_road: 2
+  speed_rough: 1
+  armor: 0
+  seats: 2
+  special: Cargo - carries the whole Crew or a mission load out of sight. Counts as Block terrain for LOS when parked.
+  faction_typical: crew, ferrymen
+
+technical:
+  name: Technical (HMG)
+  handling: 10
+  speed_road: 3
+  speed_rough: 2
+  armor: 0
+  seats: 3
+  special: Ring-mounted HMG - gunner fires with vehicle stationary at printed TN, moving at +3. Gunner is exposed.
+  faction_typical: civil-order, compact
+
+patrol-truck:
+  name: ECA Patrol Truck
+  handling: 10
+  speed_road: 3
+  speed_rough: 2
+  armor: 1
+  seats: 6
+  special: Improvised armor - occupants are not exposed; Weapon/exposed results hit the vehicle's radio instead (first) or a random occupant (after).
+  faction_typical: authority
+
+mrap:
+  name: ECA Protected Vehicle (MRAP-type)
+  handling: 12
+  speed_road: 2
+  speed_rough: 1
+  armor: 2
+  seats: 8
+  special: The Pen cap bites - small arms cannot do more than Mobility damage. Turret MMG. Occupants dismount from the rear only (one per activation).
+  faction_typical: authority, QRF
+
+motorcycle:
+  name: Dirt Bike
+  handling: 8
+  speed_road: 4
+  speed_rough: 3
+  armor: 0
+  seats: 1
+  special: Rider counts as Sprinting when moving (hard to hit, +2 TN). Any Mobility hit dumps the rider (DR 2 hit, prone).
+  faction_typical: crew scouts, ferrymen couriers

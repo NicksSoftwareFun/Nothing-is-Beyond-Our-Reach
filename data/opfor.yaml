@@ -1,0 +1,197 @@
+# OPFOR unit profiles (design-bible §4 statlines, §10 doctrines, §16 factions).
+# Schema: name, faction, shoot (Open/Cover), grit, armor, doctrine, weapon (id), special,
+# element (typical grouping), points? (Mission Architect budget cost - set in ch.17 pass).
+# Doctrine scripts live in book ch.12 + data/directives.yaml. Owned by the lead designer;
+# the ch.12/13 author may ADD units via report, not edit existing numbers.
+
+# --- The Authority (ECA) ---
+eca-rifleman:
+  name: ECA Rifleman
+  faction: authority
+  shoot: 11/13
+  grit: 9
+  armor: 1
+  doctrine: per element
+  weapon: carbine
+  special: Disciplined - ignores the first failed group-morale test each mission.
+  element: fireteam of 4 with eca-team-leader
+
+eca-team-leader:
+  name: ECA Team Leader
+  faction: authority
+  shoot: 11/13
+  grit: 8
+  armor: 1
+  doctrine: per element
+  weapon: carbine
+  special: Leader. Manpack radio - may attempt ALARM (2d10 >= 12).
+  element: leads a fireteam
+
+eca-mg-team:
+  name: ECA MG Team (Gunner + AG)
+  faction: authority
+  shoot: 11/13
+  grit: 9
+  armor: 1
+  doctrine: Base-of-Fire
+  weapon: mmg
+  special: Full crew-served rules (ch. 9). AG killed - loses Beaten Zone.
+  element: pair
+
+eca-marksman:
+  name: ECA Marksman
+  faction: authority
+  shoot: 10/12
+  grit: 9
+  armor: 1
+  doctrine: Holding
+  weapon: hunting-rifle
+  special: Scoped. Prioritizes Crew Leaders and the MMG Gunner over nearest.
+  element: single, paired with a sentry post
+
+eca-sentry:
+  name: ECA Sentry
+  faction: authority
+  shoot: 12/14
+  grit: 10
+  armor: 1
+  doctrine: Holding
+  weapon: carbine
+  special: Fixed post with landline - ALARM attempt is automatic if Alerted at post.
+  element: pair at scripted positions
+
+eca-officer:
+  name: ECA Officer
+  faction: authority
+  shoot: 11/13
+  grit: 8
+  armor: 1
+  doctrine: per element
+  special: Leader. While alive, re-draw one Directive per Warden Phase (take the harsher).
+  weapon: pistol
+  element: command element with RTO
+
+eca-rto:
+  name: ECA RTO
+  faction: authority
+  shoot: 12/14
+  grit: 9
+  armor: 1
+  doctrine: per element
+  weapon: carbine
+  special: Fixed-set comms - automatic ALARM attempt while at the command post.
+  element: with officer
+
+eca-srt:
+  name: SRT Operator
+  faction: authority
+  shoot: 9/11
+  grit: 8
+  armor: 2
+  doctrine: Assault
+  weapon: carbine
+  special: Elite - group morale at -2. Enters Zones with flashbangs (defenders do not fire first).
+  element: team of 4, QRF/ALARM asset
+
+eca-drone-op:
+  name: ECA Drone Operator
+  faction: authority
+  shoot: 13/15
+  grit: 10
+  armor: 1
+  doctrine: Holding
+  weapon: pistol
+  special: Runs one recon quad or fiber FPV per Warden Phase (ch. 11). Kill him to ground it.
+  element: pair with eca-rto
+
+# --- Civil Order Corps (collaborator militia) ---
+coc-militiaman:
+  name: Civil Order Corpsman
+  faction: civil-order
+  shoot: 13/15
+  grit: 11
+  armor: 0
+  doctrine: per element
+  weapon: carbine
+  special: Jumpy - the first casualty in the element forces an immediate group-morale test.
+  element: squads of 6 with coc-boss
+
+coc-boss:
+  name: COC Boss
+  faction: civil-order
+  shoot: 12/14
+  grit: 10
+  armor: 1
+  doctrine: per element
+  weapon: battle-rifle
+  special: Leader. Cruel - while alive, Corpsmen reroll failed morale once.
+  element: leads a squad
+
+coc-technical-crew:
+  name: COC Technical Crew
+  faction: civil-order
+  shoot: 13/15
+  grit: 11
+  armor: 0
+  doctrine: QRF
+  weapon: hmg
+  special: Mounted HMG (vehicle rules ch. 10). Bails on a Mobility hit unless the Boss is aboard.
+  element: technical + 3 crew
+
+# --- The Compact (county-militia racket) ---
+compact-fighter:
+  name: Compact Fighter
+  faction: compact
+  shoot: 12/14
+  grit: 10
+  armor: 0
+  doctrine: per element
+  weapon: battle-rifle
+  special: Woods-wise - Concealment spotting distances against them are halved.
+  element: bands of 4-6
+
+compact-headman:
+  name: Compact Headman
+  faction: compact
+  shoot: 11/13
+  grit: 9
+  armor: 1
+  doctrine: per element
+  weapon: carbine
+  special: Leader. Negotiator - some scenarios allow parley (Interact, Grit-off) instead of contact.
+  element: leads a band
+
+# --- The Ferrymen (smuggling network) ---
+ferryman-gunhand:
+  name: Ferryman Gunhand
+  faction: ferrymen
+  shoot: 12/14
+  grit: 10
+  armor: 0
+  doctrine: Holding
+  weapon: smg
+  special: Paid, not devoted - routs at half casualties automatically.
+  element: escort pairs
+
+# --- Marauders ---
+marauder:
+  name: Marauder
+  faction: marauder
+  shoot: 13/15
+  grit: 12
+  armor: 0
+  doctrine: Assault
+  weapon: shotgun
+  special: Group morale at +2 (breaks easily). Frenzied - Sprints toward Known at every Directive.
+  element: packs of 5-8
+
+marauder-chief:
+  name: Marauder Chief
+  faction: marauder
+  shoot: 12/14
+  grit: 10
+  armor: 1
+  doctrine: Assault
+  weapon: battle-rifle
+  special: Leader. The pack routs when he dies, full stop.
+  element: leads a pack

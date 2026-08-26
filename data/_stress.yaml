@@ -1,0 +1,66 @@
+# ── STRESS-BUILD PLACEHOLDER DATA ──────────────────────────────────────────
+# Used ONLY by `node tools/build.mjs stress` while the real data/weapons.yaml
+# and data/tables.yaml are being written. Chapter authors: NEVER reference
+# this file from book chapters. Once the real files land, the stress doc can
+# be repointed and this file deleted.
+
+weapons:
+  carbine:
+    name: Patrol Carbine
+    class: Rifle
+    dr: 3
+    pen: 1
+    effective: 24
+    noise: Loud
+    _art: components/c-weapon-carbine
+    notes: "Select fire. A **Braced Shot** adds one die inside Effective Range."
+  scoped-rifle:
+    name: Scoped Hunting Rifle
+    class: Rifle
+    dr: 2
+    pen: 2
+    effective: 36
+    noise: Loud
+    notes: "Single shot, slow to cycle. Every shot counts as **Aimed** or nothing."
+  sidearm:
+    name: Service Sidearm
+    class: Pistol
+    dr: 2
+    pen: 0
+    effective: 8
+    noise: Loud
+    notes: "One hand. May be fired while **Down**."
+
+tables:
+  stress-fire-mods:
+    title: Fire Modifiers (stress placeholder)
+    dice: d10 pool
+    columns: [Situation, Dice, Reminder]
+    rows:
+      - ["Aimed Shot", "+1 die", "Costs one extra AP"]
+      - ["Braced Shot", "+1 die", "**Braced** weapons only"]
+      - ["Snap Shot", "-1 die", "After a Sprint, always Snap"]
+      - ["Target Pinned", "+1 die", "It cannot shift"]
+      - ["Smoke or dusk", "-1 die", "Stacks with rain"]
+      - ["Point Blank", "+2 dice", "Same square or Zone"]
+    note: "Modifiers stack. A pool below one die means the shot is impossible."
+  stress-noise-ladder:
+    title: Noise Ladder (stress placeholder)
+    dice: d6
+    columns: [Step, Source, "Warden Response"]
+    rows:
+      - ["0", "Silence, hand signals", "No change"]
+      - ["1", "Footfalls on gravel", "Nearest Blip drifts one square"]
+      - ["2", "Bolt cutters, glass", "Blip drifts and a **Spot** test triggers"]
+      - ["3", "Suppressed shot", "Blips converge on the noise square"]
+      - ["4", "Unsuppressed shot", "Alert rises one step"]
+      - ["5", "Sustained Fire", "Alert rises one step and the ALARM test rolls"]
+      - ["6", "Explosion", "ALARM, immediately"]
+      - ["7", "Vehicle horn or siren", "ALARM and one Reinforcement Directive"]
+      - ["8", "Drone flare", "ALARM and the Warden marks your Exfil"]
+      - ["9", "Collapsing wall", "As explosion, plus rubble fills the Zone"]
+      - ["10", "Fuel-air ignition", "Every Blip flips **Known**"]
+      - ["11", "Radio detonation", "As explosion, anywhere in LOS of the mast"]
+      - ["12", "Screaming prisoner", "Rapport test or Alert rises"]
+      - ["13", "Dog pack", "The pack moves first next Turn"]
+    note: "Placeholder ladder — the real one lives in data/tables.yaml when written."

@@ -1,0 +1,44 @@
+# Drone profiles (design-bible §14).
+# Schema: name, side, battery, move (squares per control action), special.
+
+crew-recon-quad:
+  name: Recon Quadcopter (Crew)
+  side: crew
+  battery: 8
+  move: 6
+  special: Launch 3 AP. Control actions (1 Battery each) - reposition, Sweep (reveal/resolve all within 3), overwatch feed (-1 TN for one designated shooter). +1 Noise per turn aloft. Shot down at 14 (shotgun 11 within 6).
+
+crew-fpv:
+  name: FPV Strike Drone (Crew)
+  side: crew
+  battery: 4
+  move: 10
+  special: Single use. Pilot 2d10 >= 10 vs a Known square within 20 - weapon profile fpv (DR 4, Pen 2, Blast 1). Jamming - test at +4, drift d8 x d6/2 on failure.
+
+crew-dropper:
+  name: Dropper Rig (Crew)
+  side: crew
+  battery: 8
+  move: 6
+  special: Recon quad conversion. 2 grenade drops, 2 Battery each - frag attack from above, Open TN even against cover-adjacent targets.
+
+eca-recon:
+  name: ECA Recon Quad
+  side: authority
+  battery: 10
+  move: 6
+  special: Launches under ALARM or by scenario. Sweeps 3 squares each Warden Phase - swept Crew figures become Known. Counters - kill it (14 / shotgun 11), stay under canopy squares (immune), or freeze in Concealment (2d10 >= 8 stays hidden).
+
+eca-fiber-fpv:
+  name: ECA Fiber-Optic FPV
+  side: authority
+  battery: 6
+  move: 8
+  special: IMMUNE to jamming (fiber spool). Attacks one Known figure or vehicle per Warden Phase it is aloft - Pilot 11, DR 4 Pen 2 Blast 1. Its spool path follows LOS - breaking LOS twice forces it home.
+
+eca-dropper:
+  name: ECA Dropper
+  side: authority
+  battery: 8
+  move: 6
+  special: Under ALARM - drops a frag on the densest Known Crew cluster each other Warden Phase. Jammable.

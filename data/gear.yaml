@@ -1,0 +1,127 @@
+# Gear - kit items occupying crew card slots (2 slots standard; weapons are separate).
+# Schema: name, slot (1 unless noted), effect, notes?, supply (campaign Supply cost to field).
+
+plates:
+  name: Rifle Plates
+  slot: 1
+  effect: Armor 3 (Torso only).
+  supply: 2
+  notes: Heavy - a figure with plates may not have the Fast skill benefit (AP capped at 8).
+
+helmet:
+  name: Ballistic Helmet
+  slot: 0
+  effect: Armor 2 (Head only).
+  supply: 1
+
+chest-rig:
+  name: Chest Rig
+  slot: 0
+  effect: First Reload each activation costs 1 AP instead of 2.
+  supply: 1
+
+suppressor:
+  name: Suppressor
+  slot: 0
+  effect: This weapon's shots are Suppressed (+1 Noise, max +1/turn) instead of +2.
+  supply: 2
+  notes: Rifle-class and pistols only. Subsonic - Effective Range -4 squares.
+
+nvg:
+  name: NV Goggles (worn pair)
+  slot: 1
+  effect: Ignore the darkness modifier. -1 TN spotting at night.
+  supply: 3
+  notes: Campaign-scarce. The Authority owns the night unless you take a pair back.
+
+binoculars:
+  name: Binoculars
+  slot: 1
+  effect: Spot at +4 squares range. May Spot from High ground at any board distance.
+  supply: 0
+
+med-kit:
+  name: Aid Bag
+  slot: 1
+  effect: Required for Buddy Aid beyond self-aid. 3 uses per mission.
+  supply: 1
+
+trauma-kit:
+  name: Trauma Kit
+  slot: 1
+  effect: One use - automatically stabilize one Dying figure (no test).
+  supply: 2
+
+demo-kit:
+  name: Demo Kit
+  slot: 1
+  effect: Carries 2 demo-charge and rigging. Place at 3 AP with this kit.
+  supply: 3
+
+radio-set:
+  name: Handheld Net
+  slot: 0
+  effect: Crew figures with radios may Rally each other at radius 6 instead of 3.
+  supply: 1
+  notes: The Warden's EW vehicle silences these within its bubble.
+
+jammer-pack:
+  name: Jammer Pack
+  slot: 2
+  effect: Active - 6-square bubble; RF drones inside test at +4 and drift on failure; enemy manpack ALARM tests inside auto-fail.
+  supply: 3
+  notes: While active, the nearest Blip converges on the bubble (you are loud in a spectrum you cannot hear).
+
+recon-quad:
+  name: Recon Quadcopter
+  slot: 2
+  effect: Battery 8. Sweep, reposition, overwatch feed per chapter 11.
+  supply: 2
+
+fpv-kit:
+  name: FPV Kit
+  slot: 2
+  effect: One armed FPV drone (weapon profile fpv). Single use.
+  supply: 4
+
+dropper-kit:
+  name: Dropper Rig
+  slot: 1
+  effect: Converts the recon quad - 2 grenade drops (Open TN even vs cover-adjacent targets). Each drop costs 2 Battery.
+  supply: 2
+
+ghillie:
+  name: Ghillie / Drab Layup
+  slot: 1
+  effect: Prone in Concealment, this figure cannot be spotted beyond 2 squares (drone Sweeps still find on 2d10 >= 12).
+  supply: 1
+
+bolt-cutters:
+  name: Bolt Cutters
+  slot: 1
+  effect: Cut wire, chain, or padlock - Interact 2 AP, no test, no Noise.
+  supply: 0
+
+tool-kit:
+  name: Tool Roll
+  slot: 1
+  effect: Required for Mechanic repairs. Hotwire a civilian vehicle - Interact 4 AP.
+  supply: 0
+
+climbing-kit:
+  name: Rope & Harness
+  slot: 1
+  effect: A rigged wall or bluff becomes a 2 AP climb for the whole Crew.
+  supply: 1
+
+smoke:
+  name: Smoke Grenades (pair)
+  slot: 1
+  effect: Thrown (3 AP, range 8) - 2-square smoke cloud until end of next turn (+2 TN through, blocks spotting).
+  supply: 1
+
+stims:
+  name: Field Stims
+  slot: 0
+  effect: One use - clear Shaken from self immediately, or act normally while Serious for one activation (then Bleed +1).
+  supply: 1

@@ -1,0 +1,7 @@
+{
+  "$comment": "Allowed stroke-width values at the canonical scale of 100 SVG units = 1 inch. lint-svg.mjs enforces this list (plus 'none').",
+  "hairline": 0.75,
+  "detail": 1.5,
+  "standard": 3,
+  "heavy": 6
+}

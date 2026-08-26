@@ -1,0 +1,125 @@
+# The Directive deck - 24 Warden orders, drawn one per Warden Phase at Alerted+ (two under
+# ALARM: apply both if compatible, else the harsher). Bible §10. Card template: card-directive.
+# Schema: title, order (the card text, <= 3 lines), scope (footer, small caps).
+# Standing scope on every card (printed once in ch.12): "If impossible, do the closest legal
+# thing; if nothing is legal, Go Firm (hold cover, keep maximum Reaction AP)."
+
+push-them:
+  title: PUSH THEM
+  order: Assault and Sweep elements Sprint their first 3 squares toward the nearest Known position, then act normally. Base-of-Fire elements fire before anyone moves.
+  scope: aggression
+
+fix-and-flank:
+  title: FIX AND FLANK
+  order: The largest element acts as Base-of-Fire this turn. The nearest other element moves against the Crew's weakest flank - the side with the fewest Crew figures.
+  scope: maneuver
+
+tighten-the-net:
+  title: TIGHTEN THE NET
+  order: Cordon and Sweep elements spend full AP moving toward the board edge nearest the last Known position. They dig in on roads and chokepoints.
+  scope: containment
+
+talk-to-me:
+  title: TALK TO ME
+  order: Every Leader attempts ALARM comms this turn if able. Elements without a living Leader hold in cover and fire only in reaction.
+  scope: command
+
+grenades-first:
+  title: GRENADES FIRST
+  order: Every element within 8 squares of a Known position throws grenades before moving. Everyone else closes one bound toward the fight.
+  scope: aggression
+
+bound-by-teams:
+  title: BOUND BY TEAMS
+  order: Elements advance in bounds - half of each element moves, the other half holds 4 AP for Reaction Fire. Alternate next turn.
+  scope: maneuver
+
+go-firm:
+  title: GO FIRM
+  order: All elements take the best cover within 2 squares and hold every remaining AP for Reaction Fire. Nothing advances.
+  scope: caution
+
+sweep-the-green:
+  title: SWEEP THE GREEN
+  order: The element nearest the last Known position clears the largest Concealment area near it by fire - Automatic weapons rake it (near-miss Shaken applies inside).
+  scope: reconnaissance by fire
+
+eyes-up:
+  title: EYES UP
+  order: Drone operators launch or reposition and Sweep the last Known area. Marksmen relocate toward High ground. Everyone else holds.
+  scope: surveillance
+
+nothing-moves:
+  title: NOTHING MOVES
+  order: Checkpoint and roadblock elements lock down - any vehicle moving on a road is engaged on sight. Cordon elements reinforce the nearest road.
+  scope: containment
+
+mortars:
+  title: MORTARS
+  order: If a mortar and a spotter with comms are on the board or in reserve, drop a spotting round on the largest Known cluster. Otherwise treat as GO FIRM.
+  scope: fires
+
+rush-the-wounded:
+  title: RUSH THE WOUNDED
+  order: Elements advance on the square of any Down Crew figure or casualty carrier. Deny the recovery. Fire on the carriers first.
+  scope: cruelty
+
+hold-the-doors:
+  title: HOLD THE DOORS
+  order: Elements inside or adjacent to buildings Post at Portals facing the Crew. Interior elements not Posted go Deep. Exterior elements back against walls.
+  scope: defense
+
+vehicle-up:
+  title: VEHICLE UP
+  order: Mounted elements advance by road at full speed toward the last Known position and dismount 6 squares out. Unmounted QRF mounts up first.
+  scope: mobility
+
+search-by-pairs:
+  title: SEARCH BY PAIRS
+  order: Each element sends one pair to the nearest unsearched building or Concealment area. The rest hold and cover them. Bodies found raise the ladder.
+  scope: search
+
+crossfire:
+  title: CROSSFIRE
+  order: The two elements nearest a Known position reposition up to half AP so their fire converges from different arcs, then fire.
+  scope: maneuver
+
+fall-back-regroup:
+  title: FALL BACK AND REGROUP
+  order: Elements below half strength withdraw toward the nearest full-strength friendly element, Sprinting if needed. Full elements cover the withdrawal.
+  scope: caution
+
+flares-and-whistles:
+  title: FLARES AND WHISTLES
+  order: Signals go up - add +2 Noise (theirs). All Blips move 3 squares toward the last Known position. If the QRF clock is running, advance it 1.
+  scope: escalation
+
+bayonets:
+  title: BAYONETS
+  order: Assault elements close to Point Blank or enter occupied Zones this turn regardless of losses. Their group-morale tests are at +2 next turn.
+  scope: aggression
+
+watch-the-back-door:
+  title: WATCH THE BACK DOOR
+  order: The element farthest from the Crew moves to guard the objective or asset the Crew has not yet touched. It Posts and holds.
+  scope: defense
+
+deliberate-fire:
+  title: DELIBERATE FIRE
+  order: No element moves. Every figure with a target takes Aimed or Braced Shots only. Elements without targets hold AP.
+  scope: fires
+
+smoke-and-move:
+  title: SMOKE AND MOVE
+  order: Elements with smoke screen themselves and displace to better positions. Others fire through the smoke at +2 TN rather than hold.
+  scope: maneuver
+
+command-push:
+  title: COMMAND PUSH
+  order: The senior Leader element moves toward the fight. While it is on the board this turn, failed group-morale tests are rerolled once. No Officer alive - redraw.
+  scope: command
+
+false-calm:
+  title: FALSE CALM
+  order: All elements hold position and cease fire this turn unless fired upon. Blips freeze. The QRF clock still ticks. (Let the players wonder.)
+  scope: patience

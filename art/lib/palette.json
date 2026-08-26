@@ -1,0 +1,38 @@
+{
+  "$comment": "The ONLY colors permitted in any art SVG. lint-svg.mjs enforces this. Names are stable ids; refer to colors by name in specs.",
+  "base": {
+    "paper": "#F2EDDF",
+    "paper-bright": "#F8F6EE",
+    "ink": "#2B2A26",
+    "ink-soft": "#4C4A42",
+    "tan": "#C9BA95",
+    "olive": "#5B6244",
+    "olive-light": "#8A8F6A",
+    "topo-brown": "#8A6F4D",
+    "contour": "#A38B66",
+    "water": "#7A97A0",
+    "blaze": "#D96C2E",
+    "rust": "#9C4A38"
+  },
+  "factions": {
+    "crew": "#D96C2E",
+    "authority": "#4A4E57",
+    "civil-order": "#6E7480",
+    "compact": "#6B7A4B",
+    "ferrymen": "#7A97A0",
+    "marauder": "#9C4A38",
+    "neutral": "#C9BA95"
+  },
+  "terrain": {
+    "field": "#D8CBA0",
+    "hardwood-autumn": "#C08552",
+    "conifer": "#4F5D45",
+    "road": "#A9A49A",
+    "gravel": "#BFB8A8",
+    "building": "#8E8A7E",
+    "building-interior": "#DDD5C0",
+    "water": "#7A97A0",
+    "marsh": "#9BA382",
+    "rough": "#B5A98C"
+  }
+}

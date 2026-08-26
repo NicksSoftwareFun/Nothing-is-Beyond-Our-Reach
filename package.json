@@ -1,0 +1,23 @@
+{
+  "name": "nothing-is-beyond-our-reach",
+  "version": "0.1.0",
+  "private": true,
+  "description": "NOTHING IS BEYOND OUR REACH - a solo tabletop wargame of civilian resistance in a collapsed America. Build tooling for the rulebook, cards, tokens, and maps.",
+  "type": "module",
+  "scripts": {
+    "build": "node tools/build.mjs all",
+    "check": "node tools/build.mjs check"
+  },
+  "dependencies": {
+    "markdown-it": "^14.1.0",
+    "markdown-it-anchor": "^9.2.0",
+    "markdown-it-attrs": "^4.3.1",
+    "pagedjs": "^0.4.3",
+    "pdf-lib": "^1.17.1",
+    "playwright-core": "1.56.1",
+    "yaml": "^2.6.0"
+  },
+  "devDependencies": {
+    "svgo": "^4.0.0"
+  }
+}

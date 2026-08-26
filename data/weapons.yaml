@@ -1,0 +1,157 @@
+# Weapon profiles — single source of truth (see design/design-bible.md §1-2, §12-14).
+# Schema: name, class, dr (Damage Rating), pen (vehicle Penetration), eff (Effective range,
+# squares), traits (list), notes. Fields starting with _ are internal.
+# DO NOT edit numbers without re-running tools/checks/mathcheck.py against the bible targets.
+
+pistol:
+  name: Pistol
+  class: sidearm
+  dr: 2
+  pen: 0
+  eff: 8
+  traits: [One-Handed]
+  notes: Backup gun. Usable one-handed with an arm wound at no penalty.
+
+shotgun:
+  name: Hunting Shotgun
+  class: shotgun
+  dr: 3
+  pen: 0
+  eff: 6
+  traits: [Spread]
+  notes: "+1 DR within 3 squares. Best counter-drone weapon: 11 flat to hit drones within 6."
+
+smg:
+  name: Submachine Gun
+  class: smg
+  dr: 2
+  pen: 0
+  eff: 12
+  traits: [Automatic, Compact]
+  notes: Automatic (near-miss Shaken, §7.1). Compact — no Zone entry penalty.
+
+carbine:
+  name: Carbine
+  class: rifle
+  dr: 3
+  pen: 0
+  eff: 20
+  traits: [Automatic]
+  notes: The standard fighting rifle of every faction.
+
+battle-rifle:
+  name: Battle Rifle
+  class: rifle
+  dr: 3
+  pen: 1
+  eff: 30
+  traits: [Automatic, Heavy-Round]
+  notes: Full-power round. Pen 1 threatens soft vehicles.
+
+hunting-rifle:
+  name: Scoped Hunting Rifle
+  class: rifle
+  dr: 3
+  pen: 1
+  eff: 40
+  traits: [Scoped, Bolt]
+  notes: "Scoped: may fire beyond 2x Effective at +4 TN. Bolt: no Automatic near-miss; Snap Shots +1 additional TN."
+
+mmg:
+  name: Medium Machine Gun
+  class: crew-served
+  dr: 4
+  pen: 2
+  eff: 30
+  traits: [Automatic, Crew-Served, Sustained]
+  notes: Sustained Fire and Beaten Zone rules (ch. 9). Team of Gunner + AG (+ Bearer).
+
+hmg:
+  name: Heavy Machine Gun
+  class: crew-served
+  dr: 5
+  pen: 3
+  eff: 40
+  traits: [Automatic, Crew-Served, Sustained, Mounted]
+  notes: Vehicle or tripod mount only. The technical's teeth.
+
+rpg:
+  name: Rocket (RPG)
+  class: launcher
+  dr: 5
+  pen: 6
+  eff: 15
+  traits: [Blast-1, Backblast, Single-Shot]
+  notes: Blast 1-square radius. Backblast — cannot fire from inside a Zone.
+
+mortar-60:
+  name: 60mm Mortar
+  class: indirect
+  dr: 5
+  pen: 2
+  eff: 60
+  traits: [Indirect, Blast-1, Crew-Served]
+  notes: Warden/scenario asset. Spotting-round walk-in procedure (ch. 9). Requires spotter with comms.
+
+frag:
+  name: Frag Grenade
+  class: explosive
+  dr: 3
+  pen: 1
+  eff: 8
+  traits: [Blast-1, Thrown]
+  notes: Attack 12/14 vs all figures within 1 square of impact. Resolves end of Phase (§6.6).
+
+flashbang:
+  name: Flashbang
+  class: explosive
+  dr: 0
+  pen: 0
+  eff: 8
+  traits: [Thrown, Stun]
+  notes: All figures in target Zone/square+1 are Shaken. Enables first-fire entry (§6.5).
+
+demo-charge:
+  name: Demolition Charge
+  class: explosive
+  dr: 5
+  pen: 4
+  eff: 0
+  traits: [Blast-1, Placed, Breach]
+  notes: Placed (4 AP). Breaches walls into new Portals. Command or timed detonation.
+
+molotov:
+  name: Molotov
+  class: explosive
+  dr: 2
+  pen: 0
+  eff: 6
+  traits: [Thrown, Fire]
+  notes: Leaves a fire marker in the impact square (impassable; +1 Noise/turn while burning).
+
+ied:
+  name: IED
+  class: explosive
+  dr: 6
+  pen: 4
+  eff: 0
+  traits: [Blast-1, Placed, Triggered]
+  notes: Command- or victim-triggered per scenario. Both sides use these.
+
+fpv:
+  name: FPV Drone (armed)
+  class: drone
+  dr: 4
+  pen: 2
+  eff: 20
+  traits: [Blast-1, Single-Shot, Piloted]
+  notes: Pilot test 2d10 >= 10 vs a Known square. Jamming rules ch. 11.
+
+knife:
+  name: Blade / Takedown
+  class: melee
+  dr: 3
+  pen: 0
+  eff: 0
+  traits: [Silent]
+  notes: vs Unaware adjacent sentry via Interact — automatic Down, no Noise, leaves a body (§11).
