@@ -1,0 +1,93 @@
+# Event deck - 18 cards. Drawn when a scenario instructs, and once in each between-mission
+# sequence (The Long War, ch. 15). Roll d20 on the table version: 19-20 = draw two.
+# Schema: title, trigger (when it takes effect), effect (mechanical text, card body).
+
+cold-snap:
+  title: COLD SNAP
+  trigger: Next mission
+  effect: First hard frost. All Concealment spotting distances +2 squares (bare branches); any figure who spends a full turn prone outdoors is Shaken at the start of its next activation unless equipped with cold gear (1 slot, free).
+
+rain-moving-in:
+  title: RAIN MOVING IN
+  trigger: Next mission
+  effect: Heavy rain all mission. The smoke/rain/darkness modifier applies to all shots beyond 8 squares. All Noise values reduced by 1 (minimum 1). Drones cannot fly.
+
+refugee-column:
+  title: REFUGEE COLUMN
+  trigger: Next mission
+  effect: A column of displaced families crosses the map - place 6 civilian figures on the main road, moving 2 squares per turn toward the far edge. Any attack that hits a civilian - Rapport -2 for the shooter's side (the Warden's OPFOR fires around them; marauders do not).
+
+census-sweep:
+  title: CENSUS SWEEP
+  trigger: Immediately
+  effect: The Authority runs house-to-house checks. Heat +1. One Auxiliary asset of your choice must flip to Exposed to keep its cover story intact - or lose it on a d10 roll of 1-3.
+
+informer-rumor:
+  title: INFORMER RUMOR
+  trigger: Immediately
+  effect: Word of a paid informer in the valley. Until you resolve it (Underground action between missions), the Warden adds +1 to all Contact Table rolls against you.
+
+supply-windfall:
+  title: SUPPLY WINDFALL
+  trigger: Immediately
+  effect: A Ferryman shipment came through - or fell off a truck. Gain 3 Supply, or 1 Supply and one gear item of your choice with supply cost 2 or less.
+
+drone-overflight:
+  title: DRONE OVERFLIGHT
+  trigger: Next mission
+  effect: An ECA recon quad is aloft from turn 1 (it Sweeps each Warden Phase even though the force is Unaware - contact is reported, not acted on, until Alerted).
+
+patrol-change:
+  title: PATROL SCHEDULE CHANGE
+  trigger: Next mission
+  effect: New officer, new routes. The scenario's Blips set up anywhere on their half of the map (Warden places by die: nearest legal position to each rolled board edge). Scripted sentries are unchanged.
+
+dog-pack:
+  title: DOGS
+  trigger: Next mission
+  effect: Feral pack dens near the objective. The first time a Crew figure Sprints or fires within 8 squares of the marked den - +2 Noise (barking) and one Blip immediately moves toward it.
+
+cache-compromised:
+  title: CACHE COMPROMISED
+  trigger: Immediately
+  effect: One Auxiliary cache is found - lose 2 Supply and the Auxiliary asset nearest it becomes Exposed. If you have no cache to lose, the Warden was bluffing - Heat +1 instead as they sweep anyway.
+
+auxiliary-arrested:
+  title: TAKEN IN THE NIGHT
+  trigger: Immediately
+  effect: One Exposed Underground or Auxiliary asset (your choice, else random) is arrested. Lose it. Rapport -1. A rescue mission to the district lockup becomes available (Mission Architect, raid template).
+
+deserter-contact:
+  title: DESERTER
+  trigger: Immediately
+  effect: An ECA private wants out. Underground action to vet him - on 2d10 >= 9 gain 1 Capability and reveal one scripted sentry position in the next mission; on a failure he was bait - Heat +2.
+
+black-market-offer:
+  title: THE FERRYMEN CALL
+  trigger: Immediately
+  effect: The network offers one gear item of any supply cost, price - either 4 Supply, or one favor (the next mission gains a Ferryman objective the crew must also complete). Take it or leave it.
+
+pop-up-checkpoint:
+  title: POP-UP CHECKPOINT
+  trigger: Next mission
+  effect: A COC flying checkpoint sits on the main road at the marked square - technical, 4 Corpsmen, Doctrine Holding. Vehicles must detour (rough going) or run it.
+
+sickness:
+  title: SICKNESS IN THE HOLLOW
+  trigger: Immediately
+  effect: Fever moving through the camps. One crew member of your choice sits out the next mission helping - or Rapport -1 if nobody does. Pham or Haddad may test 2d10 >= 11 to halve it (nobody sits, no Rapport loss, on success).
+
+radio-intercept:
+  title: INTERCEPT
+  trigger: Immediately
+  effect: Petty pulls something off the ECA net. Before the next mission, look at the scenario's Contact Table and pre-resolve any ONE Blip (roll it now, place it face up).
+
+hunting-season:
+  title: OPENING DAY
+  trigger: Next mission
+  effect: Legal hunting season opens - armed civilians everywhere. Gunshot Noise from single-shot rifle fire is 1 instead of 2 (it blends in). The Authority is jumpier at checkpoints - Heat +1 if the mission ends in ALARM.
+
+toll-demand:
+  title: THE COMPACT'S TOLL
+  trigger: Immediately
+  effect: The Compact claims the north road. Pay 2 Supply for safe passage this campaign turn, or your next mission adds a Compact band (4 fighters, Doctrine Cordon) somewhere on the map - Warden's choice of edge.

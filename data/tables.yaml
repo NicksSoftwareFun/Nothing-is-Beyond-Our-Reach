@@ -146,6 +146,46 @@ skill-tiers:
     - ["Skilled civilian", "11/13", "11", "hunters, competent shooters"]
     - ["Green", "13/15", "12", "most starting civilians"]
 
+injury-recovery:
+  title: Post-Mission Injury Recovery (d20, roll for the worst wound carried off the table)
+  dice: d20
+  columns: [Wound carried, d20, Outcome]
+  rows:
+    - ["Graze / Light", "no roll", "Back next mission; Light - sits one mission out on a d20 roll of 1-4 (roll now)"]
+    - ["Serious", "1", "Dies of complications - unless an Auxiliary medical asset is flipped Exposed now"]
+    - ["Serious", "2-8", "Out 2 missions"]
+    - ["Serious", "9-16", "Out 1 mission"]
+    - ["Serious", "17-20", "Scar and a story - back next mission"]
+    - ["Critical (survived)", "1-3", "Dies in the night - an Auxiliary medical asset flipped now converts this to 4-10"]
+    - ["Critical (survived)", "4-10", "Permanent mark (roll on Permanent Effects) and out 3 missions"]
+    - ["Critical (survived)", "11-16", "Out 3 missions"]
+    - ["Critical (survived)", "17-20", "Out 2 missions"]
+  note: A safehouse network upgrade (Rapport 8+) adds +2 to this roll. The dead stay dead.
+
+permanent-effects:
+  title: Permanent Effects (d10)
+  dice: d10
+  columns: [d10, Effect]
+  rows:
+    - ["1-2", "Slow to mend - max AP permanently -1"]
+    - ["3-4", "Hands never steady again - Shoot TNs +1"]
+    - ["5-6", "Nerve damage - Grit +1"]
+    - ["7", "Lost eye - +2 TN on shots beyond 10 squares; -1 spotting"]
+    - ["8-9", "Deep limp - may never Sprint"]
+    - ["10", "Against all odds, whole - no permanent effect, and Grit -1 (they know what they can take)"]
+
+network-actions:
+  title: Network Actions (choose 2 per campaign turn)
+  columns: [Action, Effect]
+  rows:
+    - ["Develop", "Add one Hidden asset to Underground, Auxiliary, or Guerrilla (Guerrilla also costs 1 Capability)"]
+    - ["Gather intel", "Flip an Underground asset Exposed - before the next mission, pre-resolve one Blip or reveal one scripted position"]
+    - ["Train", "Capability +1 (max 10); requires a quiet turn or an SOF vet teaching"]
+    - ["Lie low", "Heat -1 (min 0); no mission this campaign turn"]
+    - ["Rest an asset", "Flip one Exposed asset back to Hidden"]
+    - ["Work the valley", "Rapport +1 (max 10); a named crew member spends the turn on wells, wiring, and funerals"]
+  note: Assets caught Exposed when a Heat sweep fires (Heat 8+) are lost on a d10 roll of 1-4.
+
 beaten-zone:
   title: Beaten Zone (Sustained Fire)
   columns: [Property, Rule]

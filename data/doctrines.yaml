@@ -1,0 +1,98 @@
+# The Warden's Doctrine scripts - the solo AI (bible §10). Chapter 12 prints these in full;
+# OPFOR cards print only the doctrine name. Execution rule: an element runs the FIRST line
+# whose condition is true, spending AP top to bottom; if no line applies, roll d10 on its
+# fallback. held_ap = AP the element keeps un-spent for Reaction Fire when it can.
+# Universal target priority: 1 the Known enemy that attacked this element since its last
+# activation -> 2 nearest Known in LOS -> 3 most exposed Known (Open TN available) -> tie:
+# nearest to the element's Leader or objective. The Good-Faith Clause governs all gaps.
+
+holding:
+  name: Holding
+  role: Sentries, posted guards, static weapon positions
+  held_ap: 4
+  constraint: Never moves beyond its printed objective radius (default 6 squares of its post).
+  lines:
+    - "A Known enemy is in LOS -> fire the best shot the AP allows (Aimed at 4+, else Snap) from current cover. Do not move."
+    - "Force is Suspicious and this element has not yet investigated -> ONE figure moves cover-to-cover toward the newest Noise source, at most half AP; the rest hold."
+    - "Force is Alerted and the element contains a Leader, RTO, or fixed comms not yet used -> attempt ALARM per the ladder."
+    - "Otherwise -> hold position, turn facing toward the newest Noise or nearest Known, keep all AP."
+  fallback:
+    - "1-3: Hold; face the loudest thing."
+    - "4-6: Shift to better cover within 2 squares."
+    - "7-8: One figure investigates 3 squares toward the last Noise."
+    - "9-10: Comms attempt (or signal shout: +1 Noise, nearest element gains Suspicious focus)."
+
+sweep:
+  name: Sweep
+  role: Patrols, search elements, clearing parties
+  held_ap: 2
+  constraint: null
+  lines:
+    - "A Known enemy is in LOS -> halt in cover and fire; stay halted while any Known remains in LOS."
+    - "A Known position exists anywhere -> advance on-line toward it, cover-to-cover; figures with Automatic weapons rake Concealment within 8 squares along the way (near-miss Shaken applies inside it)."
+    - "Force is Suspicious -> move toward the newest Noise source at patrol pace; Spot from each halt."
+    - "Otherwise -> follow the printed patrol route."
+  fallback:
+    - "1-4: Continue the route."
+    - "5-7: Sweep the nearest Concealment area by fire."
+    - "8-10: Hold and observe one full turn."
+
+assault:
+  name: Assault
+  role: Fire teams tasked to close, SRT, marauder packs
+  held_ap: 2
+  constraint: null
+  lines:
+    - "An enemy is adjacent or shares a Zone -> Point Blank attacks; entering an occupied Zone follows the Entry Fight rules (SRT stack with flashbangs)."
+    - "A Known enemy is within 3 squares and grenades remain -> grenade first, then close."
+    - "A Known enemy is in LOS -> bound cover-to-cover toward the nearest (bounds of 3 squares or less between cover); Snap Shot with remaining AP."
+    - "A Known position exists out of LOS -> move toward it by the best covered route."
+    - "Otherwise -> move toward the mission anchor (objective, then last Noise)."
+  fallback:
+    - "1-5: Bound forward toward the anchor."
+    - "6-8: Flank - d6: odd goes left of the last Known, even goes right."
+    - "9-10: Go firm in cover this turn."
+
+base-of-fire:
+  name: Base-of-Fire
+  role: MG teams, marksmen, any element told to suppress
+  held_ap: 2
+  constraint: Crew-served weapons follow the full ch. 9 deploy/displace rules.
+  lines:
+    - "Deployed with a Known in LOS -> Sustained Fire on the largest Known cluster (crew-served) or Braced/Aimed Shots (others)."
+    - "Known in LOS but weapon not deployed -> deploy now (bipod/tripod)."
+    - "No firing position -> move at most half AP toward the nearest position with LOS to a Known; deploy next activation."
+    - "Flanked (a Known enemy within 6 squares off the gun's axis or behind) -> displace to cover away from the threat; redeploy next activation."
+    - "Otherwise -> overwatch the widest lane toward the last Noise; keep all AP."
+  fallback:
+    - "1-4: Hold and scan (keep AP)."
+    - "5-7: Shift the fire lane to the next likeliest approach."
+    - "8-10: Displace 3 squares to an alternate position."
+
+cordon:
+  name: Cordon
+  role: Blocking elements, checkpoints, cut-off teams
+  held_ap: 4
+  constraint: Assigned a route or edge at setup; never abandons it while any Crew figure is un-exfiled.
+  lines:
+    - "A Crew figure in LOS is moving through or toward the assigned route -> fire; do not pursue beyond 2 squares."
+    - "Not yet at the blocking position -> move toward the board edge or route nearest the Crew's entry or objective; occupy the chokepoint (bridge, cut, gate)."
+    - "At position -> improve cover, hold all remaining AP, watch the assigned lane."
+  fallback:
+    - "1-5: Hold the position."
+    - "6-8: Shift 2 squares to a better chokepoint on the same route."
+    - "9-10: One figure moves to link up visually with the nearest friendly element."
+
+qrf:
+  name: QRF
+  role: Reaction forces; arrives on the QRF clock after ALARM
+  held_ap: 2
+  constraint: Arrives mounted at the edge named by the scenario (else the edge nearest the last Known).
+  lines:
+    - "Off-board and the QRF clock expires -> enter mounted at the designated edge; drive toward the last Known position at road speed."
+    - "Mounted within 8 squares of the last Known -> halt in cover or defilade; dismount (one figure per activation from an MRAP, all from open vehicles); the vehicle's weapon overwatches."
+    - "Dismounted -> split the element: the half with the heaviest weapon acts as Base-of-Fire, the rest as Assault. Run each half by its script from now on."
+  fallback:
+    - "1-4: Press the assault line."
+    - "5-7: Suppress the last Known position."
+    - "8-10: Hold and attempt comms (report contact: blips within 12 squares move toward the fight)."

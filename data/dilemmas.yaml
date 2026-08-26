@@ -1,0 +1,76 @@
+# Hard Choices deck - 12 dilemma cards. Drawn when a scenario instructs, or on a d12 when
+# the between-mission sequence calls for one. Both options always cost something real; there
+# is no mechanically correct answer. (Robin Sage war-crime-negotiation pattern.)
+# Schema: title, situation (card body, serif), option_a, option_b (each with explicit costs).
+
+the-prisoner:
+  title: THE PRISONER
+  situation: The ECA team leader your crew dragged out of the substation has a broken arm, a radio codebook, and a wife in the enclave. The guerrillas want him shot in the orchard before dawn. They lost two of their own to his patrol in September.
+  option_a: Hand him over. Capability +1, the codebook stays (reveal all scripted sentries next mission) - but Rapport with the valley's families -2, and the story travels.
+  option_b: Walk him to the county line and let him go. Rapport +1. Heat +2 when he reports everything he saw. The guerrillas remember that you chose him.
+
+the-neighbor:
+  title: THE NEIGHBOR
+  situation: Merle Cutshall has been selling fuel to the Civil Order Corps depot - and grid coordinates with it. His daughter goes to the same creek school as Birdy did. The Underground confirmed it twice.
+  option_a: Exile - the family is walked out to the Compact's road with what they can carry. Underground asset Exposed (people saw the escort). Rapport -1. The leak stops.
+  option_b: Leave him in place and feed him lies. The Warden's next mission uses the WRONG Contact Table once (your choice of Blip auto-resolves as Nothing) - but Heat +1 per mission he stays alive, forever.
+
+the-medic:
+  title: THE MEDIC
+  situation: After the ambush on the bridge road, an ECA medic stayed with your wounded when his column broke and ran. Boone is alive because of him. He has not asked for anything. He is nineteen.
+  option_a: Send him back under a white rag. Rapport +2 (the valley hears). Heat +1 - he must report where he was held.
+  option_b: Offer him the valley. Roll 2d10 - on 12+ gain a support Medic-Aux asset permanently; on less he says no, and holding him after the offer costs Rapport -1.
+
+the-tribute:
+  title: TRIBUTE
+  situation: The Compact's headman sits across the fire and names his price for the winter passes - a working technical, or your MMG's spare barrel and half your belted ammunition. He is not bluffing, and the passes are the only way the buses of evacuees get out before the snow.
+  option_a: Pay. Lose the vehicle OR 3 Supply. The evacuation runs; Rapport +2.
+  option_b: Refuse. The passes close - the next campaign mission MUST be the convoy fight (Mission Architect, escort template) with Compact as OPFOR, in the first snow.
+
+the-exchange:
+  title: THE EXCHANGE
+  situation: The Authority is offering Hollis Grant's cousin - taken in the census sweep - for any crew member on their list. They named three names. They will make the trade at the fairground, in daylight, on camera.
+  option_a: Refuse the trade. Rapport -2 with the Grant kin. The cousin ships to the works farm; a rescue template becomes available at Heat +1.
+  option_b: Stage the trade and break it. Run the exchange as a mission (raid template, ALARM starts armed) - if anyone on their list is captured in it, they are gone. No second chances either way.
+
+the-crossfire:
+  title: AFTER THE CROSSFIRE
+  situation: The round that went through the checkpoint sergeant kept going. The Tolley boy was behind the fruit stand. He will live, but not whole, and everyone in the valley knows whose rifle it was - yours or theirs doesn't matter at that range.
+  option_a: The crew takes it publicly - apology, restitution, your best medic on his care. Rapport -1 now, +2 at campaign end if he is cared for every mission (1 Supply per mission, ongoing).
+  option_b: Let the blame settle on the Authority - the Underground spreads it. Rapport +1 now. If any Underground asset is ever lost, the truth surfaces - Rapport -3, immediately.
+
+the-revenge:
+  title: WHAT DEACON WANTS
+  situation: The guerrillas found the COC boss who burned the Ledford barn - drinking, half-guarded, two hollows over. Deacon says the raid teaches the Corps a lesson no leaflet can. Vance says a killing chosen for anger is the line you don't come back across.
+  option_a: Raid him. Capability +1, Compact respect (Ferrymen prices -1 Supply this campaign). Heat +2, Rapport -1 with the church families.
+  option_b: Hold. Rapport +1. Deacon's Grit worsens by 1 for the next two missions (he carries it), and the boss's patrols keep their MMG next mission.
+
+the-deserters-family:
+  title: THE DESERTER'S PRICE
+  situation: The ECA corporal will hand you the QRF's radio schedule, patrol overlays, the works - after his mother and sister are out of the enclave. Getting two civilians through the wire is a mission with no shooting in the plan and a hundred ways to go loud.
+  option_a: Run the extraction (infiltration template, civilians in tow, exfil-or-lost applies to them too). Success - his intel delays ALARM by 2 turns in every remaining campaign mission.
+  option_b: Decline. He sells it to the Ferrymen instead - any future mission against the QRF costs 2 Supply for the same overlay, per mission.
+
+the-food-line:
+  title: THIN WINTER
+  situation: The cache count came up short - the calories in the ground will not carry both the fighters and the families past February. The auxiliary women who run the kitchens have asked you, quietly, which line eats first when it gets bad.
+  option_a: Families first. Capability -1 (hungry fighters train less). Rapport +2.
+  option_b: Fighters first. Capability +1. Rapport -2, and the next Hard Choice drawn is resolved at -1 to any roll it calls for (the valley's patience is spent).
+
+the-informer-name:
+  title: THE NAME
+  situation: The Underground finally has the informer - and it is Oren Petty's brother-in-law, who has been trading names for his son's asthma medicine from the enclave clinic. Petty does not know. The next name on the list was going to be Casey Pham's.
+  option_a: Tell Petty and let him walk the man out himself. Petty sits out the next mission. The leak ends. Rapport holds.
+  option_b: Handle it without telling him - exile arranged as a "relocation." The leak ends. If Petty ever finds out (any natural 2 on his tests, ever) - he leaves the roster for good.
+
+the-uniform:
+  title: THE UNIFORM
+  situation: A dead ECA private's kit would let two of yours walk through the fairground checkpoint on census day - straight past the vehicle park with a demo bag. It would also mean fighting in their uniform, and everyone the Authority hangs for it afterward will not have been you.
+  option_a: Use the uniforms. The next raid template starts with two figures inside the wire, ALARM delayed 2 turns. The Authority's reprisal falls on the town - Rapport -2, Heat -1 (they think it was insiders).
+  option_b: Burn them with the body, mark the grave. Rapport +1. The demo bag goes over the wire the hard way.
+
+the-g-chiefs-son:
+  title: THE G-CHIEF'S SON
+  situation: The guerrilla leader's son froze at the substation - dropped his sector, nearly cost Haddad her life, and his father watched it happen. The old man asked you, not the other way around - does the boy go on the next one?
+  option_a: Take him. He counts as a Green support unit; if he survives two missions, Capability +1 and Rapport +2. If he dies, Rapport -3.
+  option_b: Leave him with the auxiliaries. Safe. Capability -1 (the old man trains the others harder, but the message lands - his own blood was not worth risking. It costs him).

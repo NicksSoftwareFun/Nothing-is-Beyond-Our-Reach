@@ -1,0 +1,55 @@
+# Advances - post-mission character progression (bible §15.4: 2 Advances per mission,
+# distributed among survivors; escalating costs). Chapter 15 owns the prose.
+# Schema: advances (purchasable improvements), learnable (skills that can be taught).
+
+advances:
+  shoot-step:
+    name: Marksmanship Step
+    cost: "Green -> Skilled: 2 Advances. Skilled -> Veteran (10/12): 3. Veteran -> 9/11: 4."
+    rule: Improve Shoot one tier step. Nobody trains past 9/11 - the 8/10 tier is a lifetime, not a course. Requires live-fire between missions (1 Supply, +1 Noise event on a d10 roll of 1).
+  grit-step:
+    name: Hard Lessons
+    cost: 2 Advances
+    rule: Improve Grit by 1 (minimum 8). May only be bought in a campaign turn after the character was Shaken, Pinned, or wounded - composure is bought with bad nights.
+  ap-step:
+    name: Conditioning
+    cost: "7 -> 8: 3 Advances. 8 -> 9: 4."
+    rule: Improve AP by 1 (maximum 9). Characters with the Old Knees or Slow trait cap at 8.
+  new-skill:
+    name: Cross-Training
+    cost: 3 Advances
+    rule: Learn one skill from the learnable list below. Requires a teacher - a crew member or network asset that has the skill - and a quiet campaign turn (no mission that turn for the student, OR Rapport 6+ so the auxiliaries cover the time).
+
+learnable:
+  stalker:
+    name: Stalker
+    rule: In Concealment, blips and sentries spot this figure only within 3 squares.
+    teacher: Ledford, or any Guerrilla asset
+  driver:
+    name: Driver
+    rule: Drive TN 8 in wheeled vehicles; ramming and barrier runs at no Handling penalty.
+    teacher: Delgado
+  mechanic:
+    name: Mechanic
+    rule: Interact (4 AP) with a tool kit clears a vehicle Mobility hit, once per vehicle per mission.
+    teacher: Delgado, or an Auxiliary asset
+  machine-gunner:
+    name: Machine Gunner
+    rule: Sustained Fire at TN 10; reload the MMG at 2 AP with an AG.
+    teacher: Boone
+  drone-pilot:
+    name: Drone Pilot
+    rule: Operate crew drones; FPV Pilot tests at -1 TN.
+    teacher: Petty, or an Underground asset
+  demolitions:
+    name: Demolitions
+    rule: Place charges at 3 AP; demo breaches never trigger the natural-2 default complication (a professional's fingers).
+    teacher: SOF vet, or Capability 4+
+  field-medicine:
+    name: Field Medicine
+    rule: Buddy Aid at 2d10 >= 10 with an aid bag.
+    teacher: Pham or Haddad
+  leader:
+    name: Leader
+    rule: May Rally (2 AP, radius 3).
+    teacher: Deacon or Vasquez only, and only at Rapport 6+ - command is given by the led.
