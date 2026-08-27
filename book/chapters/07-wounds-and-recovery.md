@@ -38,7 +38,7 @@ Your people do not have hit points. When one of them is hit, the game asks two q
 
 {{table:severity}}
 
-**Step 3 — Apply the wound line immediately**, together with the location effect. A Light or worse wound to either arm puts the figure on one hand — long guns fire at +3 TN until the war is over or the mission is, whichever the recovery table decides ({{ref:ch-long-war}}); a sidearm with the One-Handed trait does not care. A Light or worse leg wound forbids Sprinting. A Graze, at any location, is a flinch and a story: Shaken, nothing lasting.
+**Step 3 — Apply the wound line immediately**, together with the location effect. AP penalties bite at once, including AP the figure is still holding mid-activation — a wounded watcher may find its next reaction no longer affordable. A Light or worse wound to either arm puts the figure on one hand — long guns fire at +3 TN until the war is over or the mission is, whichever the recovery table decides ({{ref:ch-long-war}}); a sidearm with the One-Handed trait does not care. A Light or worse leg wound forbids Sprinting. A Graze, at any location, is a flinch and a story: Shaken, nothing lasting.
 
 **Step 4 — Mark the wound** on the roster sheet, by location and level. Wounds do not come off during a mission. Aid stops dying; it does not heal ({{ref:sec-aid}}).
 
@@ -91,7 +91,7 @@ Buddy Aid is the action that stops the arithmetic. A figure in a square adjacent
 
 *End Phase, turn 6.* Okafor marks her Bleed: 2 points accumulated. The arithmetic is public and merciless — at 3 marks the wound worsens a step, and Serious worsens to Critical. The next End Phase takes her there. Casey Pham has exactly one Crew Phase.
 
-*Turn 7.* Pham activates first ({{stat:crew.pham.ap}} AP), six squares away at the barn corner. She Sprints 3 squares into the yard (2 AP, +1 Noise — and she is a Sprinting target now). One square into the open, the Rifleman spends held AP on Reaction Fire ({{ref:sec-reaction-fire}}): Open TN 11, +3 for Reaction Fire, +2 for a Sprinting target — TN 16. The Warden rolls **8 and 6 — 14.** A miss by 2, from an Automatic weapon, against a target in the open: the near miss ({{ref:sec-wound-procedure}}) makes **Pham Shaken** — +2 TN on her tests from this instant, no Reaction Fire, and 4 AP owed against her next activation. She keeps going: 2 squares Walking (2 AP; 4 spent) puts her at Okafor's side. Her EMT skill makes Buddy Aid 3 AP against 2d10 ≥ 9 — but Shaken adds +2 TN, so tonight the number is 11. One use comes off her Aid Bag. She rolls **5 and 7 — 12.** Success: Okafor's Bleed stops, the 2 marks are erased, and Okafor's Shaken is removed. The wound stays Serious — aid stops dying, not damage. (Double tens would have downgraded it to Light.) Pham spends her last AP going prone: 2+2+3+1 makes 8, and she holds nothing.
+*Turn 7.* Pham activates first ({{stat:crew.pham.ap}} AP), six squares away at the barn corner. She Sprints 3 squares into the yard (2 AP, +1 Noise — and she is a Sprinting target now). One square into the open, the Rifleman spends held AP on Reaction Fire ({{ref:sec-reaction-fire}}) — Pham has been Known since she returned fire from the barn corner earlier in the fight, and the Warden reacts only to Known figures ({{ref:sec-known}}): Open TN 11, +3 for Reaction Fire, +2 for a Sprinting target — TN 16. The Warden rolls **8 and 6 — 14.** A miss by 2, from an Automatic weapon, against a target in the open: the near miss ({{ref:sec-wound-procedure}}) makes **Pham Shaken** — +2 TN on her tests from this instant, no Reaction Fire, and 4 AP owed against her next activation. She keeps going: 2 squares Walking (2 AP; 4 spent) puts her at Okafor's side. Her EMT skill makes Buddy Aid 3 AP against 2d10 ≥ 9 — but Shaken adds +2 TN, so tonight the number is 11. One use comes off her Aid Bag. She rolls **5 and 7 — 12.** Success: Okafor's Bleed stops, the 2 marks are erased, and Okafor's Shaken is removed. The wound stays Serious — aid stops dying, not damage. (Double tens would have downgraded it to Light.) Pham spends her last AP going prone: 2+2+3+1 makes 8, and she holds nothing.
 
 Okafor activates next. Start of activation, Serious: Grit test against her {{stat:crew.okafor.grit}}. She rolls **4 and 3 — 7.** Failed — this activation is Crawl or self-aid only. She Crawls 2 squares, all 4 of her halved AP, into the ditch. That ends the second Crew activation of the turn; the Interrupt Die needs a 10 and comes up **4** ({{ref:sec-turn-sequence}}). When the Warden Phase brings fire back across the yard it finds two prone shapes behind a ditch lip — Cover TN — and no hits.
 
@@ -164,7 +164,7 @@ Pinned recovers **to Shaken**, never straight to clean, in either of two ways: a
 
 One dose of Field Stims will carry a figure through the worst of this — **{{stat:gear.stims.effect}}** — and the crew members who insist on packing them are usually the ones who have needed them.
 
-<!-- TODO-TABLE: status-effects — one-glance summary of Shaken and Pinned (effects, escalation, all recovery paths) plus Down and Dying, for the QRS (bible §7.5, §7.3) -->
+{{table:status-effects}}
 
 {{svg:diagrams/diagram-shaken-pinned.svg}}
 

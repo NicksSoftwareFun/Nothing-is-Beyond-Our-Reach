@@ -607,6 +607,16 @@ mechanically correct answer. (Robin Sage war-crime negotiation pattern; Falling 
     figure without resolving or surprising.
 40. **Glossary additions:** Unaware and Suspicious are capitalized Alert-ladder labels.
 
+41. **Entering an occupied Zone makes the enterer Known** (to the force) the moment they cross
+    the Portal — closing the gap between the Entry Fight and ruling 34.
+42. **Coinciding morale triggers** from a single volley or event (e.g. Jumpy's first-casualty
+    and the half-strength trigger in one burst) resolve as ONE group test.
+43. **Pinned's Grit gate is +2 total** — it replaces, not stacks with, the state's general +2.
+44. **Drone specialist actions cost AP as well as Battery** (ch. 11 owns the numbers: Fly
+    2 AP, FPV Strike 4 AP) — the operator is doing something with their hands and attention.
+45. **The Beaten Zone is also removed** when the AG is lost or the Gunner leaves the trigger —
+    canonical elaboration of §12's persistence rule.
+
 ## 18. Writing rules for chapter agents
 
 - **Capitalized game terms only when they carry rules weight**, and only terms from the

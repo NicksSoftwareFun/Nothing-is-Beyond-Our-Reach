@@ -28,7 +28,7 @@ Every shot in the game runs the same six steps — Aimed, Snap, Braced, or React
 - **Vehicle** → the vehicle hit-and-damage procedure ({{ref:ch-vehicles}}).
 - **Drone** → the drone rules ({{ref:ch-drones}}).
 
-On a miss, check one thing before moving on: if the weapon is Automatic, the miss was by exactly 1 or 2, and the target was Open, the target is Shaken — the near miss ({{ref:sec-traits}}). Every other miss is simply a miss.
+On a miss, check one thing before moving on: the near miss — an Automatic weapon's closest failures can still Shake a target in the open. The near-miss rule is owned by the hit-resolution procedure ({{ref:sec-wound-procedure}}); every other miss is simply a miss.
 
 Finally, book the shot's Noise ({{ref:sec-noise}}). Fire is the loudest thing most missions ever do, and the Warden is listening.
 
@@ -55,7 +55,7 @@ What the numbers mean on a standard 30×24 board: a Pistol's {{stat:weapons.pist
 
 A weapon card carries its numbers — DR, Pen, Effective Range — and a short list of **traits**. A trait is a standing rule, always on, never optional. This glossary is the owning definition of every trait in the game except the four crew-served traits at the end.
 
-**Automatic.** The weapon fires bursts, and its misses have a fringe. When an attack with an Automatic weapon misses the final TN by exactly 1 or 2 **and the target was Open**, the target is Shaken — rounds have snapped close enough to change a mind. The near miss applies on every kind of shot, Reaction Fire included. It never applies against a target in Cover: the wall catches what the flinch would have. This single rule is the game's hasty suppression, and it is worth building around ({{ref:sec-suppressive-intent}}).
+**Automatic.** The weapon fires bursts, and its misses have a fringe: it can inflict the **near miss** — a close miss that Shakes a target in the open. The rule itself is owned by the hit-resolution procedure ({{ref:sec-wound-procedure}}); what the trait marks is which weapons get it. This single rule is the game's hasty suppression, and it is worth building around ({{ref:sec-suppressive-intent}}).
 
 **Scoped.** The weapon may fire beyond twice its Effective Range at +4 TN, where other weapons have no shot at all ({{ref:sec-range}}). The +2 band between one and two times Effective applies to it as normal.
 
@@ -65,7 +65,7 @@ A weapon card carries its numbers — DR, Pen, Effective Range — and a short l
 
 **One-Handed.** Fired from one hand at no penalty. A figure whose arm wound forces it to one hand keeps shooting a One-Handed weapon at its printed TNs, where a long gun pays the wound table's penalty ({{ref:sec-wound-procedure}}).
 
-**Compact.** Short enough to fight indoors. A Compact weapon takes no long-gun penalty in Zone fighting; that penalty is defined with the entry rules ({{ref:sec-entry}}).
+**Compact.** Short enough to fight indoors. A Compact weapon takes no long-gun penalty in Zone fighting; that penalty is defined with the Zone-fighting rules ({{ref:sec-zone-fighting}}).
 
 **Heavy-Round.** A full-power rifle cartridge. The trait marks the weapon as a threat to soft vehicles through its printed Pen — resolution belongs to {{ref:ch-vehicles}}.
 
@@ -145,7 +145,7 @@ Then make the **Throw test: 2d10 ≥ 10.** There is no Cover TN for a throw — 
 
 {{svg:diagrams/diagram-grenade-scatter.svg}}
 
-Throwing into buildings is the close-quarters chapter's business: a grenade posted through a Portal from an adjacent square does not scatter, and what it does to a Zone full of defenders — Posted, Deep, or stacked to enter — is resolved at {{ref:sec-entry}}.
+Throwing into buildings is the close-quarters chapter's business: a grenade posted through an adjacent open Portal neither scatters nor needs a Throw test, and what it does to a Zone full of defenders — Posted, Deep, or stacked to enter — is resolved at {{ref:sec-grenades-zones}}.
 
 ### End of the Phase {#sec-blast-timing}
 

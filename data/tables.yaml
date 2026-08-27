@@ -36,7 +36,7 @@ ap-costs:
     - ["Kick breach", "2", "+2 Noise"]
     - ["Enter or exit a Zone through a Portal", "2", ""]
     - ["Buddy Aid", "4", "Medicine test; EMT 3 AP"]
-    - ["Rally (Leader, radius 3)", "2", ""]
+    - ["Rally (Leader trait or Grit 9 or less, radius 3)", "2", ""]
     - ["Spot (resolve a Blip in LOS / search)", "2", ""]
     - ["Mount / dismount vehicle", "2", ""]
     - ["Interact (cut wire, plant charge, grab cache...)", "2", "unless scenario states otherwise"]

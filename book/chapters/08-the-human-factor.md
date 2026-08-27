@@ -10,7 +10,7 @@ Bullets decide less than this chapter does. What Shaken and Pinned do to a figur
 
 A morale test is a Grit test: 2d10, unmodified unless a rule says otherwise, against the figure's own printed Grit ({{ref:sec-tests}}). Testing costs no AP and resolves immediately, mid-activation or mid-phase, the moment its trigger occurs. A Crew figure tests at exactly these four moments, and no others:
 
-<!-- TODO-TABLE: crew-morale-triggers, the four Crew Grit-test triggers with fail/Panic results, for the QRS (bible §7.6) -->
+{{table:crew-morale-triggers}}
 
 - **First blood.** The first time each mission that this figure comes under effective fire — an enemy attack roll is resolved against it, or a blast, template, or near miss touches its square. One baptism per figure per mission; after it, incoming fire is business.
 - **A neighbor falls.** A Crew figure goes Down or Dead within 6 squares of this figure, or within its LOS. Every figure that qualifies tests, at once.
@@ -33,7 +33,7 @@ Each event triggers one test per affected figure. Passing a test never immunizes
 
 Rally is the answer to most of what this chapter can do to you. It costs 2 AP ({{ref:sec-ap}}) and is available only to a figure with the **Leader** trait or a printed Grit of 9 or less — the professionals, and the people the valley already listens to.
 
-When a figure Rallies, every Shaken or Pinned Crew figure within 3 squares — the Rallying figure itself included — immediately rolls 2d10 against its *own* printed Grit, one roll per figure. These rolls are unmodified: they are not the affected figure's action, so Shaken's TN penalty does not apply. On a success, a Shaken figure clears entirely; a Pinned figure drops to Shaken ({{ref:sec-shaken}}) — nobody comes all the way back from the bottom on one word. On a failure, nothing changes, and nothing prevents another Rally later in the turn, from the same voice or a different one.
+When a figure Rallies, every Shaken or Pinned Crew figure within 3 squares — the Rallying figure itself included — immediately rolls 2d10 against its *own* printed Grit, one roll per figure. These rolls are unmodified: they are not the affected figure's action, so Shaken's TN penalty does not apply. On a success, a Shaken figure clears entirely; a Pinned figure drops to Shaken ({{ref:sec-shaken}}) — nobody comes all the way back from the bottom on one word. (Almost nobody: cards can say otherwise, and Amos Vance's Shepherd skill, below, is the standing exception.) On a failure, nothing changes, and nothing prevents another Rally later in the turn, from the same voice or a different one.
 
 A Shaken figure may Rally others. A Pinned one must first pass its Grit at +2 like any other action beyond survival ({{ref:sec-shaken}}) — panic is not led out of a ditch by someone still in it.
 
@@ -50,9 +50,9 @@ A Crew figure just went Down, so everyone within 6 squares or LOS tests Grit now
 
 **Turn 6, Crew Phase.** Vance activates first. Boone is Dying within 6 squares of him, so the cries rule bites at the start of his activation ({{ref:sec-bleed}}): 9 and 4 — 13 against his 9. He holds again. He has {{stat:crew.vance.ap}} AP: he Walks 2 squares to the truck (2 AP), putting Okafor at 2 squares and Birdy at 3, and Rallies (2 AP) — legal for him twice over, by his Shepherd skill and by his Grit.
 
-Each affected figure rolls against her own Grit. Okafor, Pinned: 8 and 4 — 12 against her 10. Success — Pinned drops to **Shaken**, and she can act like a person again, four AP short and flinching, but moving. Birdy: 5 and 5 — 10 against her 11. Failure — she stays Shaken, face down in the ditch.
+Each affected figure rolls against her own Grit. Okafor, Pinned: 8 and 4 — 12 against her 10. Success — and where a base Rally would only step her down to Shaken, Vance's Shepherd skill clears the state entirely: Okafor comes all the way back, whole. Birdy: 5 and 5 — 10 against her 11. Failure — she stays Shaken, face down in the ditch.
 
-Vance keeps his last 4 AP watching. The right play now writes itself: leave Birdy unactivated — if nobody shoots at her, the End Phase clears her for free ({{ref:sec-shaken}}) — and spend Okafor's diminished turn getting to Boone, because his clock does not care how anyone feels.
+Vance keeps his last 4 AP watching. The right play now writes itself: leave Birdy unactivated — if nobody shoots at her, the End Phase clears her for free ({{ref:sec-shaken}}) — and spend Okafor's restored turn getting to Boone, because his clock does not care how anyone feels.
 :::
 
 ## Breaking the Warden's People {#sec-opfor-morale}
@@ -80,7 +80,7 @@ Each trigger is tested once, when it occurs — and both can occur to the same e
 
 {{svg:diagrams/diagram-doctrine-fallback.svg}}
 
-<!-- TODO-TABLE: opfor-group-morale, group-morale triggers, per-figure Grit test, and the four-step Doctrine fallback ladder, for the QRS (bible §7.6) -->
+{{table:opfor-group-morale}}
 
 ### Rout {#sec-rout}
 
