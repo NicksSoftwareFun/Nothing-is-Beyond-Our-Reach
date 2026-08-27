@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 200" data-nibor="tokens/vehicles/vehicle-box-truck">
+  <!-- Box Truck - neutral edge band, short cab up front, big ribbed cargo box roof behind. -->
+  <!-- faction edge band (stroke 6 rounded rect inset) -->
+  <rect x="5" y="5" width="90" height="190" rx="12" fill="#F8F6EE" stroke="#C9BA95" stroke-width="6"/>
+  <!-- tires (front pair, heavy rear pair) -->
+  <rect x="22.5" y="36" width="7.5" height="20" rx="2" fill="#2B2A26"/>
+  <rect x="70" y="36" width="7.5" height="20" rx="2" fill="#2B2A26"/>
+  <rect x="16.5" y="130" width="9" height="22" rx="2" fill="#2B2A26"/>
+  <rect x="74.5" y="130" width="9" height="22" rx="2" fill="#2B2A26"/>
+  <!-- cab -->
+  <rect x="30" y="24" width="40" height="48" rx="5" fill="#A9A49A" stroke="#2B2A26" stroke-width="3"/>
+  <!-- grille -->
+  <rect x="40" y="25.5" width="20" height="4" fill="#4C4A42"/>
+  <!-- hood line -->
+  <line x1="31.5" y1="46" x2="68.5" y2="46" stroke="#2B2A26" stroke-width="1.5"/>
+  <!-- windshield band -->
+  <rect x="32" y="46" width="36" height="11" fill="#4C4A42" stroke="#2B2A26" stroke-width="1.5"/>
+  <!-- mirrors -->
+  <rect x="24" y="48" width="6" height="3" fill="#2B2A26"/>
+  <rect x="70" y="48" width="6" height="3" fill="#2B2A26"/>
+  <!-- cab roof -->
+  <rect x="33" y="57" width="34" height="12" rx="3" fill="#BFB8A8" stroke="#2B2A26" stroke-width="1.5"/>
+  <!-- cargo box roof with transverse ribs -->
+  <rect x="24" y="74" width="52" height="102" rx="3" fill="#BFB8A8" stroke="#2B2A26" stroke-width="3"/>
+  <line x1="25.5" y1="90" x2="74.5" y2="90" stroke="#2B2A26" stroke-width="1.5"/>
+  <line x1="25.5" y1="106" x2="74.5" y2="106" stroke="#2B2A26" stroke-width="1.5"/>
+  <line x1="25.5" y1="122" x2="74.5" y2="122" stroke="#2B2A26" stroke-width="1.5"/>
+  <line x1="25.5" y1="138" x2="74.5" y2="138" stroke="#2B2A26" stroke-width="1.5"/>
+  <line x1="25.5" y1="154" x2="74.5" y2="154" stroke="#2B2A26" stroke-width="1.5"/>
+  <!-- rear roll-door frame -->
+  <line x1="25.5" y1="168" x2="74.5" y2="168" stroke="#2B2A26" stroke-width="1.5"/>
+</svg>

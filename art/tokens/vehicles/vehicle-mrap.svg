@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 200" data-nibor="tokens/vehicles/vehicle-mrap">
+  <!-- ECA Protected Vehicle (MRAP-type) - authority edge band, angular chamfered hull, turret MMG circle, rear-door seam. -->
+  <!-- faction edge band (stroke 6 rounded rect inset) -->
+  <rect x="5" y="5" width="90" height="190" rx="12" fill="#F8F6EE" stroke="#4A4E57" stroke-width="6"/>
+  <!-- heavy tires -->
+  <rect x="15.5" y="34" width="9" height="24" rx="2" fill="#2B2A26"/>
+  <rect x="75.5" y="34" width="9" height="24" rx="2" fill="#2B2A26"/>
+  <rect x="15.5" y="126" width="9" height="24" rx="2" fill="#2B2A26"/>
+  <rect x="75.5" y="126" width="9" height="24" rx="2" fill="#2B2A26"/>
+  <!-- angular hull -->
+  <polygon points="36,20 64,20 76,42 76,160 66,178 34,178 24,160 24,42" fill="#5B6244" stroke="#2B2A26" stroke-width="3" stroke-linejoin="round"/>
+  <!-- winch/grille plate -->
+  <rect x="42" y="22" width="16" height="4" fill="#4C4A42"/>
+  <!-- hood plate line -->
+  <line x1="25.5" y1="54" x2="74.5" y2="54" stroke="#2B2A26" stroke-width="1.5"/>
+  <!-- armored windshield, two panes -->
+  <rect x="33" y="54" width="34" height="11" fill="#4C4A42" stroke="#2B2A26" stroke-width="1.5"/>
+  <line x1="50" y1="54.5" x2="50" y2="64.5" stroke="#2B2A26" stroke-width="1.5"/>
+  <!-- mirrors -->
+  <rect x="18" y="56" width="6" height="3" fill="#2B2A26"/>
+  <rect x="76" y="56" width="6" height="3" fill="#2B2A26"/>
+  <!-- roof plate -->
+  <rect x="30" y="68" width="40" height="102" rx="2" fill="#8A8F6A" stroke="#2B2A26" stroke-width="1.5"/>
+  <!-- turret MMG: barrel over the hood, ring, hatch -->
+  <rect x="47.6" y="66" width="4.8" height="5" fill="#2B2A26"/>
+  <rect x="48.6" y="71" width="2.8" height="29" fill="#2B2A26"/>
+  <circle cx="50" cy="100" r="14" fill="#4C4A42" stroke="#2B2A26" stroke-width="3"/>
+  <circle cx="50" cy="100" r="6" fill="#8A8F6A" stroke="#2B2A26" stroke-width="1.5"/>
+  <!-- rear dismount doors -->
+  <line x1="30.5" y1="162" x2="69.5" y2="162" stroke="#2B2A26" stroke-width="1.5"/>
+  <line x1="50" y1="162" x2="50" y2="176" stroke="#2B2A26" stroke-width="1.5"/>
+</svg>

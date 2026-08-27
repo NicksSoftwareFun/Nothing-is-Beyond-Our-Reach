@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 200" data-nibor="tokens/vehicles/vehicle-pickup">
+  <!-- Pickup Truck - neutral edge band, same hull as the technical with an open empty bed (rib lines). -->
+  <!-- faction edge band (stroke 6 rounded rect inset) -->
+  <rect x="5" y="5" width="90" height="190" rx="12" fill="#F8F6EE" stroke="#C9BA95" stroke-width="6"/>
+  <!-- tires -->
+  <rect x="18.5" y="38" width="7.5" height="20" rx="2" fill="#2B2A26"/>
+  <rect x="74" y="38" width="7.5" height="20" rx="2" fill="#2B2A26"/>
+  <rect x="18.5" y="128" width="7.5" height="20" rx="2" fill="#2B2A26"/>
+  <rect x="74" y="128" width="7.5" height="20" rx="2" fill="#2B2A26"/>
+  <!-- pickup body -->
+  <rect x="26" y="24" width="48" height="152" rx="6" fill="#C9BA95" stroke="#2B2A26" stroke-width="3"/>
+  <!-- grille -->
+  <rect x="38" y="25.5" width="24" height="4.5" fill="#4C4A42"/>
+  <!-- hood line -->
+  <line x1="27.5" y1="64" x2="72.5" y2="64" stroke="#2B2A26" stroke-width="1.5"/>
+  <!-- windshield band -->
+  <rect x="28" y="64" width="44" height="13" fill="#4C4A42" stroke="#2B2A26" stroke-width="1.5"/>
+  <!-- mirrors -->
+  <rect x="20" y="66" width="6" height="3" fill="#2B2A26"/>
+  <rect x="74" y="66" width="6" height="3" fill="#2B2A26"/>
+  <!-- cab roof -->
+  <rect x="29" y="77" width="42" height="26" rx="3" fill="#BFB8A8" stroke="#2B2A26" stroke-width="1.5"/>
+  <!-- open bed, empty, lengthwise ribs -->
+  <rect x="30" y="106" width="40" height="64" fill="#4C4A42" stroke="#2B2A26" stroke-width="1.5"/>
+  <line x1="40" y1="108" x2="40" y2="168" stroke="#2B2A26" stroke-width="1.5"/>
+  <line x1="50" y1="108" x2="50" y2="168" stroke="#2B2A26" stroke-width="1.5"/>
+  <line x1="60" y1="108" x2="60" y2="168" stroke="#2B2A26" stroke-width="1.5"/>
+  <!-- tailgate line -->
+  <line x1="27" y1="170" x2="73" y2="170" stroke="#2B2A26" stroke-width="1.5"/>
+</svg>

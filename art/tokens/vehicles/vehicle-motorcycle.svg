@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 200" data-nibor="tokens/vehicles/vehicle-motorcycle">
+  <!-- Dirt Bike - neutral edge band, narrow silhouette: wheel / bars / tank / hunched rider / wheel. -->
+  <!-- faction edge band (stroke 6 rounded rect inset) -->
+  <rect x="5" y="5" width="90" height="190" rx="12" fill="#F8F6EE" stroke="#C9BA95" stroke-width="6"/>
+  <!-- front wheel -->
+  <rect x="46.5" y="38" width="7" height="28" rx="3.5" fill="#2B2A26"/>
+  <!-- forks -->
+  <line x1="45" y1="70" x2="48" y2="52" stroke="#2B2A26" stroke-width="1.5"/>
+  <line x1="55" y1="70" x2="52" y2="52" stroke="#2B2A26" stroke-width="1.5"/>
+  <!-- handlebar with grips -->
+  <line x1="35" y1="72" x2="65" y2="72" stroke="#2B2A26" stroke-width="3"/>
+  <rect x="32.5" y="70" width="5" height="4" rx="1.5" fill="#2B2A26"/>
+  <rect x="62.5" y="70" width="5" height="4" rx="1.5" fill="#2B2A26"/>
+  <!-- tank and frame -->
+  <rect x="44.5" y="74" width="11" height="22" rx="5" fill="#8A8F6A" stroke="#2B2A26" stroke-width="3"/>
+  <!-- rider arms to the bars -->
+  <rect x="-3.5" y="-15" width="7" height="30" rx="3.5" fill="#5B6244" stroke="#2B2A26" stroke-width="3" transform="translate(42,92) rotate(-12)"/>
+  <rect x="-3.5" y="-15" width="7" height="30" rx="3.5" fill="#5B6244" stroke="#2B2A26" stroke-width="3" transform="translate(58,92) rotate(12)"/>
+  <!-- rider shoulders (hunched forward) -->
+  <ellipse cx="50" cy="110" rx="17" ry="11" fill="#5B6244" stroke="#2B2A26" stroke-width="3"/>
+  <!-- helmet -->
+  <circle cx="50" cy="104" r="7" fill="#BFB8A8" stroke="#2B2A26" stroke-width="3"/>
+  <circle cx="50" cy="104" r="4.5" fill="none" stroke="#2B2A26" stroke-width="1.5"/>
+  <!-- seat/tail -->
+  <rect x="45.5" y="120" width="9" height="14" rx="3" fill="#8A8F6A" stroke="#2B2A26" stroke-width="1.5"/>
+  <!-- rear wheel and fender -->
+  <rect x="46.5" y="134" width="7" height="28" rx="3.5" fill="#2B2A26"/>
+  <rect x="45" y="154" width="10" height="8" rx="3" fill="#8A8F6A" stroke="#2B2A26" stroke-width="1.5"/>
+</svg>

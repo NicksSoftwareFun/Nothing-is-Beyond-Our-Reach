@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 75 75" data-nibor="tokens/drones/drone-eca-fiber-fpv">
+  <!-- ECA fiber-optic FPV - authority ring, sleek airframe, warhead wedge, fiber spool line trailing to the token edge. -->
+  <circle cx="37.5" cy="37.5" r="34" fill="#F8F6EE" stroke="#4A4E57" stroke-width="3"/>
+  <!-- sleek rotor arms -->
+  <line x1="37.5" y1="37.5" x2="22.5" y2="22.5" stroke="#2B2A26" stroke-width="1.5"/>
+  <line x1="37.5" y1="37.5" x2="52.5" y2="22.5" stroke="#2B2A26" stroke-width="1.5"/>
+  <line x1="37.5" y1="37.5" x2="22.5" y2="52.5" stroke="#2B2A26" stroke-width="1.5"/>
+  <line x1="37.5" y1="37.5" x2="52.5" y2="52.5" stroke="#2B2A26" stroke-width="1.5"/>
+  <!-- rotors -->
+  <circle cx="22.5" cy="22.5" r="8.5" fill="none" stroke="#2B2A26" stroke-width="1.5"/>
+  <circle cx="52.5" cy="22.5" r="8.5" fill="none" stroke="#2B2A26" stroke-width="1.5"/>
+  <circle cx="22.5" cy="52.5" r="8.5" fill="none" stroke="#2B2A26" stroke-width="1.5"/>
+  <circle cx="52.5" cy="52.5" r="8.5" fill="none" stroke="#2B2A26" stroke-width="1.5"/>
+  <circle cx="22.5" cy="22.5" r="1.8" fill="#2B2A26"/>
+  <circle cx="52.5" cy="22.5" r="1.8" fill="#2B2A26"/>
+  <circle cx="22.5" cy="52.5" r="1.8" fill="#2B2A26"/>
+  <circle cx="52.5" cy="52.5" r="1.8" fill="#2B2A26"/>
+  <!-- fiber line paying out from the tail spool to the token edge -->
+  <path d="M37.5,49 C34,55 41,59 38,64 C36,67 35,71 37,75" fill="none" stroke="#2B2A26" stroke-width="1.5"/>
+  <!-- warhead wedge (nose, points up) -->
+  <polygon points="33,30 42,30 37.5,15.5" fill="#9C4A38" stroke="#2B2A26" stroke-width="1.5" stroke-linejoin="round"/>
+  <!-- pointed airframe with tail spool -->
+  <polygon points="37.5,25 43,30 43,45 37.5,49 32,45 32,30" fill="#2B2A26"/>
+  <circle cx="37.5" cy="46" r="3" fill="#2B2A26"/>
+  <circle cx="37.5" cy="46" r="1.2" fill="#F8F6EE"/>
+</svg>

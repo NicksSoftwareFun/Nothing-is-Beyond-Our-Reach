@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 75 75" data-nibor="tokens/drones/drone-crew-dropper">
+  <!-- Crew dropper rig - recon quad conversion: camera dot kept, rust grenade cylinder slung below the tail. -->
+  <circle cx="37.5" cy="37.5" r="34" fill="#F8F6EE" stroke="#D96C2E" stroke-width="3"/>
+  <!-- rotor arms -->
+  <line x1="37.5" y1="37.5" x2="22.5" y2="22.5" stroke="#2B2A26" stroke-width="3"/>
+  <line x1="37.5" y1="37.5" x2="52.5" y2="22.5" stroke="#2B2A26" stroke-width="3"/>
+  <line x1="37.5" y1="37.5" x2="22.5" y2="52.5" stroke="#2B2A26" stroke-width="3"/>
+  <line x1="37.5" y1="37.5" x2="52.5" y2="52.5" stroke="#2B2A26" stroke-width="3"/>
+  <!-- rotors -->
+  <circle cx="22.5" cy="22.5" r="8.5" fill="none" stroke="#2B2A26" stroke-width="3"/>
+  <circle cx="52.5" cy="22.5" r="8.5" fill="none" stroke="#2B2A26" stroke-width="3"/>
+  <circle cx="22.5" cy="52.5" r="8.5" fill="none" stroke="#2B2A26" stroke-width="3"/>
+  <circle cx="52.5" cy="52.5" r="8.5" fill="none" stroke="#2B2A26" stroke-width="3"/>
+  <circle cx="22.5" cy="22.5" r="1.8" fill="#2B2A26"/>
+  <circle cx="52.5" cy="22.5" r="1.8" fill="#2B2A26"/>
+  <circle cx="22.5" cy="52.5" r="1.8" fill="#2B2A26"/>
+  <circle cx="52.5" cy="52.5" r="1.8" fill="#2B2A26"/>
+  <!-- hanging grenade cylinder (slung under, trails aft) -->
+  <rect x="33.5" y="43" width="8" height="18" rx="3.5" fill="#9C4A38" stroke="#2B2A26" stroke-width="1.5"/>
+  <line x1="34.2" y1="48" x2="40.8" y2="48" stroke="#2B2A26" stroke-width="1.5"/>
+  <!-- fuselage -->
+  <rect x="31" y="29.5" width="13" height="16" rx="3" fill="#2B2A26"/>
+  <!-- camera dot (nose, faces up) -->
+  <circle cx="37.5" cy="33.5" r="2.6" fill="#F8F6EE"/>
+</svg>

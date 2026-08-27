@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 200" data-nibor="tokens/vehicles/vehicle-wreck">
+  <!-- Wreck - ink edge band, burned-out hull with rust scorch, blown front tire, smoke curls. Overlay marker for any dead vehicle. -->
+  <!-- edge band (stroke 6 rounded rect inset) -->
+  <rect x="5" y="5" width="90" height="190" rx="12" fill="#F8F6EE" stroke="#2B2A26" stroke-width="6"/>
+  <!-- smoke curls off the engine bay -->
+  <path d="M38,30 C34,24 42,20 38,13" fill="none" stroke="#4C4A42" stroke-width="1.5" stroke-linecap="round"/>
+  <path d="M50,28 C47,22 55,19 51,12" fill="none" stroke="#4C4A42" stroke-width="1.5" stroke-linecap="round"/>
+  <path d="M60,32 C58,27 64,25 62,19" fill="none" stroke="#4C4A42" stroke-width="1.5" stroke-linecap="round"/>
+  <!-- blown-off front tire -->
+  <rect x="-3.75" y="-10" width="7.5" height="20" rx="2" fill="#2B2A26" transform="translate(16.5,30) rotate(35)"/>
+  <!-- remaining tires (rear-left sits askew) -->
+  <rect x="72" y="44" width="7.5" height="20" rx="2" fill="#2B2A26"/>
+  <rect x="-3.75" y="-10" width="7.5" height="20" rx="2" fill="#2B2A26" transform="translate(24.25,144) rotate(8)"/>
+  <rect x="72" y="134" width="7.5" height="20" rx="2" fill="#2B2A26"/>
+  <!-- burned hull -->
+  <rect x="28" y="32" width="44" height="138" rx="8" fill="#4C4A42" stroke="#2B2A26" stroke-width="3"/>
+  <!-- bare front hub -->
+  <rect x="24" y="48" width="5" height="9" rx="1" fill="#2B2A26"/>
+  <!-- rust scorch patches -->
+  <polygon points="30,38 52,35 58,52 40,58 30,50" fill="#9C4A38"/>
+  <polygon points="44,84 68,80 69,108 50,112 42,98" fill="#9C4A38"/>
+  <polygon points="34,132 56,128 60,156 36,158" fill="#9C4A38"/>
+  <!-- burned-out window openings -->
+  <rect x="31" y="64" width="38" height="11" fill="#2B2A26"/>
+  <rect x="31" y="124" width="38" height="9" fill="#2B2A26"/>
+</svg>
