@@ -146,6 +146,24 @@ skill-tiers:
     - ["Skilled civilian", "11/13", "11", "hunters, competent shooters"]
     - ["Green", "13/15", "12", "most starting civilians"]
 
+campaign-tracks:
+  title: The Three Tracks
+  columns: [Track, Starts, Raised by, Lowered by, Thresholds]
+  rows:
+    - ["Rapport", "3", "wins, restraint, aid, Work the valley", "civilian harm, failures, abandoning bodies/prisoners", "0-1: no Auxiliary + a Hard Choice every turn. 8+: recruit or safehouse upgrade each turn"]
+    - ["Heat", "2", "loud missions, ALARM exfils, captured crew", "Lie low, quiet missions", "8+: sweep events - Exposed assets lost on d10 1-4"]
+    - ["Capability", "1", "Train actions, captured arms", "spent to field Guerrilla teams (1 per team per mission)", "sets what the partner force can give you"]
+
+supply-costs:
+  title: What Things Cost (Supply)
+  columns: [Item, Supply]
+  rows:
+    - ["Fielding a mission (base)", "1"]
+    - ["Crew-served weapon full belt load", "2"]
+    - ["Each gear item fielded", "its printed supply cost (see Arsenal appendix)"]
+    - ["FPV airframe", "4 - and the airframe is gone when it flies"]
+    - ["Live-fire training (Marksmanship step)", "1 - and Heat +1 on a d10 roll of 1"]
+
 mission-type:
   title: Mission Generator - Type
   dice: d10

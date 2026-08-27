@@ -624,6 +624,22 @@ mechanically correct answer. (Robin Sage war-crime negotiation pattern; Falling 
     Unknown.
 49. **Directives never override ANY printed constraint line** (Holding radius, Cordon route,
     crew-served deploy states) — the standing scope clause generalizes.
+50. **Lost at the Deadline:** Dead/unstabilized Dying = dead; anyone lost alive (hale,
+    restrained, or stabilized Down) = captured — Heat +1, gear gone, rescue missions possible.
+51. **Supply semantics:** gear supply costs are per-mission fielding costs (refill uses/
+    payloads); owned pool items persist; FPV airframes expend permanently. Base mission cost
+    1 Supply; crew-served full belt load 2 Supply.
+52. **Rapport 0–1:** no Auxiliary use AND the Consequences step draws a Hard Choice each
+    campaign turn. **Rapport 8+:** choose one per turn — recruit (Green, roster cap 12) or the
+    once-per-campaign safehouse upgrade (+2 on injury recovery).
+53. **Fielding a Guerrilla team costs 1 Capability per mission**; statlines scenario-printed.
+54. **Moving the Insertion** is an Underground asset flip.
+55. **Advances bank:** 2 points per mission into a shared bank, spendable only on survivors of
+    the just-completed mission; banking across turns is allowed.
+56. **Quiet turn** = a campaign turn with no mission (sequence steps 3–7 only); "out N
+    missions" counts missions actually played. **Exiting at the Exfil costs 1 AP.**
+57. **Glossary additions:** Supply, Advance, Underground, Auxiliary, Guerrilla, asset,
+    campaign turn, quiet turn, Exfil Deadline, gear pool.
 
 ## 18. Writing rules for chapter agents
 
