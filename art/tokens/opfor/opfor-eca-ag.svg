@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" data-nibor="tokens/opfor/opfor-eca-ag">
+  <!-- ECA assistant gunner - authority ring, pack with spare barrel/tripod, helmet, carbine, ammo badge. -->
+  <!-- base ring: authority (c-ring-authority) -->
+  <circle cx="50" cy="50" r="46" fill="#F8F6EE" stroke="#4A4E57" stroke-width="6"/>
+  <!-- c-body-pack (recolored authority) - hands drawn over the weapon below -->
+  <g id="c-body-pack">
+    <rect x="-4.5" y="-16" width="9" height="32" rx="4.5" fill="#4A4E57" stroke="#2B2A26" stroke-width="3" transform="translate(42.75,34) rotate(22)"/>
+    <rect x="-4.5" y="-12" width="9" height="24" rx="4.5" fill="#4A4E57" stroke="#2B2A26" stroke-width="3" transform="translate(57.25,40) rotate(-36)"/>
+    <ellipse cx="50" cy="53" rx="27" ry="16" fill="#4A4E57" stroke="#2B2A26" stroke-width="3"/>
+    <rect x="34.5" y="62" width="31" height="25" rx="5" fill="#6E7480" stroke="#2B2A26" stroke-width="3"/>
+  </g>
+  <!-- spare barrel (thick, left) + folded tripod (thin, right) lashed to the pack -->
+  <line x1="36.5" y1="84" x2="43" y2="63.5" stroke="#2B2A26" stroke-width="3" stroke-linecap="round"/>
+  <line x1="63.5" y1="84" x2="57" y2="63.5" stroke="#2B2A26" stroke-width="1.5" stroke-linecap="round"/>
+  <!-- c-head-helmet (recolored authority) -->
+  <g id="c-head-helmet">
+    <circle cx="50" cy="50" r="13.5" fill="#4A4E57" stroke="#2B2A26" stroke-width="3"/>
+    <circle cx="50" cy="50" r="9" fill="none" stroke="#2B2A26" stroke-width="1.5"/>
+  </g>
+  <!-- c-weapon-carbine -->
+  <g id="c-weapon-carbine">
+    <rect x="47.8" y="12" width="4.4" height="5" fill="#2B2A26"/><rect x="48.6" y="17" width="2.8" height="9" fill="#2B2A26"/><rect x="45.4" y="25.5" width="9.2" height="2.8" fill="#2B2A26"/><rect x="45.9" y="28.3" width="8.2" height="18" rx="2" fill="#2B2A26"/><rect x="44.4" y="46.3" width="11.2" height="16" rx="1.2" fill="#2B2A26"/><rect x="55.6" y="49.5" width="2.8" height="7" fill="#2B2A26"/><rect x="47.4" y="62.3" width="5.2" height="11" fill="#2B2A26"/><polygon points="44.8,73.3 55.2,73.3 56.6,85 43.4,85" fill="#2B2A26"/><rect x="42.6" y="85" width="14.8" height="3.6" rx="1" fill="#2B2A26"/>
+  </g>
+  <!-- hands on the weapon (from c-body-pack, drawn over the weapon) -->
+  <circle cx="47.5" cy="23.5" r="4.2" fill="#C9BA95" stroke="#2B2A26" stroke-width="1.5"/>
+  <circle cx="52.5" cy="33.5" r="4.2" fill="#C9BA95" stroke="#2B2A26" stroke-width="1.5"/>
+  <!-- role badge: ammo (glyph in faction color per style-guide 4.1) -->
+  <rect x="71.5" y="71.5" width="22" height="22" rx="3" fill="#F8F6EE" stroke="#2B2A26" stroke-width="1.5"/>
+  <g id="c-glyph-ammo" transform="translate(73.7,73.7) scale(0.45)"><path d="M12.2,29.5 L12.2,16 C12.2,12.6 13.3,11.2 15.45,8.5 C17.6,11.2 18.7,12.6 18.7,16 L18.7,29.5 Z" fill="#4A4E57"/><rect x="11.7" y="29.5" width="7.5" height="2.6" fill="#4A4E57"/><path d="M21.3,29.5 L21.3,16 C21.3,12.6 22.4,11.2 24.55,8.5 C26.7,11.2 27.8,12.6 27.8,16 L27.8,29.5 Z" fill="#4A4E57"/><rect x="20.8" y="29.5" width="7.5" height="2.6" fill="#4A4E57"/></g>
+  <!-- c-blind-notch (rear) -->
+  <g id="c-blind-notch"><path d="M40.5,83 L50,91.5 L59.5,83 L59.5,76 L50,84.5 L40.5,76 Z" fill="#2B2A26"/></g>
+</svg>

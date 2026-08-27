@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 75 75" data-nibor="tokens/status/status-dying">
+  <!-- Dying - bad state: rust ring, c-glyph-bleed (three drops), DYING label. -->
+  <circle cx="37.5" cy="37.5" r="34" fill="#F8F6EE" stroke="#9C4A38" stroke-width="3"/>
+  <g id="c-glyph-bleed" transform="translate(37.5,29) scale(0.95) translate(-20,-20.9)">
+    <path d="M11.5,4 C13.98,8.96 17.39,11.75 17.39,16.4 A5.89,5.89 0 0 1 5.61,16.4 C5.61,11.75 9.02,8.96 11.5,4 Z" fill="#2B2A26"/>
+    <path d="M28.5,4 C30.98,8.96 34.39,11.75 34.39,16.4 A5.89,5.89 0 0 1 22.61,16.4 C22.61,11.75 26.02,8.96 28.5,4 Z" fill="#2B2A26"/>
+    <path d="M20,19.5 C22.48,24.46 25.89,27.25 25.89,31.9 A5.89,5.89 0 0 1 14.11,31.9 C14.11,27.25 17.52,24.46 20,19.5 Z" fill="#2B2A26"/>
+  </g>
+  <text x="37.5" y="65" text-anchor="middle" font-family='"Oswald", "Liberation Sans", sans-serif' font-weight="600" font-size="11" letter-spacing="0.5" fill="#2B2A26">DYING</text>
+</svg>

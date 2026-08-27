@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 75 75" data-nibor="tokens/objectives/obj-intel">
+  <!-- Intel objective - olive ring, paper-bright disc, c-glyph-intel document. -->
+  <circle cx="37.5" cy="37.5" r="34" fill="#F8F6EE" stroke="#5B6244" stroke-width="3"/>
+  <g id="c-glyph-intel" transform="translate(17.5,17.5)">
+    <path d="M10.5,5 L24,5 L29.5,10.5 L29.5,35 L10.5,35 Z" fill="none" stroke="#2B2A26" stroke-width="3" stroke-linejoin="round"/>
+    <path d="M24,5 L24,10.5 L29.5,10.5" fill="none" stroke="#2B2A26" stroke-width="1.5"/>
+    <line x1="14.5" y1="17" x2="25.5" y2="17" stroke="#2B2A26" stroke-width="1.5"/>
+    <line x1="14.5" y1="22" x2="25.5" y2="22" stroke="#2B2A26" stroke-width="1.5"/>
+    <line x1="14.5" y1="27" x2="21.5" y2="27" stroke="#2B2A26" stroke-width="1.5"/>
+  </g>
+</svg>

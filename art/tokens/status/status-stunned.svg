@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 75 75" data-nibor="tokens/status/status-stunned">
+  <!-- Stunned - bad state: rust ring, c-glyph-shaken zigzag under an impact star. -->
+  <circle cx="37.5" cy="37.5" r="34" fill="#F8F6EE" stroke="#9C4A38" stroke-width="3"/>
+  <polygon points="37.5,14.5 39.73,20.93 46.53,21.06 41.11,25.17 43.08,31.69 37.5,27.8 31.92,31.69 33.89,25.17 28.47,21.06 35.27,20.93" fill="#2B2A26"/>
+  <g id="c-glyph-shaken" transform="translate(37.5,49) translate(-19.5,-21)">
+    <polygon points="4.5,23 12,12.5 19.5,23 27,12.5 34.5,23 34.5,29.5 27,19 19.5,29.5 12,19 4.5,29.5" fill="#2B2A26"/>
+  </g>
+</svg>

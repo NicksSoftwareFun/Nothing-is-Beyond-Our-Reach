@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 75 75" data-nibor="tokens/status/status-aim">
+  <!-- Aim - good state: olive ring, paper-bright disc, c-glyph-crosshair. -->
+  <circle cx="37.5" cy="37.5" r="34" fill="#F8F6EE" stroke="#5B6244" stroke-width="3"/>
+  <g id="c-glyph-crosshair" transform="translate(17.5,17.5)">
+    <circle cx="20" cy="20" r="11.5" fill="none" stroke="#2B2A26" stroke-width="3"/>
+    <line x1="20" y1="2.5" x2="20" y2="10" stroke="#2B2A26" stroke-width="3"/>
+    <line x1="20" y1="30" x2="20" y2="37.5" stroke="#2B2A26" stroke-width="3"/>
+    <line x1="2.5" y1="20" x2="10" y2="20" stroke="#2B2A26" stroke-width="3"/>
+    <line x1="30" y1="20" x2="37.5" y2="20" stroke="#2B2A26" stroke-width="3"/>
+    <circle cx="20" cy="20" r="2.6" fill="#2B2A26"/>
+  </g>
+</svg>

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 75 75" data-nibor="tokens/objectives/obj-generator">
+  <!-- Generator objective - olive ring, paper-bright disc, c-glyph-generator bolt. -->
+  <circle cx="37.5" cy="37.5" r="34" fill="#F8F6EE" stroke="#5B6244" stroke-width="3"/>
+  <g id="c-glyph-generator" transform="translate(17.5,17.5)">
+    <polygon points="23.5,3 10.5,21.5 17.6,21.5 14.5,37 29.5,16.5 21.6,16.5" fill="#2B2A26"/>
+  </g>
+</svg>

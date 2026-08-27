@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" data-nibor="tokens/crew/crew-okafor">
+  <!-- Tanya Okafor - co-op lineman. Pack body (tool load), hardhat reads as helmet, shotgun. -->
+  <!-- base ring: crew (c-ring-crew) -->
+  <circle cx="50" cy="50" r="46" fill="#F8F6EE" stroke="#D96C2E" stroke-width="6"/>
+  <g id="c-body-pack">
+    <rect x="-4.5" y="-16" width="9" height="32" rx="4.5" fill="#5B6244" stroke="#2B2A26" stroke-width="3" transform="translate(42.75,34) rotate(22)"/>
+    <rect x="-4.5" y="-12" width="9" height="24" rx="4.5" fill="#5B6244" stroke="#2B2A26" stroke-width="3" transform="translate(57.25,40) rotate(-36)"/>
+    <ellipse cx="50" cy="53" rx="27" ry="16" fill="#5B6244" stroke="#2B2A26" stroke-width="3"/>
+    <rect x="34.5" y="62" width="31" height="25" rx="5" fill="#8A8F6A" stroke="#2B2A26" stroke-width="3"/>
+    <line x1="41.5" y1="63.5" x2="41.5" y2="85.5" stroke="#2B2A26" stroke-width="1.5"/>
+    <line x1="58.5" y1="63.5" x2="58.5" y2="85.5" stroke="#2B2A26" stroke-width="1.5"/>
+  </g>
+  <g id="c-head-helmet">
+    <circle cx="50" cy="50" r="13.5" fill="#5B6244" stroke="#2B2A26" stroke-width="3"/>
+    <circle cx="50" cy="50" r="9" fill="none" stroke="#2B2A26" stroke-width="1.5"/>
+  </g>
+  <g id="c-weapon-shotgun">
+    <rect x="47.2" y="6" width="5.6" height="4" fill="#2B2A26"/><rect x="48.5" y="10" width="3" height="32" fill="#2B2A26"/><rect x="45" y="40" width="10" height="16" rx="2.5" fill="#2B2A26"/><rect x="46.2" y="56" width="7.6" height="13" rx="1" fill="#2B2A26"/><polygon points="46.6,69 53.4,69 55.6,89 44.4,89" fill="#2B2A26"/><rect x="43.8" y="89" width="12.4" height="4" rx="1.2" fill="#2B2A26"/>
+  </g>
+  <!-- hands on barrel and pump (from c-body-pack, drawn over the weapon) -->
+  <circle cx="47.4" cy="24" r="4.2" fill="#C9BA95" stroke="#2B2A26" stroke-width="1.5"/>
+  <circle cx="52.6" cy="34" r="4.2" fill="#C9BA95" stroke="#2B2A26" stroke-width="1.5"/>
+  <!-- role badge: gear (lineman) -->
+  <rect x="71.5" y="71.5" width="22" height="22" rx="3" fill="#F8F6EE" stroke="#2B2A26" stroke-width="1.5"/>
+  <g id="c-glyph-gear" transform="translate(73.7,73.7) scale(0.45)"><path d="M30.77,23.09 L35.61,22.47 L35.61,17.53 L30.77,16.91 L29.8,14.57 L32.78,10.71 L29.29,7.22 L25.43,10.2 L23.09,9.23 L22.47,4.39 L17.53,4.39 L16.91,9.23 L14.57,10.2 L10.71,7.22 L7.22,10.71 L10.2,14.57 L9.23,16.91 L4.39,17.53 L4.39,22.47 L9.23,23.09 L10.2,25.43 L7.22,29.29 L10.71,32.78 L14.57,29.8 L16.91,30.77 L17.53,35.61 L22.47,35.61 L23.09,30.77 L25.43,29.8 L29.29,32.78 L32.78,29.29 L29.8,25.43 Z M24.6,20 A4.6,4.6 0 1 1 15.4,20 A4.6,4.6 0 1 1 24.6,20 Z" fill="#2B2A26" fill-rule="evenodd"/></g>
+  <!-- c-blind-notch (rear) -->
+  <g id="c-blind-notch"><path d="M40.5,83 L50,91.5 L59.5,83 L59.5,76 L50,84.5 L40.5,76 Z" fill="#2B2A26"/></g>
+</svg>

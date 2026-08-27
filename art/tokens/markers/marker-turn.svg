@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 75 75" data-nibor="tokens/markers/marker-turn">
+  <!-- Turn tracker - olive ring, blank numeral slot box (the track prints the numbers), TURN label. -->
+  <circle cx="37.5" cy="37.5" r="34" fill="#F8F6EE" stroke="#5B6244" stroke-width="3"/>
+  <rect x="25.5" y="17" width="24" height="28" rx="2.5" fill="none" stroke="#2B2A26" stroke-width="3"/>
+  <text x="37.5" y="65" text-anchor="middle" font-family='"Oswald", "Liberation Sans", sans-serif' font-weight="600" font-size="11" letter-spacing="0.5" fill="#2B2A26">TURN</text>
+</svg>

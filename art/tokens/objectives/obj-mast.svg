@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 75 75" data-nibor="tokens/objectives/obj-mast">
+  <!-- Mast objective - olive ring, paper-bright disc, c-glyph-mast lattice tower. -->
+  <circle cx="37.5" cy="37.5" r="34" fill="#F8F6EE" stroke="#5B6244" stroke-width="3"/>
+  <g id="c-glyph-mast" transform="translate(17.5,19)">
+    <polygon points="17,6 23,6 30.4,34 9.6,34" fill="none" stroke="#2B2A26" stroke-width="3" stroke-linejoin="round"/>
+    <line x1="20" y1="6" x2="20" y2="1.5" stroke="#2B2A26" stroke-width="1.5"/>
+    <line x1="7.5" y1="34" x2="32.5" y2="34" stroke="#2B2A26" stroke-width="3"/>
+    <line x1="16.34" y1="8.5" x2="25.51" y2="15.5" stroke="#2B2A26" stroke-width="1.5"/>
+    <line x1="23.66" y1="8.5" x2="14.49" y2="15.5" stroke="#2B2A26" stroke-width="1.5"/>
+    <line x1="14.49" y1="15.5" x2="27.36" y2="22.5" stroke="#2B2A26" stroke-width="1.5"/>
+    <line x1="25.51" y1="15.5" x2="12.64" y2="22.5" stroke="#2B2A26" stroke-width="1.5"/>
+    <line x1="12.64" y1="22.5" x2="29.21" y2="29.5" stroke="#2B2A26" stroke-width="1.5"/>
+    <line x1="27.36" y1="22.5" x2="10.79" y2="29.5" stroke="#2B2A26" stroke-width="1.5"/>
+  </g>
+</svg>

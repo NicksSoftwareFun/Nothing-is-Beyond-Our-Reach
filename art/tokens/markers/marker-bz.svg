@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 75 75" data-nibor="tokens/markers/marker-bz">
+  <!-- Beaten zone - rust ring, twin falling-fire arrows (2-wide x 4-long template hint), BZ label. -->
+  <circle cx="37.5" cy="37.5" r="34" fill="#F8F6EE" stroke="#9C4A38" stroke-width="3"/>
+  <line x1="31" y1="14" x2="31" y2="40" stroke="#2B2A26" stroke-width="3"/>
+  <polygon points="26.8,39 35.2,39 31,48" fill="#2B2A26"/>
+  <line x1="44" y1="14" x2="44" y2="40" stroke="#2B2A26" stroke-width="3"/>
+  <polygon points="39.8,39 48.2,39 44,48" fill="#2B2A26"/>
+  <text x="37.5" y="65" text-anchor="middle" font-family='"Oswald", "Liberation Sans", sans-serif' font-weight="600" font-size="11" letter-spacing="0.5" fill="#2B2A26">BZ</text>
+</svg>

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 75 75" data-nibor="tokens/markers/marker-blip-qrf">
+  <!-- QRF blip - authority-tint disc, ink ring, blip diamond + c-glyph-leader chevrons in paper-bright, QRF label. -->
+  <circle cx="37.5" cy="37.5" r="34" fill="#4A4E57" stroke="#2B2A26" stroke-width="3"/>
+  <polygon points="37.5,8.5 66.5,37.5 37.5,66.5 8.5,37.5" fill="none" stroke="#F8F6EE" stroke-width="3" stroke-linejoin="round"/>
+  <g id="c-glyph-leader" transform="translate(37.5,26) scale(0.5) translate(-20,-21.25)">
+    <path d="M8,17.5 L20,6 L32,17.5 L32,24.5 L20,13 L8,24.5 Z" fill="#F8F6EE"/>
+    <path d="M8,29.5 L20,18 L32,29.5 L32,36.5 L20,25 L8,36.5 Z" fill="#F8F6EE"/>
+  </g>
+  <text x="37.5" y="54" text-anchor="middle" font-family='"Oswald", "Liberation Sans", sans-serif' font-weight="600" font-size="12" letter-spacing="0.5" fill="#F8F6EE">QRF</text>
+</svg>

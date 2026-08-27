@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" data-nibor="tokens/support/support-porter">
+  <!-- Auxiliary Porter - two extra gear slots. Pack body (double load), cap, no weapon. -->
+  <!-- base ring: neutral (c-ring-neutral) + inner crew liner -->
+  <circle cx="50" cy="50" r="46" fill="#F8F6EE" stroke="#C9BA95" stroke-width="6"/>
+  <!-- thin inner crew-orange ring: ours, but simplified (spec) -->
+  <circle cx="50" cy="50" r="42" fill="none" stroke="#D96C2E" stroke-width="1.5"/>
+  <g id="c-body-pack">
+    <rect x="-4.5" y="-16" width="9" height="32" rx="4.5" fill="#5B6244" stroke="#2B2A26" stroke-width="3" transform="translate(42.75,34) rotate(22)"/>
+    <rect x="-4.5" y="-12" width="9" height="24" rx="4.5" fill="#5B6244" stroke="#2B2A26" stroke-width="3" transform="translate(57.25,40) rotate(-36)"/>
+    <ellipse cx="50" cy="53" rx="27" ry="16" fill="#5B6244" stroke="#2B2A26" stroke-width="3"/>
+    <rect x="34.5" y="58" width="31" height="15" rx="5" fill="#8A8F6A" stroke="#2B2A26" stroke-width="3"/>
+    <line x1="41.5" y1="59.5" x2="41.5" y2="71.5" stroke="#2B2A26" stroke-width="1.5"/>
+    <line x1="58.5" y1="59.5" x2="58.5" y2="71.5" stroke="#2B2A26" stroke-width="1.5"/>
+    <rect x="37.5" y="73" width="25" height="14" rx="5" fill="#8A8F6A" stroke="#2B2A26" stroke-width="3"/>
+    <line x1="39" y1="80" x2="61" y2="80" stroke="#2B2A26" stroke-width="1.5"/>
+  </g>
+  <g id="c-head-cap">
+    <path d="M35.5,44.24 A16,16 0 0 1 64.5,44.24 L58.61,46.99 A9.5,9.5 0 0 0 41.39,46.99 Z" fill="#5B6244" stroke="#2B2A26" stroke-width="1.5"/>
+    <circle cx="50" cy="51" r="11" fill="#5B6244" stroke="#2B2A26" stroke-width="3"/>
+    <circle cx="50" cy="51" r="1.8" fill="#2B2A26"/>
+  </g>
+  <!-- hands (from the body component) -->
+  <circle cx="47.5" cy="21" r="4.2" fill="#C9BA95" stroke="#2B2A26" stroke-width="1.5"/>
+  <circle cx="52.5" cy="31" r="4.2" fill="#C9BA95" stroke="#2B2A26" stroke-width="1.5"/>
+  <!-- role badge: ammo (porter) -->
+  <rect x="71.5" y="71.5" width="22" height="22" rx="3" fill="#F8F6EE" stroke="#2B2A26" stroke-width="1.5"/>
+  <g id="c-glyph-ammo" transform="translate(73.7,73.7) scale(0.45)"><path d="M12.2,29.5 L12.2,16 C12.2,12.6 13.3,11.2 15.45,8.5 C17.6,11.2 18.7,12.6 18.7,16 L18.7,29.5 Z" fill="#2B2A26"/><rect x="11.7" y="29.5" width="7.5" height="2.6" fill="#2B2A26"/><path d="M21.3,29.5 L21.3,16 C21.3,12.6 22.4,11.2 24.55,8.5 C26.7,11.2 27.8,12.6 27.8,16 L27.8,29.5 Z" fill="#2B2A26"/><rect x="20.8" y="29.5" width="7.5" height="2.6" fill="#2B2A26"/></g>
+  <!-- c-blind-notch (rear) -->
+  <g id="c-blind-notch"><path d="M40.5,83 L50,91.5 L59.5,83 L59.5,76 L50,84.5 L40.5,76 Z" fill="#2B2A26"/></g>
+</svg>

@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" data-nibor="tokens/opfor/opfor-eca-drone-op">
+  <!-- ECA drone operator - authority ring, standard body + helmet, pistol, drone badge. -->
+  <!-- base ring: authority (c-ring-authority) -->
+  <circle cx="50" cy="50" r="46" fill="#F8F6EE" stroke="#4A4E57" stroke-width="6"/>
+  <!-- c-body-standard (recolored authority) - hands drawn over the weapon below -->
+  <g id="c-body-standard">
+    <rect x="-4.5" y="-16" width="9" height="32" rx="4.5" fill="#4A4E57" stroke="#2B2A26" stroke-width="3" transform="translate(42.75,36) rotate(22)"/>
+    <rect x="-4.5" y="-12" width="9" height="24" rx="4.5" fill="#4A4E57" stroke="#2B2A26" stroke-width="3" transform="translate(57.25,42) rotate(-36)"/>
+    <ellipse cx="50" cy="55" rx="27" ry="16" fill="#4A4E57" stroke="#2B2A26" stroke-width="3"/>
+  </g>
+  <!-- c-head-helmet (recolored authority) -->
+  <g id="c-head-helmet">
+    <circle cx="50" cy="50" r="13.5" fill="#4A4E57" stroke="#2B2A26" stroke-width="3"/>
+    <circle cx="50" cy="50" r="9" fill="none" stroke="#2B2A26" stroke-width="1.5"/>
+  </g>
+  <!-- c-weapon-pistol -->
+  <g id="c-weapon-pistol" transform="translate(0,-14)">
+    <rect x="47.6" y="28" width="4.8" height="3" fill="#2B2A26"/><rect x="46.4" y="31" width="7.2" height="26" rx="1" fill="#2B2A26"/><rect x="43.4" y="55" width="13.2" height="13.5" rx="3" fill="#2B2A26"/><rect x="45.2" y="52.5" width="9.6" height="4" fill="#2B2A26"/>
+  </g>
+  <!-- hands on the weapon (from c-body-standard, drawn over the weapon) -->
+  <circle cx="47.5" cy="24" r="4.2" fill="#C9BA95" stroke="#2B2A26" stroke-width="1.5"/>
+  <circle cx="52.5" cy="34" r="4.2" fill="#C9BA95" stroke="#2B2A26" stroke-width="1.5"/>
+  <!-- role badge: drone (glyph in faction color per style-guide 4.1) -->
+  <rect x="71.5" y="71.5" width="22" height="22" rx="3" fill="#F8F6EE" stroke="#2B2A26" stroke-width="1.5"/>
+  <g id="c-glyph-drone" transform="translate(73.7,73.7) scale(0.45)"><line x1="20" y1="20" x2="9" y2="9" stroke="#4A4E57" stroke-width="3"/><circle cx="9" cy="9" r="6.2" fill="none" stroke="#4A4E57" stroke-width="3"/><circle cx="9" cy="9" r="1.6" fill="#4A4E57"/><line x1="20" y1="20" x2="31" y2="9" stroke="#4A4E57" stroke-width="3"/><circle cx="31" cy="9" r="6.2" fill="none" stroke="#4A4E57" stroke-width="3"/><circle cx="31" cy="9" r="1.6" fill="#4A4E57"/><line x1="20" y1="20" x2="9" y2="31" stroke="#4A4E57" stroke-width="3"/><circle cx="9" cy="31" r="6.2" fill="none" stroke="#4A4E57" stroke-width="3"/><circle cx="9" cy="31" r="1.6" fill="#4A4E57"/><line x1="20" y1="20" x2="31" y2="31" stroke="#4A4E57" stroke-width="3"/><circle cx="31" cy="31" r="6.2" fill="none" stroke="#4A4E57" stroke-width="3"/><circle cx="31" cy="31" r="1.6" fill="#4A4E57"/><rect x="15.4" y="15.4" width="9.2" height="9.2" rx="2" fill="#4A4E57"/></g>
+  <!-- c-blind-notch (rear) -->
+  <g id="c-blind-notch"><path d="M40.5,83 L50,91.5 L59.5,83 L59.5,76 L50,84.5 L40.5,76 Z" fill="#2B2A26"/></g>
+</svg>

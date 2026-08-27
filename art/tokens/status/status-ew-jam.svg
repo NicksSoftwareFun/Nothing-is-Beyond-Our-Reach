@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 75 75" data-nibor="tokens/status/status-ew-jam">
+  <!-- EW jam - alert state: blaze ring, paper-bright disc, c-glyph-jammer (broken-wave). -->
+  <circle cx="37.5" cy="37.5" r="34" fill="#F8F6EE" stroke="#D96C2E" stroke-width="3"/>
+  <g id="c-glyph-jammer" transform="translate(17.5,17.5)">
+    <circle cx="20" cy="32.5" r="3.8" fill="#2B2A26"/>
+    <path d="M10.67,26.67 A11,11 0 0 1 18.28,21.64" fill="none" stroke="#2B2A26" stroke-width="3" stroke-linecap="round"/>
+    <path d="M21.72,21.64 A11,11 0 0 1 29.33,26.67" fill="none" stroke="#2B2A26" stroke-width="3" stroke-linecap="round"/>
+    <path d="M4.74,22.96 A18,18 0 0 1 17.18,14.72" fill="none" stroke="#2B2A26" stroke-width="3" stroke-linecap="round"/>
+    <path d="M22.82,14.72 A18,18 0 0 1 35.26,22.96" fill="none" stroke="#2B2A26" stroke-width="3" stroke-linecap="round"/>
+    <polygon points="23.8,2.5 28.8,2.5 16.2,36 11.2,36" fill="#2B2A26"/>
+  </g>
+</svg>

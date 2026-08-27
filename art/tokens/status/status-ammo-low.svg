@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 75 75" data-nibor="tokens/status/status-ammo-low">
+  <!-- Ammo low - bad state: rust ring, paper-bright disc, c-glyph-ammo. -->
+  <circle cx="37.5" cy="37.5" r="34" fill="#F8F6EE" stroke="#9C4A38" stroke-width="3"/>
+  <g id="c-glyph-ammo" transform="translate(37.5,37.5) scale(1.35) translate(-20,-20.3)">
+    <path d="M12.2,29.5 L12.2,16 C12.2,12.6 13.3,11.2 15.45,8.5 C17.6,11.2 18.7,12.6 18.7,16 L18.7,29.5 Z" fill="#2B2A26"/>
+    <rect x="11.7" y="29.5" width="7.5" height="2.6" fill="#2B2A26"/>
+    <path d="M21.3,29.5 L21.3,16 C21.3,12.6 22.4,11.2 24.55,8.5 C26.7,11.2 27.8,12.6 27.8,16 L27.8,29.5 Z" fill="#2B2A26"/>
+    <rect x="20.8" y="29.5" width="7.5" height="2.6" fill="#2B2A26"/>
+  </g>
+</svg>

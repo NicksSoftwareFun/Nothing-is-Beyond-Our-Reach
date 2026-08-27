@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 75 75" data-nibor="tokens/objectives/obj-prisoner">
+  <!-- Prisoner objective - olive ring, paper-bright disc, c-glyph-prisoner shackles. -->
+  <circle cx="37.5" cy="37.5" r="34" fill="#F8F6EE" stroke="#5B6244" stroke-width="3"/>
+  <g id="c-glyph-prisoner" transform="translate(37.5,37.5) scale(1.1) translate(-20,-19)">
+    <rect x="8.8" y="5" width="6.4" height="15" rx="3" fill="#2B2A26"/>
+    <rect x="24.8" y="5" width="6.4" height="15" rx="3" fill="#2B2A26"/>
+    <path d="M19,26 A7,7 0 1 1 5,26 A7,7 0 1 1 19,26 Z M15.6,26 A3.6,3.6 0 1 0 8.4,26 A3.6,3.6 0 1 0 15.6,26 Z" fill="#2B2A26" fill-rule="nonzero"/>
+    <path d="M35,26 A7,7 0 1 1 21,26 A7,7 0 1 1 35,26 Z M31.6,26 A3.6,3.6 0 1 0 24.4,26 A3.6,3.6 0 1 0 31.6,26 Z" fill="#2B2A26" fill-rule="nonzero"/>
+    <rect x="16.6" y="23.8" width="6.8" height="4.4" fill="#2B2A26"/>
+  </g>
+</svg>

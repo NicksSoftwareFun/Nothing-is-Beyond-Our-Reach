@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 75 75" data-nibor="tokens/status/status-pinned">
+  <!-- Pinned - bad state: rust ring, paper-bright disc, c-glyph-pinned. -->
+  <circle cx="37.5" cy="37.5" r="34" fill="#F8F6EE" stroke="#9C4A38" stroke-width="3"/>
+  <g id="c-glyph-pinned" transform="translate(37.5,37.5) scale(1.1) translate(-20,-20)">
+    <rect x="17.4" y="4.5" width="5.2" height="13" fill="#2B2A26"/>
+    <polygon points="10.5,17.5 29.5,17.5 20,28.5" fill="#2B2A26"/>
+    <rect x="8" y="31" width="24" height="4.6" fill="#2B2A26"/>
+  </g>
+</svg>

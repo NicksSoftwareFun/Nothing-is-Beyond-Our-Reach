@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 75 75" data-nibor="tokens/markers/marker-noise">
+  <!-- Noise - cube-tracker pawn face: rust ring, paper-bright disc, c-glyph-noise. -->
+  <circle cx="37.5" cy="37.5" r="34" fill="#F8F6EE" stroke="#9C4A38" stroke-width="3"/>
+  <g id="c-glyph-noise" transform="translate(17.5,17.5)">
+    <polygon points="6,15.5 12,15.5 19.5,8.5 19.5,31.5 12,24.5 6,24.5" fill="#2B2A26"/>
+    <line x1="24.5" y1="20" x2="34" y2="20" stroke="#2B2A26" stroke-width="3" stroke-linecap="round"/>
+    <line x1="24" y1="13" x2="31.5" y2="7.5" stroke="#2B2A26" stroke-width="3" stroke-linecap="round"/>
+    <line x1="24" y1="27" x2="31.5" y2="32.5" stroke="#2B2A26" stroke-width="3" stroke-linecap="round"/>
+  </g>
+</svg>

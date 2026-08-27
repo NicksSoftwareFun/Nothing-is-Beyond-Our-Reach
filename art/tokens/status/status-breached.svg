@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 75 75" data-nibor="tokens/status/status-breached">
+  <!-- Breached - good/neutral state: olive ring, c-glyph-roadblock with the bar snapped (halves tilted in). -->
+  <circle cx="37.5" cy="37.5" r="34" fill="#F8F6EE" stroke="#5B6244" stroke-width="3"/>
+  <g id="c-glyph-roadblock-broken" transform="translate(17.5,13)">
+    <rect x="9" y="22" width="4.4" height="12" fill="#2B2A26"/>
+    <rect x="26.6" y="22" width="4.4" height="12" fill="#2B2A26"/>
+    <rect x="6.4" y="34" width="9.6" height="3" fill="#2B2A26"/>
+    <rect x="24" y="34" width="9.6" height="3" fill="#2B2A26"/>
+    <g transform="rotate(14 5 17)">
+      <rect x="4" y="12" width="15" height="10" fill="#2B2A26"/>
+      <polygon points="11.9,12.7 14.5,12.7 11.1,21.3 8.5,21.3" fill="#F8F6EE"/>
+    </g>
+    <g transform="rotate(-14 35 17)">
+      <rect x="21" y="12" width="15" height="10" fill="#2B2A26"/>
+      <polygon points="29.9,12.7 32.5,12.7 29.1,21.3 26.5,21.3" fill="#F8F6EE"/>
+    </g>
+  </g>
+</svg>

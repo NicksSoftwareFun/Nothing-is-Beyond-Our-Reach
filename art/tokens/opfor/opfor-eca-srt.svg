@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" data-nibor="tokens/opfor/opfor-eca-srt">
+  <!-- SRT operator - authority DOUBLE ring (elite), heavy body (plates) + helmet, carbine, skull badge. -->
+  <!-- base ring: authority (c-ring-authority) -->
+  <circle cx="50" cy="50" r="46" fill="#F8F6EE" stroke="#4A4E57" stroke-width="6"/>
+  <!-- inner elite ring (SRT: double ring per spec) -->
+  <circle cx="50" cy="50" r="41" fill="none" stroke="#4A4E57" stroke-width="1.5"/>
+  <!-- c-body-heavy (recolored authority) - hands drawn over the weapon below -->
+  <g id="c-body-heavy">
+    <rect x="-5" y="-17" width="10" height="34" rx="5" fill="#4A4E57" stroke="#2B2A26" stroke-width="3" transform="translate(41.5,35.5) rotate(23)"/>
+    <rect x="-5" y="-13" width="10" height="26" rx="5" fill="#4A4E57" stroke="#2B2A26" stroke-width="3" transform="translate(58.5,42) rotate(-36)"/>
+    <ellipse cx="50" cy="55" rx="31" ry="18" fill="#4A4E57" stroke="#2B2A26" stroke-width="3"/>
+    <polygon points="34,43 66,43 71.5,50 71.5,64 65.5,71 34.5,71 28.5,64 28.5,50" fill="#4A4E57" stroke="#2B2A26" stroke-width="3" stroke-linejoin="round"/>
+  </g>
+  <!-- c-head-helmet (recolored authority) -->
+  <g id="c-head-helmet">
+    <circle cx="50" cy="50" r="13.5" fill="#4A4E57" stroke="#2B2A26" stroke-width="3"/>
+    <circle cx="50" cy="50" r="9" fill="none" stroke="#2B2A26" stroke-width="1.5"/>
+  </g>
+  <!-- c-weapon-carbine -->
+  <g id="c-weapon-carbine">
+    <rect x="47.8" y="12" width="4.4" height="5" fill="#2B2A26"/><rect x="48.6" y="17" width="2.8" height="9" fill="#2B2A26"/><rect x="45.4" y="25.5" width="9.2" height="2.8" fill="#2B2A26"/><rect x="45.9" y="28.3" width="8.2" height="18" rx="2" fill="#2B2A26"/><rect x="44.4" y="46.3" width="11.2" height="16" rx="1.2" fill="#2B2A26"/><rect x="55.6" y="49.5" width="2.8" height="7" fill="#2B2A26"/><rect x="47.4" y="62.3" width="5.2" height="11" fill="#2B2A26"/><polygon points="44.8,73.3 55.2,73.3 56.6,85 43.4,85" fill="#2B2A26"/><rect x="42.6" y="85" width="14.8" height="3.6" rx="1" fill="#2B2A26"/>
+  </g>
+  <!-- hands on the weapon (from c-body-heavy, drawn over the weapon) -->
+  <circle cx="47.2" cy="24" r="4.4" fill="#C9BA95" stroke="#2B2A26" stroke-width="1.5"/>
+  <circle cx="52.8" cy="34" r="4.4" fill="#C9BA95" stroke="#2B2A26" stroke-width="1.5"/>
+  <!-- role badge: skull (glyph in faction color per style-guide 4.1) -->
+  <rect x="71.5" y="71.5" width="22" height="22" rx="3" fill="#F8F6EE" stroke="#2B2A26" stroke-width="1.5"/>
+  <g id="c-glyph-skull" transform="translate(73.7,73.7) scale(0.45)"><path d="M32,16.5 A12,12 0 1 1 8,16.5 A12,12 0 1 1 32,16.5 Z M14.5,25 L25.5,25 L25.5,33.6 L14.5,33.6 Z M18.5,15.5 A3.5,3.5 0 1 0 11.5,15.5 A3.5,3.5 0 1 0 18.5,15.5 Z M28.5,15.5 A3.5,3.5 0 1 0 21.5,15.5 A3.5,3.5 0 1 0 28.5,15.5 Z M20,20.6 L17.9,24.8 L22.1,24.8 Z M16.9,29.6 L16.9,33.6 L18.3,33.6 L18.3,29.6 Z M19.3,29.6 L19.3,33.6 L20.7,33.6 L20.7,29.6 Z M21.7,29.6 L21.7,33.6 L23.1,33.6 L23.1,29.6 Z" fill="#4A4E57" fill-rule="nonzero"/></g>
+  <!-- c-blind-notch (rear) -->
+  <g id="c-blind-notch"><path d="M40.5,83 L50,91.5 L59.5,83 L59.5,76 L50,84.5 L40.5,76 Z" fill="#2B2A26"/></g>
+</svg>

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 75 75" data-nibor="tokens/status/status-smoke">
+  <!-- Smoke - neutral/good concealment: olive ring, paper-bright disc, c-glyph-smoke. -->
+  <circle cx="37.5" cy="37.5" r="34" fill="#F8F6EE" stroke="#5B6244" stroke-width="3"/>
+  <g id="c-glyph-smoke" transform="translate(37.5,37.5) scale(1.1) translate(-20,-20)">
+    <path d="M9.5,30.5 C5,30.5 3.2,26.5 5.4,23.2 C3.2,19.2 6.4,15 10.6,16 C11.6,10.8 18,8.8 21,12 C24,8.2 31,9.4 31.8,14.4 C35.8,14.6 37.6,19.6 34.8,22.6 C37.2,26.6 34.4,30.5 30.2,30.5 Z" fill="#2B2A26"/>
+  </g>
+</svg>

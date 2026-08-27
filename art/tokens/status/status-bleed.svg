@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 75 75" data-nibor="tokens/status/status-bleed">
+  <!-- Bleed - bad state: rust ring, paper-bright disc, c-glyph-wound (single drop). -->
+  <circle cx="37.5" cy="37.5" r="34" fill="#F8F6EE" stroke="#9C4A38" stroke-width="3"/>
+  <g id="c-glyph-wound" transform="translate(37.5,37.5) scale(1.05) translate(-20,-20)">
+    <path d="M20,4.5 C24.2,12.9 29.98,17.62 29.98,25.5 A9.97,9.97 0 0 1 10.03,25.5 C10.03,17.62 15.8,12.9 20,4.5 Z" fill="#2B2A26"/>
+  </g>
+</svg>

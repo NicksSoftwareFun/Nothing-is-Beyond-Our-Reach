@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 75 75" data-nibor="tokens/status/status-fire">
+  <!-- Fire - bad state: rust ring, paper-bright disc, c-glyph-flame. -->
+  <circle cx="37.5" cy="37.5" r="34" fill="#F8F6EE" stroke="#9C4A38" stroke-width="3"/>
+  <g id="c-glyph-flame" transform="translate(17.5,17.5)">
+    <path d="M20,3 C25,9.5 31,14.5 31,24 C31,31.5 26.2,36.5 20,36.5 C13.8,36.5 9,31.5 9,24 C9,18 12,13.5 14.2,9.2 C14.6,13.4 16.2,15.8 18.6,16.4 C20.6,12.4 20.4,7.6 20,3 Z M20,21 C17.6,23.6 15.8,25.2 15.8,28.2 C15.8,30.8 17.6,32.6 20,32.6 C22.4,32.6 24.2,30.8 24.2,28.2 C24.2,25.2 22.4,23.6 20,21 Z" fill="#2B2A26" fill-rule="evenodd"/>
+  </g>
+</svg>
