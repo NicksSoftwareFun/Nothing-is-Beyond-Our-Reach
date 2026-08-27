@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 750 1050" data-nibor="cards/templates/card-gear">
+  <!-- Gear kit card template. 300 u/in - stroke weights scaled x3 (hairline 2.25, detail 4.5, standard 9). -->
+  <!-- Field sizing proven against data/gear.yaml: name "NV GOGGLES (WORN PAIR)" 624u @44; effect jammer-pack 119 ch = 3 lines @28 (box holds 7); notes jammer-pack 100 ch = 2 lines @22 (box holds 4). -->
+  <rect x="0" y="0" width="750" height="1050" fill="#F2EDDF"/>
+  <!-- frame: 24u paper margin, ink border (standard) -->
+  <rect x="24" y="24" width="702" height="1002" fill="#F8F6EE" stroke="#2B2A26" stroke-width="9"/>
+  <!-- header band: gear olive -->
+  <rect x="28.5" y="28.5" width="693" height="96" fill="#5B6244"/>
+  <rect data-field="name" x="48" y="44" width="650" height="66" fill="none"/>
+  <text x="52" y="94" font-family='"Oswald", "Liberation Sans", sans-serif' font-weight="600" font-size="44" letter-spacing="1.5" fill="#F8F6EE">{{name}}</text>
+  <!-- stat boxes: slot / supply -->
+  <rect x="48" y="150" width="150" height="120" fill="#F2EDDF" stroke="#2B2A26" stroke-width="4.5"/>
+  <text x="123" y="178" text-anchor="middle" font-family='"Barlow Semi Condensed", "Liberation Sans", sans-serif' font-weight="600" font-size="18" letter-spacing="1.5" fill="#4C4A42">SLOT</text>
+  <rect data-field="slot" x="56" y="188" width="134" height="60" fill="none"/>
+  <text x="123" y="240" text-anchor="middle" font-family='"Oswald", "Liberation Sans", sans-serif' font-weight="600" font-size="50" fill="#2B2A26">{{slot}}</text>
+  <rect x="214" y="150" width="150" height="120" fill="#F2EDDF" stroke="#2B2A26" stroke-width="4.5"/>
+  <text x="289" y="178" text-anchor="middle" font-family='"Barlow Semi Condensed", "Liberation Sans", sans-serif' font-weight="600" font-size="18" letter-spacing="1.5" fill="#4C4A42">SUPPLY</text>
+  <rect data-field="supply" x="222" y="188" width="134" height="60" fill="none"/>
+  <text x="289" y="240" text-anchor="middle" font-family='"Oswald", "Liberation Sans", sans-serif' font-weight="600" font-size="50" fill="#2B2A26">{{supply}}</text>
+  <!-- effect -->
+  <text x="52" y="346" font-family='"Barlow Semi Condensed", "Liberation Sans", sans-serif' font-weight="600" font-size="20" letter-spacing="2" fill="#2B2A26">EFFECT</text>
+  <line x1="48" y1="356" x2="702" y2="356" stroke="#2B2A26" stroke-width="2.25"/>
+  <rect data-field="effect" x="48" y="368" width="654" height="300" fill="none"/>
+  <text x="52" y="404" font-family='"Barlow Semi Condensed", "Liberation Sans", sans-serif' font-weight="400" font-size="28" fill="#2B2A26">{{effect}}</text>
+  <!-- notes -->
+  <text x="52" y="712" font-family='"Barlow Semi Condensed", "Liberation Sans", sans-serif' font-weight="600" font-size="20" letter-spacing="2" fill="#2B2A26">NOTES</text>
+  <line x1="48" y1="722" x2="702" y2="722" stroke="#2B2A26" stroke-width="2.25"/>
+  <rect data-field="notes" x="48" y="734" width="654" height="130" fill="none"/>
+  <text x="52" y="766" font-family='"Barlow Semi Condensed", "Liberation Sans", sans-serif' font-weight="400" font-size="22" fill="#4C4A42">{{notes}}</text>
+  <!-- footer -->
+  <line x1="48" y1="994" x2="702" y2="994" stroke="#4C4A42" stroke-width="2.25"/>
+  <text x="52" y="1016" font-family='"Barlow Semi Condensed", "Liberation Sans", sans-serif' font-weight="500" font-size="15" letter-spacing="2.5" fill="#4C4A42">CREW KIT CARD</text>
+  <text x="698" y="1016" text-anchor="end" font-family='"Oswald", "Liberation Sans", sans-serif' font-weight="600" font-size="17" letter-spacing="2" fill="#5B6244">GEAR</text>
+</svg>
