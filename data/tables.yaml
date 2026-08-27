@@ -146,6 +146,71 @@ skill-tiers:
     - ["Skilled civilian", "11/13", "11", "hunters, competent shooters"]
     - ["Green", "13/15", "12", "most starting civilians"]
 
+mission-type:
+  title: Mission Generator - Type
+  dice: d10
+  columns: [d10, Mission, Frame]
+  rows:
+    - ["1-2", "Reconnaissance", "Observe and record a site or route; exfil undetected. Bonus intel spend next mission if never Alerted"]
+    - ["3", "Link-up", "Reach a contact or courier drop, authenticate, escort or receive; the contact may be a support unit"]
+    - ["4-5", "Ambush", "Destroy or turn back a moving OPFOR element on a route; crew chooses the ground"]
+    - ["6-7", "Raid", "Seize or destroy an objective at a garrisoned site; scripted sentries + Blips"]
+    - ["8", "Recovery", "Extract a cache, vehicle, or person from a held area; the load slows you"]
+    - ["9", "Sabotage", "Demolish or disable infrastructure; the charge placement is the objective"]
+    - ["10", "Defense", "The Warden comes to you - hold or evacuate a site for the turn limit; Warden initiates Alerted"]
+
+mission-site:
+  title: Mission Generator - Site
+  dice: d10
+  columns: [d10, Site, Terrain notes]
+  rows:
+    - ["1", "Farmstead and outbuildings", "2-3 small structures, fields, treelines"]
+    - ["2", "Church or school", "one large multi-Zone building, open approaches"]
+    - ["3", "Crossroads hamlet", "4-6 small buildings on a road cross"]
+    - ["4", "Bridge or ford", "water barrier, chokepoint, Cordon country"]
+    - ["5", "Substation or relay site", "fenced compound, wire, generator noise"]
+    - ["6", "Mill or small factory", "one big building, many Zones, catwalk High level"]
+    - ["7", "Fuel depot or gas station", "road frontage, fire hazards everywhere"]
+    - ["8", "Ridge observation post", "High ground, long sightlines, thin cover"]
+    - ["9", "River landing", "water edge, boats, marsh flank"]
+    - ["10", "Small-town main street", "dense facing buildings, alleys, the hardest CQB"]
+
+mission-complication:
+  title: Mission Generator - Complication
+  dice: d10
+  columns: [d10, Complication, Effect]
+  rows:
+    - ["1", "Civilians on site", "6 civilian figures; hits on them cost Rapport -2"]
+    - ["2", "Weather turns", "rain/fog all mission - the smoke modifier beyond 8 squares; drones grounded"]
+    - ["3", "Short window", "Exfil Deadline -3 turns"]
+    - ["4", "Third party", "a rival-faction element with its own objective enters turn d6"]
+    - ["5", "Compromised", "the Warden expects you - all Contact rolls +1, one scripted sentry pair added"]
+    - ["6", "Thin kit", "campaign Supply -1 before loadout"]
+    - ["7", "The stranger", "a wounded unknown at the objective - carry them out (Rapport +2) or leave them"]
+    - ["8", "Eyes above", "an OPFOR recon drone is aloft from turn 1"]
+    - ["9", "Bring them home", "a body - one of ours - is at the site; recovering it is a second objective (Rapport +2 / -1 if left)"]
+    - ["10", "Hard Choice", "draw a dilemma card at the mission's midpoint (turn 6)"]
+
+opfor-by-heat:
+  title: Mission Generator - OPFOR by Heat
+  columns: [Heat, Force, QRF]
+  rows:
+    - ["0-3", "1 scripted sentry pair + 3 Blips; Contact Table favors patrols; militia-quality (COC or scenario faction)", "No QRF - ALARM brings +2 Blips at edges instead"]
+    - ["4-7", "2 scripted posts + 4 Blips; mixed COC/ECA regulars; one crew-served weapon on the table", "QRF: mounted COC technical element"]
+    - ["8-10", "2 posts + 5 Blips (+2 on Contact); ECA regulars with MG team + marksman; drone operator on site", "QRF: ECA patrol truck or MRAP element; SRT under ALARM on d10 8+"]
+  note: Rival-faction missions swap the roster, not the structure. Defense missions start one state higher on the Alert Ladder.
+
+season-effects:
+  title: Season & Light (Mission Architect)
+  columns: [Condition, Table effects]
+  rows:
+    - ["Early autumn (full canopy)", "Concealment blocks LOS 1 square deeper; canopy squares common (drone-immune)"]
+    - ["Late autumn (leaves down)", "Concealment spotting envelopes +2 squares; canopy sparse - the LEAF SEASON default"]
+    - ["First snow", "Tracks: a figure that moved outdoors last turn is spotted at +2; all Noise -1 (snow damp); Sprint costs +1 AP in drifts"]
+    - ["Hard rain", "Smoke modifier beyond 8 squares; drones grounded; Noise -1"]
+    - ["Fog", "No LOS beyond 8 squares for everyone; Blips resolve at 6/3"]
+    - ["Night", "Darkness modifier without lights; NV gear negates; OPFOR posts use lights (revealed, immune to the modifier in their arc)"]
+
 breaching-methods:
   title: Getting Through - Doors, Windows, Breaches
   columns: [Method, AP, Noise, Entry order]
