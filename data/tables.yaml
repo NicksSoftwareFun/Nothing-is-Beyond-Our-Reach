@@ -216,7 +216,7 @@ opfor-by-heat:
     - ["0-3", "1 scripted sentry pair + 3 Blips; Contact Table favors patrols; militia-quality (COC or scenario faction)", "No QRF - ALARM brings +2 Blips at edges instead"]
     - ["4-7", "2 scripted posts + 4 Blips; mixed COC/ECA regulars; one crew-served weapon on the table", "QRF: mounted COC technical element"]
     - ["8-10", "2 posts + 5 Blips (+2 on Contact); ECA regulars with MG team + marksman; drone operator on site", "QRF: ECA patrol truck or MRAP element; SRT under ALARM on d10 8+"]
-  note: Rival-faction missions swap the roster, not the structure. Defense missions start one state higher on the Alert Ladder.
+  note: Rival-faction missions swap the roster, not the structure. Defense missions start at Alerted - Directives live from turn 1.
 
 season-effects:
   title: Season & Light (Mission Architect)

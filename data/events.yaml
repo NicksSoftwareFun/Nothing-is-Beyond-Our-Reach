@@ -40,7 +40,7 @@ drone-overflight:
 patrol-change:
   title: PATROL SCHEDULE CHANGE
   trigger: Next mission
-  effect: New officer, new routes. The scenario's Blips set up anywhere on their half of the map (Warden places by die: nearest legal position to each rolled board edge). Scripted sentries are unchanged.
+  effect: "New officer, new routes. The scenario's Blips set up anywhere on their half of the map (Warden places by die: nearest legal position to each rolled board edge). Scripted sentries are unchanged."
 
 dog-pack:
   title: DOGS
