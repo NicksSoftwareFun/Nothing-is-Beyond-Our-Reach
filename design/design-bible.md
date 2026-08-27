@@ -344,7 +344,7 @@ An element = the group a card represents (pair, fireteam, team, vehicle); it act
 | **QRF** | arrives mounted under ALARM; drives to 8 squares from last Known, dismounts, splits: half Assault, half Base-of-Fire |
 
 **Target priority (all Doctrines):** 1 the Known enemy that attacked this element since its last
-activation → 2 nearest Known in LOS → 3 most exposed Known (Open TN available) → tie: closest.
+activation → 2 nearest Known in LOS → 3 most exposed Known (Open TN available) → tie: nearest to the element's Leader or objective.
 **Reaction AP:** each script states AP held (typically 2). **The Good-Faith Clause (printed in
 ch. 1 and ch. 12):** when a script is ambiguous, the Warden does the most tactically sensible
 thing *against* the Crew; when two options are equal, the less favorable one for the player.
@@ -616,6 +616,14 @@ mechanically correct answer. (Robin Sage war-crime negotiation pattern; Falling 
     2 AP, FPV Strike 4 AP) — the operator is doing something with their hands and attention.
 45. **The Beaten Zone is also removed** when the AG is lost or the Gunner leaves the trigger —
     canonical elaboration of §12's persistence rule.
+46. **The QRF clock ticks in the clocks step of the same Warden Phase it starts.**
+47. **QRF arrival:** enters as Blips that move by the QRF script (road speed, not Blip pace)
+    and skip the Contact Table — composition is scenario-printed.
+48. **Sweep's Concealment rake:** costs Snap-Shot AP, makes gunfire Noise, no roll and no
+    target — every Crew figure inside the raked area is Shaken (prone or not) and stays
+    Unknown.
+49. **Directives never override ANY printed constraint line** (Holding radius, Cordon route,
+    crew-served deploy states) — the standing scope clause generalizes.
 
 ## 18. Writing rules for chapter agents
 
