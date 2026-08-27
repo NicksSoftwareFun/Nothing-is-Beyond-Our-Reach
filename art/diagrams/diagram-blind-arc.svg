@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" data-nibor="diagrams/diagram-blind-arc">
+<!-- Facing and the rear Blind Arc (design-bible 4): figures face 4 ways; the rear 90 degree quadrant cannot be seen into. -->
+<rect x="0" y="0" width="800" height="500" fill="#F2EDDF"/>
+<g stroke="#A38B66" stroke-width="0.75" fill="none">
+<path d="M0,100 H800 M0,200 H800 M0,300 H800 M0,400 H800"/>
+<path d="M100,0 V500 M200,0 V500 M300,0 V500 M400,0 V500 M500,0 V500 M600,0 V500 M700,0 V500"/>
+</g>
+<rect x="2" y="2" width="796" height="496" fill="none" stroke="#2B2A26" stroke-width="1.5"/>
+<clipPath id="clip-blind-wedge"><polygon points="370,225 95,500 645,500"/></clipPath>
+<path d="M-200,500 L75,225 L78.2,225 L-196.8,500 Z M-188,500 L87,225 L90.2,225 L-184.8,500 Z M-176,500 L99,225 L102.2,225 L-172.8,500 Z M-164,500 L111,225 L114.2,225 L-160.8,500 Z M-152,500 L123,225 L126.2,225 L-148.8,500 Z M-140,500 L135,225 L138.2,225 L-136.8,500 Z M-128,500 L147,225 L150.2,225 L-124.8,500 Z M-116,500 L159,225 L162.2,225 L-112.8,500 Z M-104,500 L171,225 L174.2,225 L-100.8,500 Z M-92,500 L183,225 L186.2,225 L-88.8,500 Z M-80,500 L195,225 L198.2,225 L-76.8,500 Z M-68,500 L207,225 L210.2,225 L-64.8,500 Z M-56,500 L219,225 L222.2,225 L-52.8,500 Z M-44,500 L231,225 L234.2,225 L-40.8,500 Z M-32,500 L243,225 L246.2,225 L-28.8,500 Z M-20,500 L255,225 L258.2,225 L-16.8,500 Z M-8,500 L267,225 L270.2,225 L-4.8,500 Z M4,500 L279,225 L282.2,225 L7.2,500 Z M16,500 L291,225 L294.2,225 L19.2,500 Z M28,500 L303,225 L306.2,225 L31.2,500 Z M40,500 L315,225 L318.2,225 L43.2,500 Z M52,500 L327,225 L330.2,225 L55.2,500 Z M64,500 L339,225 L342.2,225 L67.2,500 Z M76,500 L351,225 L354.2,225 L79.2,500 Z M88,500 L363,225 L366.2,225 L91.2,500 Z M100,500 L375,225 L378.2,225 L103.2,500 Z M112,500 L387,225 L390.2,225 L115.2,500 Z M124,500 L399,225 L402.2,225 L127.2,500 Z M136,500 L411,225 L414.2,225 L139.2,500 Z M148,500 L423,225 L426.2,225 L151.2,500 Z M160,500 L435,225 L438.2,225 L163.2,500 Z M172,500 L447,225 L450.2,225 L175.2,500 Z M184,500 L459,225 L462.2,225 L187.2,500 Z M196,500 L471,225 L474.2,225 L199.2,500 Z M208,500 L483,225 L486.2,225 L211.2,500 Z M220,500 L495,225 L498.2,225 L223.2,500 Z M232,500 L507,225 L510.2,225 L235.2,500 Z M244,500 L519,225 L522.2,225 L247.2,500 Z M256,500 L531,225 L534.2,225 L259.2,500 Z M268,500 L543,225 L546.2,225 L271.2,500 Z M280,500 L555,225 L558.2,225 L283.2,500 Z M292,500 L567,225 L570.2,225 L295.2,500 Z M304,500 L579,225 L582.2,225 L307.2,500 Z M316,500 L591,225 L594.2,225 L319.2,500 Z M328,500 L603,225 L606.2,225 L331.2,500 Z M340,500 L615,225 L618.2,225 L343.2,500 Z M352,500 L627,225 L630.2,225 L355.2,500 Z M364,500 L639,225 L642.2,225 L367.2,500 Z M376,500 L651,225 L654.2,225 L379.2,500 Z M388,500 L663,225 L666.2,225 L391.2,500 Z M400,500 L675,225 L678.2,225 L403.2,500 Z M412,500 L687,225 L690.2,225 L415.2,500 Z M424,500 L699,225 L702.2,225 L427.2,500 Z M436,500 L711,225 L714.2,225 L439.2,500 Z M448,500 L723,225 L726.2,225 L451.2,500 Z M460,500 L735,225 L738.2,225 L463.2,500 Z M472,500 L747,225 L750.2,225 L475.2,500 Z M484,500 L759,225 L762.2,225 L487.2,500 Z M496,500 L771,225 L774.2,225 L499.2,500 Z M508,500 L783,225 L786.2,225 L511.2,500 Z M520,500 L795,225 L798.2,225 L523.2,500 Z M532,500 L807,225 L810.2,225 L535.2,500 Z M544,500 L819,225 L822.2,225 L547.2,500 Z M556,500 L831,225 L834.2,225 L559.2,500 Z M568,500 L843,225 L846.2,225 L571.2,500 Z M580,500 L855,225 L858.2,225 L583.2,500 Z M592,500 L867,225 L870.2,225 L595.2,500 Z M604,500 L879,225 L882.2,225 L607.2,500 Z M616,500 L891,225 L894.2,225 L619.2,500 Z M628,500 L903,225 L906.2,225 L631.2,500 Z M640,500 L915,225 L918.2,225 L643.2,500 Z M652,500 L927,225 L930.2,225 L655.2,500 Z" fill="#9C4A38" fill-opacity="0.35" clip-path="url(#clip-blind-wedge)"/>
+<line x1="370" y1="225" x2="95" y2="500" stroke="#9C4A38" stroke-width="3"/>
+<line x1="370" y1="225" x2="645" y2="500" stroke="#9C4A38" stroke-width="3"/>
+<path d="M412.4,267.4 A60,60 0 0 1 327.6,267.4" fill="none" stroke="#9C4A38" stroke-width="1.5"/>
+<text x="370" y="316" text-anchor="middle" font-family='"Barlow Semi Condensed", "Liberation Sans", sans-serif' font-weight="600" font-size="22" fill="#9C4A38">90&#176;</text>
+<circle cx="240" cy="420" r="30" fill="#F8F6EE" stroke="#4A4E57" stroke-width="6"/>
+<rect x="226" y="406" width="28" height="28" fill="none" stroke="#2B2A26" stroke-width="3"/>
+<text x="240" y="479" text-anchor="middle" font-family='"Barlow Semi Condensed", "Liberation Sans", sans-serif' font-weight="400" font-size="20" fill="#4C4A42">UNSEEN</text>
+<path d="M342.8,265.8 L258.3,392.5" stroke="#4C4A42" stroke-width="1.5" stroke-dasharray="9 6" fill="none"/>
+<g stroke="#9C4A38" stroke-width="6" fill="none"><path d="M282,311 L320,349 M320,311 L282,349"/></g>
+<rect x="428" y="424" width="188" height="56" fill="#F8F6EE" stroke="#9C4A38" stroke-width="1.5"/>
+<text x="522" y="450" text-anchor="middle" font-family='"Barlow Semi Condensed", "Liberation Sans", sans-serif' font-weight="600" font-size="26" fill="#9C4A38">BLIND ARC</text>
+<text x="522" y="471" text-anchor="middle" font-family='"Barlow Semi Condensed", "Liberation Sans", sans-serif' font-weight="500" font-size="15" fill="#4C4A42">NO SPOT &#183; NO REACTION FIRE</text>
+<circle cx="370" cy="225" r="46" fill="#F8F6EE" stroke="#D96C2E" stroke-width="6"/>
+<path d="M370,197 L398,253 L342,253 Z" fill="none" stroke="#2B2A26" stroke-width="3"/>
+<path d="M360.5,283 L370,291.5 L379.5,283 L379.5,276 L370,284.5 L360.5,276 Z" fill="#2B2A26"/>
+<line x1="370" y1="172" x2="370" y2="130" stroke="#D96C2E" stroke-width="3"/>
+<polygon points="370.0,114.0 377.5,130.0 362.5,130.0" fill="#D96C2E"/>
+<text x="386" y="141" text-anchor="start" font-family='"Barlow Semi Condensed", "Liberation Sans", sans-serif' font-weight="500" font-size="18" fill="#4C4A42">FACING</text>
+<path d="M302.8,292.2 A95,95 0 1 1 437.2,292.2" fill="none" stroke="#D96C2E" stroke-width="3"/>
+<polygon points="306.8,296.2 290.2,290.2 300.8,279.6" fill="#D96C2E"/>
+<polygon points="433.2,296.2 439.2,279.6 449.8,290.2" fill="#D96C2E"/>
+<text x="296" y="192" text-anchor="end" font-family='"Barlow Semi Condensed", "Liberation Sans", sans-serif' font-weight="600" font-size="22" fill="#D96C2E">FRONT 270&#176;</text>
+<line x1="299" y1="180" x2="309" y2="164" stroke="#4C4A42" stroke-width="0.75"/>
+<rect x="28" y="28" width="150" height="122" fill="#F8F6EE" stroke="#2B2A26" stroke-width="1.5"/>
+<text x="103" y="52" text-anchor="middle" font-family='"Barlow Semi Condensed", "Liberation Sans", sans-serif' font-weight="600" font-size="15" letter-spacing="0.5" fill="#2B2A26">FACING: 4 WAYS</text>
+<circle cx="63" cy="82" r="16" fill="#F2EDDF" stroke="#4C4A42" stroke-width="3"/>
+<polygon points="63,68 70,88 56,88" fill="#D96C2E"/>
+<circle cx="113" cy="82" r="16" fill="#F2EDDF" stroke="#4C4A42" stroke-width="3"/>
+<polygon points="127,82 107,89 107,75" fill="#D96C2E"/>
+<circle cx="63" cy="122" r="16" fill="#F2EDDF" stroke="#4C4A42" stroke-width="3"/>
+<polygon points="63,136 70,116 56,116" fill="#D96C2E"/>
+<circle cx="113" cy="122" r="16" fill="#F2EDDF" stroke="#4C4A42" stroke-width="3"/>
+<polygon points="99,122 119,129 119,115" fill="#D96C2E"/>
+</svg>
