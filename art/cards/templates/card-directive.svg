@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 750 1050" data-nibor="cards/templates/card-directive">
+  <!-- Directive card template - Warden message-pad slip. 300 u/in - stroke weights scaled x3 (hairline 2.25, detail 4.5, standard 9). -->
+  <!-- Ruled pad lines are solid contour hairlines (no opacity). Order baselines sit on the rules: 242 + 46k. -->
+  <!-- Field sizing proven against data/directives.yaml: title "FALL BACK AND REGROUP" 621u @44; order flares-and-whistles 28 words = 3 lines @30 (~48 ch/line; box holds 6, so ~40 words fit); scope "RECONNAISSANCE BY FIRE" 395u @24. -->
+  <rect x="0" y="0" width="750" height="1050" fill="#F2EDDF"/>
+  <!-- frame: 24u paper margin, ink border (standard) -->
+  <rect x="24" y="24" width="702" height="1002" fill="#F8F6EE" stroke="#2B2A26" stroke-width="9"/>
+  <!-- header band: ink -->
+  <rect x="28.5" y="28.5" width="693" height="96" fill="#2B2A26"/>
+  <rect data-field="title" x="48" y="44" width="650" height="66" fill="none"/>
+  <text x="52" y="94" font-family='"Oswald", "Liberation Sans", sans-serif' font-weight="600" font-size="44" letter-spacing="1.5" fill="#F8F6EE">{{title}}</text>
+  <!-- message-pad head -->
+  <text x="52" y="164" font-family='"Barlow Semi Condensed", "Liberation Sans", sans-serif' font-weight="600" font-size="17" letter-spacing="2" fill="#4C4A42">FROM: THE WARDEN</text>
+  <text x="380" y="164" font-family='"Barlow Semi Condensed", "Liberation Sans", sans-serif' font-weight="600" font-size="17" letter-spacing="2" fill="#4C4A42">TO: ALL ELEMENTS</text>
+  <line x1="48" y1="178" x2="702" y2="178" stroke="#A38B66" stroke-width="2.25"/>
+  <!-- order -->
+  <text x="52" y="207" font-family='"Barlow Semi Condensed", "Liberation Sans", sans-serif' font-weight="600" font-size="20" letter-spacing="2" fill="#2B2A26">ORDER</text>
+  <line x1="48" y1="217" x2="702" y2="217" stroke="#2B2A26" stroke-width="2.25"/>
+  <!-- ruled pad lines -->
+  <line x1="48" y1="254" x2="702" y2="254" stroke="#A38B66" stroke-width="2.25"/>
+  <line x1="48" y1="300" x2="702" y2="300" stroke="#A38B66" stroke-width="2.25"/>
+  <line x1="48" y1="346" x2="702" y2="346" stroke="#A38B66" stroke-width="2.25"/>
+  <line x1="48" y1="392" x2="702" y2="392" stroke="#A38B66" stroke-width="2.25"/>
+  <line x1="48" y1="438" x2="702" y2="438" stroke="#A38B66" stroke-width="2.25"/>
+  <line x1="48" y1="484" x2="702" y2="484" stroke="#A38B66" stroke-width="2.25"/>
+  <line x1="48" y1="530" x2="702" y2="530" stroke="#A38B66" stroke-width="2.25"/>
+  <line x1="48" y1="576" x2="702" y2="576" stroke="#A38B66" stroke-width="2.25"/>
+  <line x1="48" y1="622" x2="702" y2="622" stroke="#A38B66" stroke-width="2.25"/>
+  <line x1="48" y1="668" x2="702" y2="668" stroke="#A38B66" stroke-width="2.25"/>
+  <line x1="48" y1="714" x2="702" y2="714" stroke="#A38B66" stroke-width="2.25"/>
+  <line x1="48" y1="760" x2="702" y2="760" stroke="#A38B66" stroke-width="2.25"/>
+  <line x1="48" y1="806" x2="702" y2="806" stroke="#A38B66" stroke-width="2.25"/>
+  <line x1="48" y1="852" x2="702" y2="852" stroke="#A38B66" stroke-width="2.25"/>
+  <rect data-field="order" x="48" y="216" width="654" height="268" fill="none"/>
+  <text x="52" y="242" font-family='"Barlow Semi Condensed", "Liberation Sans", sans-serif' font-weight="400" font-size="30" fill="#2B2A26">{{order}}</text>
+  <!-- scope: small-caps footer -->
+  <text x="375" y="930" text-anchor="middle" font-family='"Barlow Semi Condensed", "Liberation Sans", sans-serif' font-weight="500" font-size="15" letter-spacing="2.5" fill="#4C4A42">SCOPE</text>
+  <rect data-field="scope" x="48" y="936" width="654" height="40" fill="none"/>
+  <text x="375" y="966" text-anchor="middle" font-family='"Barlow Semi Condensed", "Liberation Sans", sans-serif' font-weight="600" font-size="24" letter-spacing="3" fill="#2B2A26">{{scope}}</text>
+  <!-- footer -->
+  <line x1="48" y1="994" x2="702" y2="994" stroke="#4C4A42" stroke-width="2.25"/>
+  <text x="52" y="1016" font-family='"Barlow Semi Condensed", "Liberation Sans", sans-serif' font-weight="500" font-size="15" letter-spacing="2.5" fill="#4C4A42">WARDEN MESSAGE FORM</text>
+  <text x="698" y="1016" text-anchor="end" font-family='"Oswald", "Liberation Sans", sans-serif' font-weight="600" font-size="17" letter-spacing="2" fill="#2B2A26">DIRECTIVE</text>
+</svg>

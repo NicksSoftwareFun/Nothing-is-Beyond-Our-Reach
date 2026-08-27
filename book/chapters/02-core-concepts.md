@@ -49,7 +49,7 @@ Everything else that can legally change a roll is on this list:
 
 {{table:modifiers}}
 
-This list is closed. If a situation is not on it, it does not modify the roll — no matter how vivid the fiction. Chapters, scenarios, and house instinct add nothing to it. When every modifier is accounted for, clamp the net total to the printed maximum before rolling.
+This list is closed. If a situation is not on it, it does not modify the roll — no matter how vivid the fiction. Scenarios and house instinct add nothing to it; the only additions anywhere in this book ride on the weapon itself — a trait or class rule with a printed TN adjustment, like the Bolt tax on Snap Shots ({{ref:sec-traits}}) or the long-gun penalty inside a Zone ({{ref:sec-zone-fighting}}). When every modifier is accounted for, clamp the net total to the printed maximum before rolling.
 
 ::: designer
 Cover could have been a +2 like everything else. It isn't, for two reasons. First, arithmetic: cover applies to more shots than any other condition in the game, so printing both TNs on the cardface moves the single most common addition off the table entirely. Second, honesty: a binary Open-or-Cover call — four conditions, no stacking — resolves in seconds and kills the "my wall plus his smoke plus my crouch" negotiation before it starts. The modifier list stays short precisely because cover never visits it.
@@ -91,7 +91,7 @@ Here is a card in full:
 
 {{card:crew.vasquez}}
 
-Read it top to bottom. Reyna Vasquez shoots at {{stat:crew.vasquez.shoot}} — a service veteran's line. Her Grit of {{stat:crew.vasquez.grit}} means she passes a morale test more often than not even on a bad night. She has {{stat:crew.vasquez.ap}} AP, the standard allowance. Her Leader skill lets her Rally shaken neighbors ({{ref:sec-rally}}); Fire Discipline quiets the shooting around her — which matters because Noise is a currency ({{ref:sec-noise}}). Her carbine hits at DR {{stat:weapons.carbine.dr}} out to an Effective Range of {{stat:weapons.carbine.eff}} squares, and her chest rig speeds her reloads. Everything she can do is on this card or in the universal action list ({{ref:sec-ap}}).
+Read it top to bottom. Reyna Vasquez shoots at {{stat:crew.vasquez.shoot}} — a service veteran's line. Her Grit of {{stat:crew.vasquez.grit}} means she passes a morale test more often than not even on a bad night. She has {{stat:crew.vasquez.ap}} AP, the standard allowance. Her Leader skill lets her Rally Shaken neighbors ({{ref:sec-rally}}); Fire Discipline quiets the shooting around her — which matters because Noise is a currency ({{ref:sec-noise}}). Her carbine hits at DR {{stat:weapons.carbine.dr}} out to an Effective Range of {{stat:weapons.carbine.eff}} squares, and her chest rig speeds her reloads. Everything she can do is on this card or in the universal action list ({{ref:sec-ap}}).
 
 Enemy cards read the same way but leaner — a Shoot line, Grit, Armor, a Doctrine, and one special rule. The Warden's people do not get biographies. What they get instead is a script, and the script is the subject of {{ref:ch-enemy-system}}.
 
@@ -168,7 +168,7 @@ Ask the question per shot, from the shooter's square: the same figure can be in 
 ::: example
 **Reading the ground, then rolling.** Turn 3, a farm lane below Sugar Creek. Reyna Vasquez kneels at the corner of the barn. A Civil Order Corps militiaman stands 14 squares off, at the edge of a brush line.
 
-*The call.* Vasquez traces LOS center-to-center: the line is clear of Block, but it touches a Concealment square adjacent to the militiaman — condition 1. He is in Cover. Her card reads Shoot {{stat:crew.vasquez.shoot}}, so she needs the right-hand number: 12. He is inside her carbine's Effective Range of {{stat:weapons.carbine.eff}} squares and no other line item on the modifier list applies, so 12 it stays. She spends the AP for an Aimed Shot at the printed TN and rolls 2d10: **8 and 5 — 13.** A hit. The Warden rolls the Casualty Die ({{ref:sec-opfor-casualty}}): **d10 = 6**, plus the carbine's DR {{stat:weapons.carbine.dr}}, minus his Armor 0 — total 9. Dead. (Had her dice come up 10 and 10 — a natural 20 — the hit would have ignored Armor entirely and struck at +3 Severity.)
+*The call.* Vasquez traces LOS center-to-center: the line is clear of Block, but it touches a Concealment square adjacent to the militiaman — condition 1. He is in Cover. Her card reads Shoot {{stat:crew.vasquez.shoot}}, so she needs the right-hand number: 12. He is inside her carbine's Effective Range of {{stat:weapons.carbine.eff}} squares and no other line item on the modifier list applies, so 12 it stays. She spends the AP for an Aimed Shot at the printed TN and rolls 2d10: **8 and 5 — 13.** A hit. The Warden rolls the Casualty Die ({{ref:sec-opfor-casualty}}): **d10 = 6**, plus the carbine's DR {{stat:weapons.carbine.dr}}, minus his Armor of {{stat:opfor.coc-militiaman.armor}} — total 9. Dead. (Had her dice come up 10 and 10 — a natural 20 — the hit would have ignored Armor entirely and struck at +3 Severity.)
 
 *The stack.* The dead man's partner bolts — a Sprint across the open farmyard toward a wrecked truck. Birdy Sizemore, watching from a ditch with AP still unspent ({{ref:sec-overwatch}}), takes Reaction Fire, which resolves mid-move ({{ref:sec-reaction-fire}}). Her Shoot is {{stat:crew.birdy.shoot}}. The runner is upright in Clear terrain: Open TN 13. Reaction Fire is +3; a Sprinting target is +2. Net +5 — under the +6 cap — for a final TN of 18. She rolls **9 and 6 — 15.** A miss; the runner makes the truck.
 
@@ -188,7 +188,7 @@ Inside a Zone, exact position does not exist. Every figure in a Zone is in one o
 - **Posted** — at one named Portal. The figure sees and shoots through that Portal, and only that one. It counts as in Cover against fire from outside ({{ref:sec-cover}}, condition 3), and it may take Reaction Fire through its Portal ({{ref:sec-reaction-fire}}).
 - **Deep** — somewhere inside, away from the openings. No LOS in, no LOS out. A Deep figure cannot be seen or shot from outside the Zone, and cannot see, shoot, or react out of it. Deep is safe, and Deep is blind.
 
-Figures in the same Zone are all at Point Blank to one another — the modifier list already prices what a room fight is.
+Figures in the same Zone are all at Point Blank to one another ({{ref:sec-zone-fighting}}) — the modifier list already prices what a room fight is.
 
 That is the entire spatial model for interiors, and these definitions are all this chapter owns. What happens when somebody comes *through* the door — entry fights, who fires first, breaching, flashbangs, grenades through Portals — is the business of {{ref:ch-close-quarters}}, beginning at {{ref:sec-entry}}. It is most of why this game gets played.
 
@@ -206,7 +206,7 @@ The **Blind Arc** is the 90° quadrant directly behind a figure. Precisely: a sq
 
 The Blind Arc cuts both ways. It is how your people close on a sentry ({{ref:sec-stealth}}), and it is the seam you leave the Warden every time a figure ends its activation careless of what is behind it. An enemy with AP in hand is a loaded trap ({{ref:sec-reaction-fire}}) — but only across the arc it can see.
 
-Vehicles and drones have no Blind Arc: mirrors, cameras, and a rotor's-eye view. Vehicle weapons use their own fire arcs, which are a different mechanism entirely ({{ref:ch-vehicles}}).
+Vehicles and drones have no Blind Arc: mirrors, cameras, and a rotor's-eye view. Neither does anyone indoors — a Zone is close chaos, and every aware figure in it counts as inside every other's frontal arc ({{ref:sec-zone-fighting}}). Vehicle weapons use their own fire arcs, which are a different mechanism entirely ({{ref:ch-vehicles}}).
 
 ::: sidebar
 **Margin note, Deacon's hand:** *"Check your six" is a lie — you can't, not while you're working. That's what a buddy is. Pair up and quarter opposite ways; two people offset have no Blind Arc between them. Watch how their sentries stand. When the Authority posts them lazy, both men facing the road — that's not a post, that's a door. Walk through it.*
